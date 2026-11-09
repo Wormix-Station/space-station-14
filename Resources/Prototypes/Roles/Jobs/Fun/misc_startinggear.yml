@@ -157,6 +157,24 @@
     - TRayScanner
     - AccessConfiguratorUniversal
     - Multitool
+    # Wormix edit
+    - JawsOfLife
+    - PowerDrill
+    - WelderExperimental
+    - HolofanProjector
+    - DoorRemoteAll
+    - AdminHypo
+    - Handcuffs
+    - Handcuffs
+    - ClownRecorder
+    - RubberStampCentcom
+    - ImplanterAdmeme
+    - ChemistryBottleOmnizine
+    - ChemistryBottlePax
+    - ChemistryBottleToxin
+    - ChemistryBottleNocturine
+    # Wormix edit
+
 
 #Gladiator with spear
 - type: startingGear

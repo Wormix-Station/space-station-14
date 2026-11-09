@@ -6,6 +6,7 @@ using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Ghost.Components;
 using Content.Server.Ghost.Roles.Components;
+using Content.Server.Medical.CrewMonitoring;
 using Content.Server.Mind;
 using Content.Server.Roles;
 using Content.Server.Roles.Jobs;
@@ -145,12 +146,34 @@ namespace Content.Server.Ghost
             {
                 RemComp<ShowHealthBarsComponent>(uid);
                 RemComp<ShowHealthIconsComponent>(uid);
+
+                // Wormix start tweak
+                if (HasComp<CrewMonitoringConsoleComponent>(uid))
+                {
+                    RemComp<ShowCriminalRecordIconsComponent>(uid);
+                    RemComp<ShowMindShieldIconsComponent>(uid);
+                    RemComp<ShowJobIconsComponent>(uid);
+                    RemComp<ShowSyndicateIconsComponent>(uid);
+                }
+                // Wormix end tweak
+
                 _actions.SetToggled(component.ToggleMedicalHudActionEntity, true);
             }
             else
             {
                 AddComp<ShowHealthBarsComponent>(uid);
                 AddComp<ShowHealthIconsComponent>(uid);
+
+                // Wormix start tweak
+                if (HasComp<CrewMonitoringConsoleComponent>(uid))
+                {
+                    AddComp<ShowCriminalRecordIconsComponent>(uid);
+                    AddComp<ShowMindShieldIconsComponent>(uid);
+                    AddComp<ShowJobIconsComponent>(uid);
+                    AddComp<ShowSyndicateIconsComponent>(uid);
+                }
+                // Wormix end tweak
+
                 _actions.SetToggled(component.ToggleMedicalHudActionEntity, false);
             }
 
@@ -253,6 +276,7 @@ namespace Content.Server.Ghost
             _actions.AddAction(uid, ref component.ToggleLightingActionEntity, component.ToggleLightingAction);
             _actions.AddAction(uid, ref component.ToggleFoVActionEntity, component.ToggleFoVAction);
             _actions.AddAction(uid, ref component.ToggleGhostsActionEntity, component.ToggleGhostsAction);
+
             _actions.AddAction(uid, ref component.ToggleMedicalHudActionEntity, component.ToggleMedicalHudAction); // WL-Changes
         }
 
