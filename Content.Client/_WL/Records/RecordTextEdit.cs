@@ -21,7 +21,7 @@ public sealed class RecordTextEdit : PanelContainer
     private static readonly StyleBoxFlat FocusedStyle = new()
     {
         BackgroundColor = Color.FromHex("#19191E"),
-        BorderColor = Color.FromHex("#9B4DB5"),
+        BorderColor = Color.FromHex("#6AB237"), // Wormix: was #9B4DB5
         BorderThickness = new Thickness(1),
     };
 

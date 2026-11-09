@@ -66,7 +66,7 @@ namespace Content.Client.Stylesheets
 
         public static readonly Color PanelDark = Color.FromHex("#0a0a0a");
 
-        public static readonly Color NanoGold = Color.FromHex("#9051A8");
+        public static readonly Color NanoGold = Color.FromHex("#6AB237"); // Wormix: was #9051A8
         public static readonly Color GoodGreenFore = Color.FromHex("#006400");
         public static readonly Color ConcerningOrangeFore = Color.FromHex("#99461d");
         public static readonly Color DangerousRedFore = Color.FromHex("#640000");
@@ -79,9 +79,9 @@ namespace Content.Client.Stylesheets
         public static readonly Color ButtonColorPressed = Color.FromHex("#0C0C0C");
         public static readonly Color ButtonColorDisabled = Color.FromHex("#282828");
 
-        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#9051A8");
-        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#a261ba");
-        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#3e164d");
+        public static readonly Color ButtonColorCautionDefault = Color.FromHex("#6AB237"); // Wormix: was #9051A8
+        public static readonly Color ButtonColorCautionHovered = Color.FromHex("#7FC94A"); // Wormix: was #a261ba
+        public static readonly Color ButtonColorCautionPressed = Color.FromHex("#2F5418"); // Wormix: was #3e164d
         public static readonly Color ButtonColorCautionDisabled = Color.FromHex("#403445");
 
         public static readonly Color ButtonColorGoodDefault = Color.FromHex("#3E6C45"); // old: 006400
@@ -1241,15 +1241,15 @@ namespace Content.Client.Stylesheets
 
                 Element<Button>().Class("SkillLevelUpgraded")
                     .Pseudo(ContainerButton.StylePseudoClassNormal)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#9051A8")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#6AB237")), // Wormix: was #9051A8
 
                 Element<Button>().Class("SkillLevelUpgradedHover")
                     .Pseudo(ContainerButton.StylePseudoClassHover)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#A061B8")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#7FC94A")), // Wormix: was #A061B8
 
                 Element<Button>().Class("SkillLevelUpgradedPressed")
                     .Pseudo(ContainerButton.StylePseudoClassPressed)
-                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#804198")),
+                    .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#2F5418")), // Wormix: was #804198
 
                 Element<Button>().Class("SkillLevelNormal")
                     .Pseudo(ContainerButton.StylePseudoClassNormal)

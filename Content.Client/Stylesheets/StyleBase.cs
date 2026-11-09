@@ -133,7 +133,7 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(TextureButton.StylePropertyTexture, textureCloseButton),
-                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#9051A8")),
+                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#6AB237")), // Wormix: was #9051A8
                     }),
                 // Window close button hover.
                 new StyleRule(
@@ -149,7 +149,7 @@ namespace Content.Client.Stylesheets
                         new[] {TextureButton.StylePseudoClassPressed}),
                     new[]
                     {
-                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#3e164d")),
+                        new StyleProperty(Control.StylePropertyModulateSelf, Color.FromHex("#2F5418")), // Wormix: was #3e164d
                     }),
             };
         }

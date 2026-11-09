@@ -28,7 +28,7 @@ public static class Palettes
     public static readonly ColorPalette AlphaModulate = ColorPalette.FromHexBase("#ffffff");
 
     // wl tones
-    public static readonly ColorPalette WL1 = ColorPalette.FromHexBase("#9051A8");
+    public static readonly ColorPalette WL1 = ColorPalette.FromHexBase("#6AB237"); // Wormix: was #9051A8
     public static readonly ColorPalette WL2 = ColorPalette.FromHexBase("#2d2d2d", lightnessShift: 0.015f, chromaShift: 0.0055f);
 
 }

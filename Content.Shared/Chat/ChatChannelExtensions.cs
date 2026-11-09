@@ -6,7 +6,7 @@ public static class ChatChannelExtensions
     {
         return channel switch
         {
-            ChatChannel.Server => Color.FromHex("#9051a8"),
+            ChatChannel.Server => Color.FromHex("#6AB237"), // Wormix: was #9051a8
             ChatChannel.Radio => Color.LimeGreen,
             ChatChannel.LOOC => Color.MediumTurquoise,
             ChatChannel.OOC => Color.LightSkyBlue,
