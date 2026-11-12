@@ -96,6 +96,7 @@ namespace Content.Client.Input
                 ContentKeyFunctions.SmartEquipPocket1,
                 ContentKeyFunctions.SmartEquipPocket2,
                 ContentKeyFunctions.SmartEquipSuitStorage,
+                ContentKeyFunctions.SmartEquipBack,
                 ContentKeyFunctions.OpenBackpack,
                 ContentKeyFunctions.OpenBelt,
                 ContentKeyFunctions.RotateObjectClockwise,
