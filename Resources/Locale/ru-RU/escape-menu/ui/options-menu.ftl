@@ -180,6 +180,7 @@ ui-options-static-storage-ui = Закрепить интерфейс храни�
 ui-options-function-smart-equip-backpack = Умная экипировка в рюкзак
 ui-options-function-smart-equip-belt = Умная экипировка на пояс
 ui-options-function-smart-equip-suit-storage = Умная экипировка на хранилище костюма
+ui-options-function-smart-equip-back = Умная экипировка на спину
 ui-options-function-smart-equip-pocket1 = Умная экипировка в карман 1
 ui-options-function-smart-equip-pocket2 = Умная экипировка в карман 2
 ui-options-function-open-backpack = Открыть рюкзак

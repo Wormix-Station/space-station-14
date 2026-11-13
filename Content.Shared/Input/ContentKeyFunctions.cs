@@ -36,6 +36,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction SmartEquipPocket1 = "SmartEquipPocket1";
         public static readonly BoundKeyFunction SmartEquipPocket2 = "SmartEquipPocket2";
         public static readonly BoundKeyFunction SmartEquipSuitStorage = "SmartEquipSuitStorage";
+        public static readonly BoundKeyFunction SmartEquipBack = "SmartEquipBack";
         public static readonly BoundKeyFunction OpenBackpack = "OpenBackpack";
         public static readonly BoundKeyFunction OpenBelt = "OpenBelt";
         public static readonly BoundKeyFunction OpenAHelp = "OpenAHelp";
@@ -66,6 +67,13 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction ZoomIn = "ZoomIn";
         public static readonly BoundKeyFunction ResetZoom = "ResetZoom";
         public static readonly BoundKeyFunction CombatIndicator = "CombatIndicator"; //Corvax-Wl-indicator
+        public static readonly BoundKeyFunction TogglePosing = "TogglePosing";
+        public static readonly BoundKeyFunction PosingOffsetLeft = "PosingOffsetLeft";
+        public static readonly BoundKeyFunction PosingOffsetRight = "PosingOffsetRight";
+        public static readonly BoundKeyFunction PosingOffsetUp = "PosingOffsetUp";
+        public static readonly BoundKeyFunction PosingOffsetDown = "PosingOffsetDown";
+        public static readonly BoundKeyFunction PosingRotateNegative = "PosingRotateNegative";
+        public static readonly BoundKeyFunction PosingRotatePositive = "PosingRotatePositive";
 
         public static readonly BoundKeyFunction ArcadeUp = "ArcadeUp";
         public static readonly BoundKeyFunction ArcadeDown = "ArcadeDown";

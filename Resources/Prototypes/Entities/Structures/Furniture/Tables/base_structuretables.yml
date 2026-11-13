@@ -40,6 +40,9 @@
   - type: Tag
     tags:
     - ForceFixRotations
+  - type: InteractionVerbs
+    allowedVerbs:
+    - KnockOn
 
 - type: entity
   abstract: true

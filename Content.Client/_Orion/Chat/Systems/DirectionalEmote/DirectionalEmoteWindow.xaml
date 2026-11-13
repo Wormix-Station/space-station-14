@@ -1,0 +1,38 @@
+<ui:FancyWindow xmlns="https://spacestation14.io"
+                xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
+                xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                VerticalExpand="True" HorizontalExpand="True"
+                Title="{Loc directional-emote-title-default}"
+                MinSize="600 300"
+                SetSize="600 300">
+    <PanelContainer Margin="10">
+        <PanelContainer.PanelOverride>
+            <gfx:StyleBoxFlat BackgroundColor="#2b2b3b" />
+        </PanelContainer.PanelOverride>
+
+        <BoxContainer Orientation="Vertical" Margin="10">
+            <TextEdit Name="MessageInput"
+                VerticalExpand="True"
+                HorizontalExpand="True"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"/>
+
+            <BoxContainer Orientation="Horizontal" Margin="0 5 0 0">
+                <CheckBox Name="HideNameCheckBox"
+                          Text="{Loc 'directional-emote-hide-name'}"
+                          HorizontalAlignment="Left"
+                          Visible="False" />
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" HorizontalAlignment="Center">
+                    <Button Name="LastEmoteButton"
+                        Text="{Loc 'directional-emote-last-button'}"
+                        ModulateSelfOverride="#3D3D4A"
+                        StyleClasses="OpenRight"/>
+                    <Button Name="AcceptButton"
+                        Text="{Loc 'directional-emote-button'}"
+                        ModulateSelfOverride="#3D3D4A"
+                        StyleClasses="OpenLeft"/>
+                </BoxContainer>
+            </BoxContainer>
+        </BoxContainer>
+    </PanelContainer>
+</ui:FancyWindow>

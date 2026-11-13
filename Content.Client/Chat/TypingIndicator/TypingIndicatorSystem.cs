@@ -2,6 +2,7 @@ using Content.Shared.CCVar;
 using Content.Shared.Chat.TypingIndicator;
 using Robust.Client.Player;
 using Robust.Shared.Configuration;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
 namespace Content.Client.Chat.TypingIndicator;
@@ -17,12 +18,22 @@ public sealed partial class TypingIndicatorSystem : SharedTypingIndicatorSystem
     private TimeSpan _lastTextChange;
     private bool _isClientTyping;
     private bool _isClientChatFocused;
+    private bool _isClientEmoteWindowActive;
+
+    private static readonly ProtoId<TypingIndicatorPrototype> DirectID = "emote";
 
     public override void Initialize()
     {
         base.Initialize();
 
         Subs.CVar(_cfg, CCVars.ChatShowTypingIndicator, OnShowTypingChanged);
+    }
+
+    public void ClientChangedWindowStatus(bool isOpen)
+    {
+        _isClientEmoteWindowActive = isOpen;
+        if (_cfg.GetCVar(CCVars.ChatShowTypingIndicator))
+            ClientUpdateTyping();
     }
 
     public void ClientChangedChatText()
@@ -86,8 +97,14 @@ public sealed partial class TypingIndicatorSystem : SharedTypingIndicatorSystem
             return;
 
         var state = TypingIndicatorState.None;
-        if (_isClientChatFocused)
+        if (_isClientChatFocused || _isClientEmoteWindowActive)
             state = _isClientTyping ? TypingIndicatorState.Typing : TypingIndicatorState.Idle;
+
+        if (_isClientEmoteWindowActive)
+        {
+            RaisePredictiveEvent(new TypingChangedEvent(state, DirectID));
+            return;
+        }
 
         // send a networked event to server
         RaisePredictiveEvent(new TypingChangedEvent(state));

@@ -50,6 +50,7 @@
   parent: BaseControllable
   id: BaseMob
   components:
+  - type: DirectionalEmoteTarget
   # - type: MobCollision # WL-Changes: MobCollision works for players only
   - type: Physics
     bodyType: KinematicController
@@ -64,6 +65,8 @@
   abstract: true
   components:
   - type: Polymorphable
+  - type: OwnInteractionVerbs
+    allowedVerbs: []
 
 # Used for mobs that have health and can take damage.
 - type: entity

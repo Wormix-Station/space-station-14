@@ -11,6 +11,7 @@
     voice: BlueMoonBarksDontStarveWX78
   - type: RandomizedSpeechBarks
   # WL-Changes-end
+  - type: Posing
   - type: Reactive
     groups:
       Acidic: [Touch]
