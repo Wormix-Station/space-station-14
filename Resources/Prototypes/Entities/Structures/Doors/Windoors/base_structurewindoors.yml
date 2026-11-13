@@ -192,6 +192,9 @@
     tags:
     - Windoor
     - DoorRemoteWhitelist
+  - type: InteractionVerbs
+    allowedVerbs:
+    - KnockOn
 
 #Plasma Windoors
 - type: entity

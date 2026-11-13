@@ -30,6 +30,7 @@ verb-categories-fax = Задать место назначения
 verb-categories-power-level = Уровень мощности
 verb-categories-adjust = Отрегулировать
 verb-categories-select-target = Установить цель
+verb-categories-interaction = Взаимодействовать
 
 verb-common-toggle-light = Переключить свет
 verb-common-close = Закрыть

@@ -50,6 +50,9 @@
     fx: EffectRCDDeconstruct6
   - type: Occluder
   - type: BlockWeather
+  - type: InteractionVerbs
+    allowedVerbs:
+    - KnockOn
   - type: IconSmooth
     key: doors
   - type: PlacementReplacement

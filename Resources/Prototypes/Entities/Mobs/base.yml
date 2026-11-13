@@ -64,6 +64,8 @@
   abstract: true
   components:
   - type: Polymorphable
+  - type: OwnInteractionVerbs
+    allowedVerbs: []
 
 # Used for mobs that have health and can take damage.
 - type: entity
