@@ -50,6 +50,7 @@
   parent: BaseControllable
   id: BaseMob
   components:
+  - type: DirectionalEmoteTarget
   # - type: MobCollision # WL-Changes: MobCollision works for players only
   - type: Physics
     bodyType: KinematicController
