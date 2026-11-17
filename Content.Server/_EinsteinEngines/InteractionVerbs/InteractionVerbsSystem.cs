@@ -10,7 +10,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server.InteractionVerbs;
 
-public sealed class InteractionVerbsSystem : SharedInteractionVerbsSystem
+public sealed partial class InteractionVerbsSystem : SharedInteractionVerbsSystem
 {
     [Dependency] private IChatManager _chatManager = default!;
     [Dependency] private SharedInteractionSystem _interactions = default!;
