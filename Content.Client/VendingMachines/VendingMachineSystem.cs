@@ -3,6 +3,7 @@ using System.Linq;
 using Content.Client.VendingMachines.Components;
 using Content.Shared.Power;
 using Content.Shared.Power.EntitySystems;
+using Content.Client._Funkystation.VendingMachines; // Funky change
 using Content.Shared.VendingMachines;
 using Content.Shared.VendingMachines.Components;
 using Robust.Client.Animations;
@@ -23,7 +24,9 @@ public sealed partial class VendingMachineSystem : SharedVendingMachineSystem
         if (!Resolve(entity, ref entity.Comp))
             return;
 
-        if (TryGetOpenUi(entity.Owner, out var bui))
+        if (UISystem.TryGetOpenUi<BoundUserInterface>(entity.Owner,
+                VendingMachineUiKey.Key,
+                out var baseBui) && baseBui is IVendingMachineBoundUi bui) // Funky change
         {
             bui.UpdateAmounts();
         }
@@ -60,13 +63,19 @@ public sealed partial class VendingMachineSystem : SharedVendingMachineSystem
         if (brokenChanged)
             TryUpdateVisualState((uid, component));
 
-        if (!TryGetOpenUi(uid, out var bui))
-            return;
-
-        if (fullUiUpdate)
-            bui.Refresh();
-        else
-            bui.UpdateAmounts();
+        if (UISystem.TryGetOpenUi<BoundUserInterface>(uid,
+                VendingMachineUiKey.Key,
+                out var baseBui) && baseBui is IVendingMachineBoundUi bui) // Funky change
+        {
+            if (fullUiUpdate)
+            {
+                bui.Refresh();
+            }
+            else
+            {
+                bui.UpdateAmounts();
+            }
+        }
     }
 
     [SubscribeLocalEvent]
@@ -243,10 +252,5 @@ public sealed partial class VendingMachineSystem : SharedVendingMachineSystem
             return;
 
         _sprite.LayerSetVisible(sprite.AsNullable(), actualLayer, false);
-    }
-
-    private bool TryGetOpenUi(EntityUid uid, [NotNullWhen(true)] out VendingMachineBoundUserInterface? bui)
-    {
-        return UISystem.TryGetOpenUi(uid, VendingMachineUiKey.Key, out bui);
     }
 }

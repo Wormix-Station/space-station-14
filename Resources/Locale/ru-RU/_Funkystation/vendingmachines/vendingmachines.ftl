@@ -1,0 +1,12 @@
+vending-machine-keypad-sold-out = ЗАКОНЧ
+vending-machine-keypad-clear = СБ
+vending-machine-keypad-enter = ПЛ
+vending-machine-keypad-dispense = ВЫДАЧА
+vending-machine-keypad-target = ЦЕЛЬ
+vending-machine-keypad-row = РЯД
+vending-machine-keypad-col = СТЛБ
+vending-machine-keypad-empty = [ ПУСТО ]
+vending-machine-keypad-success-enjoy = [ ПРИЯТ ]
+vending-machine-keypad-success-thanks = [ СПС! ]
+vending-machine-keypad-success-yum = [ НЯМ! ]
+vending-machine-keypad-success-vend = [ ВЫД. ]
