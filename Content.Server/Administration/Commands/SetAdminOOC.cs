@@ -10,14 +10,14 @@ using Robust.Shared.Console;
 namespace Content.Server.Administration.Commands
 {
     [AdminCommand(AdminFlags.NameColor)]
-    internal sealed class SetAdminOOC : LocalizedCommands
+    internal sealed partial class SetAdminOOC : LocalizedCommands
     {
-        [Dependency] private readonly IServerDbManager _dbManager = default!;
-        [Dependency] private readonly IServerPreferencesManager _preferenceManager = default!;
+        [Dependency] private IServerDbManager _dbManager = default!;
+        [Dependency] private IServerPreferencesManager _preferenceManager = default!;
 
         // Wormix start edit
-        [Dependency] private readonly IPlayerLocator _locator = default!;
-        [Dependency] private readonly IPlayerManager _players = default!;
+        [Dependency] private IPlayerLocator _locator = default!;
+        [Dependency] private IPlayerManager _players = default!;
 
 
         public override string Command => "setadminooc";
@@ -42,8 +42,7 @@ namespace Content.Server.Administration.Commands
                 if (string.IsNullOrEmpty(colorArg))
                     return;
 
-                var color = Color.TryFromHex(colorArg);
-                if (!color.HasValue)
+                if (!Color.TryFromHex(colorArg, out var color))
                 {
                     shell.WriteError(Loc.GetString("shell-invalid-color-hex"));
                     return;
@@ -51,10 +50,10 @@ namespace Content.Server.Administration.Commands
 
 
                 // Save the DB
-                await _dbManager.SaveAdminOOCColorAsync(user.UserId, color.Value);
+                await _dbManager.SaveAdminOOCColorAsync(user.UserId, color);
                 // Update the cached preference
                 var prefs = _preferenceManager.GetPreferences(user.UserId);
-                prefs.AdminOOCColor = color.Value;
+                prefs.AdminOOCColor = color;
 
                 return;
             }
