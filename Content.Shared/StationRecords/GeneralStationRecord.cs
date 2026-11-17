@@ -48,6 +48,14 @@ public sealed partial record GeneralStationRecord : StationRecord
     public string Species = string.Empty;
 
     /// <summary>
+    ///     Starlight
+    ///     Custom species name tied to this station record, if the profile has one.
+    ///     Kept separate from <see cref="Species"/> so prototype-ID based logic still works.
+    /// </summary>
+    [DataField]
+    public string CustomSpeciesName = string.Empty;
+
+    /// <summary>
     ///     Gender identity tied to this station record.
     /// </summary>
     /// <remarks>Sex should be placed in a medical record, not a general record.</remarks>

@@ -53,6 +53,8 @@ namespace Content.Server.Database
                 //WL-Changes-end
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
+                .Include(p => p.Profiles) // Starlight
+                .ThenInclude(h => h.StarLightProfile) // Starlight
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -116,6 +118,7 @@ namespace Content.Server.Database
                 //WL-Changes-end
                 .Include(p => p.Antags)
                 .Include(p => p.Traits)
+                .Include(p => p.StarLightProfile) // Starlight
                 .Include(p => p.Loadouts)
                     .ThenInclude(l => l.Groups)
                     .ThenInclude(group => group.Loadouts)
@@ -364,6 +367,20 @@ namespace Content.Server.Database
 
                 profile.Loadouts.Add(dz);
             }
+
+            // Starlight - Start
+            if (profile.StarLightProfile is null)
+            {
+                profile.StarLightProfile = new StarLightModel.StarLightProfile
+                {
+                    CustomSpecieName = humanoid.CustomSpeciesName,
+                };
+            }
+            else
+            {
+                profile.StarLightProfile.CustomSpecieName = humanoid.CustomSpeciesName;
+            }
+            // Starlight - End
 
             return profile;
         }

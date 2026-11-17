@@ -15,9 +15,14 @@ public static class RecordIdentityBuilder
         Func<string, string> loc)
     {
         var noData = loc("records-value-no-data");
-        var species = prototypes.TryIndex<SpeciesPrototype>(record.Species, out var speciesPrototype)
-            ? loc(speciesPrototype.Name)
-            : noData;
+        // Starlight - Start
+        // A custom species name is stored as plain text, not as a prototype ID, so it takes priority here.
+        var species = !string.IsNullOrWhiteSpace(record.CustomSpeciesName)
+            ? record.CustomSpeciesName
+            : prototypes.TryIndex<SpeciesPrototype>(record.Species, out var speciesPrototype)
+                ? loc(speciesPrototype.Name)
+                : noData;
+        // Starlight - End
         var confederation = prototypes.TryIndex<ConfederationRecordsPrototype>(record.Confederation, out var confederationPrototype)
             ? loc(confederationPrototype.Name)
             : noData;

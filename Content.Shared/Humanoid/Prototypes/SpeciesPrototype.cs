@@ -69,6 +69,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     public EntProtoId DollPrototype { get; private set; } = default!;
 
     /// <summary>
+    /// Starlight
+    /// Allow Custom Specie Name for this Species.
+    /// </summary>
+    [DataField]
+    public bool CustomName { get; private set; } = true; // Starlight - default true so every species allows it, opt out per-species in YAML
+
+    /// <summary>
     /// Method of skin coloration used by the species.
     /// </summary>
     [DataField(required: true)]
@@ -145,7 +152,7 @@ public sealed partial class SpeciesPrototype : IPrototype
     public int MaxHeight = 200;
 
     /// <summary>
-    ///     Species maximal add item 
+    ///     Species maximal add item
     /// </summary>
     [DataField("maxItemHeight")]
     public int MaxItemHeight = 140;

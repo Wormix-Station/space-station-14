@@ -34,6 +34,10 @@ public sealed partial class HumanoidProfileComponent : Component
     [DataField, AutoNetworkedField]
     public int Age = 18;
 
+    // Starlight
+    [DataField, AutoNetworkedField]
+    public string CustomSpecieName = "";
+
     [DataField, AutoNetworkedField]
     public ProtoId<SpeciesPrototype> Species = HumanoidCharacterProfile.DefaultSpecies;
 

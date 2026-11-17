@@ -215,6 +215,23 @@ public sealed partial class HumanoidProfileEditor
         }
     }
 
+    // Starlight - Start
+    private void SetCustomSpecieName(string customName)
+    {
+        Profile = Profile?.WithCustomSpeciesName(customName);
+        SetDirty();
+    }
+
+    private void UpdateCustomSpecieNameEdit()
+    {
+        var species = _species.Find(x => x.ID == Profile?.Species) ?? _species.First();
+        CCustomSpecieNameEdit.Text = string.IsNullOrEmpty(Profile?.CustomSpeciesName) ? Loc.GetString(species.Name) : Profile.CustomSpeciesName;
+        CCustomSpecieName.Visible = species.CustomName;
+    }
+    // Starlight - End
+
+
+
     private void SetSpecies(string newSpecies)
     {
         Profile = Profile?.WithSpecies(newSpecies);

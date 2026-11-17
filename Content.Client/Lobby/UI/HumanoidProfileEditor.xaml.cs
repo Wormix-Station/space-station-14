@@ -242,6 +242,15 @@ namespace Content.Client.Lobby.UI
 
             #endregion Name
 
+            // Starlight - Start
+            #region Custom Specie Name
+
+            CCustomSpecieNameEdit.OnTextChanged += args => { SetCustomSpecieName(args.Text); };
+
+            #endregion CustomSpecieName
+            // Starlight - End
+
+
             #region Appearance
 
             TabContainer.SetTabTitle(0, Loc.GetString("humanoid-profile-editor-appearance-tab"));
@@ -314,6 +323,7 @@ namespace Content.Client.Lobby.UI
                 SpeciesButton.SelectId(args.Id);
                 SetSpecies(_species[args.Id].ID);
                 OnSkinColorOnValueChanged();
+                UpdateCustomSpecieNameEdit(); // Starlight
             };
 
             #region Skin
@@ -497,6 +507,7 @@ namespace Content.Client.Lobby.UI
             JobOverride = null;
 
             UpdateNameEdit();
+            UpdateCustomSpecieNameEdit(); // Starlight
             UpdateFlavorTextEdit();
             UpdateSexControls();
             UpdateVoiceControls();

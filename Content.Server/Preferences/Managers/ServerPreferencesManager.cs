@@ -141,6 +141,8 @@ namespace Content.Server.Preferences.Managers
                 speciesPrototype = _prototypeManager.Index<SpeciesPrototype>(species);
             }
 
+            var customSpecie = profile.StarLightProfile?.CustomSpecieName ?? ""; // Starlight
+
             var voice = profile.Voice ?? speciesPrototype.DefaultSoundsBySex[(int)sex];
             if (!_prototypeManager.HasIndex<EmoteSoundsPrototype>(voice))
                 voice = speciesPrototype.DefaultSoundsBySex[(int)sex];
@@ -204,6 +206,7 @@ namespace Content.Server.Preferences.Managers
                 profile.FlavorText,
                 profile.OocText, // WL-OOCText
                 species,
+                customSpecie,
                 TTSVoice, // Corvax-TTS
                 profile.Age,
                 profile.Height, // WL-Heights

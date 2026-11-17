@@ -52,6 +52,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                 Name = "Charlie Charlieson",
                 FlavorText = "The biggest boy around.",
                 Species = "Human",
+                CustomSpeciesName = "", // Starlight
                 TTSVoice = "Eugene", // Corvax-TTS
                 Age = 21,
                 Appearance = new(

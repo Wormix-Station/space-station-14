@@ -21,9 +21,14 @@ public static class RecordPrintIdentityBuilder
         var confederation = prototypes.TryIndex(record.Confederation, out ConfederationRecordsPrototype? confederationPrototype)
             ? loc(confederationPrototype.Name)
             : noData;
-        var species = prototypes.TryIndex<SpeciesPrototype>(record.Species, out var speciesPrototype)
-            ? loc(speciesPrototype.Name)
-            : noData;
+        // Starlight - Start
+        // A custom species name is stored as plain text, not as a prototype ID, so it takes priority here.
+        var species = !string.IsNullOrWhiteSpace(record.CustomSpeciesName)
+            ? record.CustomSpeciesName
+            : prototypes.TryIndex<SpeciesPrototype>(record.Species, out var speciesPrototype)
+                ? loc(speciesPrototype.Name)
+                : noData;
+        // Starlight - End
         var brainSource = prototypes.TryIndex(record.BrainSource, out BrainSourcePrototype? brainSourcePrototype) && record.Species is "Android"
             ? loc(brainSourcePrototype.Name)
             : noData;

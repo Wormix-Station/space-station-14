@@ -29,6 +29,7 @@ using Robust.Shared.Utility;
 using Robust.Shared;
 using YamlDotNet.RepresentationModel;
 using Content.Corvax.Interfaces.Shared; // Corvax-Sponsors
+using Content.Shared._Starlight.CCVar;
 
 namespace Content.Shared.Preferences
 {
@@ -44,6 +45,7 @@ namespace Content.Shared.Preferences
         private static readonly ProtoId<ConfederationRecordsPrototype> DefaultConfederation = "NoConfederation";
         //private static readonly Regex RestrictedNameRegex = new("[^А-Яа-яёЁ0-9' -]"); // Corvax-Localization + WL-Changes. Also - we dont't need it
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
+        private static readonly Regex RestrictedCustomSpeciesNameRegex = new(@"[^A-Za-z0-9 '\-,]|\B\s+|\s+\B"); //Starlight
 
         //WL-Changes-start
         public const int MaxDescLength = 512 * 2; // WL-CharacterInfo: Increase
@@ -107,6 +109,10 @@ namespace Content.Shared.Preferences
         /// </summary>
         [DataField]
         public ProtoId<SpeciesPrototype> Species { get; set; } = DefaultSpecies;
+
+        // Starlight
+        [DataField]
+        public string CustomSpeciesName { get; set; } = "";
 
         [DataField] //Corvax-TTS
         public string TTSVoice { get; set; } = HumanoidProfileSystem.DefaultVoice;
@@ -176,6 +182,7 @@ namespace Content.Shared.Preferences
             string flavortext,
             string ooctext, // WL-OOCText
             string species,
+            string customSpeciesName, // Starlight
             string TTS_voice, // Corvax-TTS
             int age,
             int height,
@@ -246,6 +253,8 @@ namespace Content.Shared.Preferences
             Skills = skills; // WL-Skills
             //WL-Changes-end
 
+            CustomSpeciesName =  customSpeciesName; // Starlight
+
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
             {
@@ -267,6 +276,7 @@ namespace Content.Shared.Preferences
                 other.FlavorText,
                 other.OocText, // WL-OOC
                 other.Species,
+                other.CustomSpeciesName, // Starlight
                 other.TTSVoice,
                 other.Age,
                 other.Height, // WL-Heigh
@@ -688,6 +698,13 @@ namespace Content.Shared.Preferences
             return new(this) { Species = species };
         }
 
+        // Starlight - Start
+        public HumanoidCharacterProfile WithCustomSpeciesName(string customSpeciesName)
+        {
+            return new(this) { CustomSpeciesName = customSpeciesName };
+        }
+        // Starlight - End
+
         // Corvax-TTS-Start
         public HumanoidCharacterProfile WithVoice(string voice)
         {
@@ -1007,6 +1024,7 @@ namespace Content.Shared.Preferences
             if (Voice != other.Voice) return false;
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
+            if (CustomSpeciesName != other.CustomSpeciesName) return false; // Starlight
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
             if (SpawnPriority != other.SpawnPriority) return false;
             if (!_jobPriorities.SequenceEqual(other._jobPriorities)) return false;
@@ -1107,6 +1125,35 @@ namespace Content.Shared.Preferences
             {
                 name = GetName(Species, gender);
             }
+
+            // Starlight - Start
+            var customSpeciesName =
+                !speciesPrototype.CustomName
+                || string.IsNullOrWhiteSpace(CustomSpeciesName)
+                    ? ""
+                    : CustomSpeciesName.Length > maxNameLength
+                        ? CustomSpeciesName[..maxNameLength]
+                        : CustomSpeciesName;
+
+            if (!string.IsNullOrWhiteSpace(CustomSpeciesName) &&
+                configManager.GetCVar(StarlightCCVars.RestrictedCustomSpeciesNames))
+            {
+                customSpeciesName = RestrictedCustomSpeciesNameRegex.Replace(customSpeciesName, string.Empty);
+
+                var speciesPrototypes = prototypeManager.EnumeratePrototypes<SpeciesPrototype>();
+                foreach (var specieNames in speciesPrototypes)
+                {
+                    if (specieNames == speciesPrototype)
+                        continue;
+
+                    if (Loc.GetString(specieNames.Name).ToLower() == customSpeciesName.ToLower())
+                    {
+                        customSpeciesName = "";
+                        break;
+                    }
+                }
+            }
+            // Starlight - End
 
             string flavortext;
             var maxFlavorTextLength = configManager.GetCVar(CCVars.MaxFlavorTextLength);
@@ -1246,6 +1293,7 @@ namespace Content.Shared.Preferences
             // WL-Skills-End
 
             Name = name;
+            CustomSpeciesName = customSpeciesName; // Starlight
             FlavorText = flavortext;
             OocText = oocText; // WL-OOCText
             MedicalRecord = medicalRecord; // WL-Records
@@ -1423,6 +1471,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(Name);
             hashCode.Add(FlavorText);
             hashCode.Add(Species);
+            hashCode.Add(CustomSpeciesName); // Starlight
             hashCode.Add(Age);
             hashCode.Add((int)Sex);
             hashCode.Add(Voice);

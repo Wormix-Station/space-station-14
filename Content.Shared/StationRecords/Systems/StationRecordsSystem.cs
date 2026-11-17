@@ -198,6 +198,7 @@ public sealed partial class StationRecordsSystem : EntitySystem
             JobIcon = jobPrototype.Icon,
             JobPrototype = jobId,
             Species = species,
+            CustomSpeciesName = profile.CustomSpeciesName, // Starlight
             Gender = gender,
             DisplayPriority = displayPriority,
             Fingerprint = mobFingerprint,

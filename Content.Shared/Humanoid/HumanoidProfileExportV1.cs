@@ -71,6 +71,10 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField]
     public ProtoId<SpeciesPrototype> Species;
 
+    // Starlight
+    [DataField]
+    public string CustomSpeciesName = "";
+
     [DataField] //Corvax-TTS
     public string TTSVoice = HumanoidProfileSystem.DefaultVoice;
 
@@ -126,7 +130,7 @@ public sealed partial class HumanoidCharacterProfileV1
     //WL-Changes: Records end
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, OocText, Species, TTSVoice, Age, Height, Sex, GetDefaultVoice(Species, Sex), Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, JobSubnames, AntagPreferences, TraitPreferences, new Dictionary<ProtoId<TraitPrototype>, int>(), Loadouts, JobUnblockings, MedicalRecord, SecurityRecord, EmploymentRecord, FullName, DateOfBirth, Confederation, BrainSource, Country, Skills); //WL-Changes; WL fiches
+        return new(Name, FlavorText, OocText, Species, CustomSpeciesName, TTSVoice, Age, Height, Sex, GetDefaultVoice(Species, Sex), Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, JobSubnames, AntagPreferences, TraitPreferences, new Dictionary<ProtoId<TraitPrototype>, int>(), Loadouts, JobUnblockings, MedicalRecord, SecurityRecord, EmploymentRecord, FullName, DateOfBirth, Confederation, BrainSource, Country, Skills); //WL-Changes; WL fiches
     }
 
     // In V2 voices are stored as a separate database entry, this picks the default for the species and sex, which would give the same voice as pre-nubody.

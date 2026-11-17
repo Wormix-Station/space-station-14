@@ -47,6 +47,9 @@ public sealed partial class HumanoidProfileSystem : EntitySystem
         ent.Comp.Species = profile.Species;
         ent.Comp.Voice = profile.Voice;
         ent.Comp.Sex = profile.Sex;
+        ent.Comp.CustomSpecieName = profile.CustomSpeciesName; // Starlight
+
+
         // Corvax-TTS-start
         ent.Comp.TTSVoice = profile.TTSVoice;
         if (TryComp<TTSComponent>(ent, out var _TTSComponent) && _TTSComponent.VoicePrototypeId == "Taskmaster")
@@ -86,7 +89,7 @@ public sealed partial class HumanoidProfileSystem : EntitySystem
             return;
 
         var identity = Identity.Entity(ent, EntityManager);
-        var species = GetSpeciesRepresentation(ent.Comp.Species).ToLower();
+        var species = GetSpeciesRepresentation(ent.Comp.Species, ent.Comp.CustomSpecieName).ToLower(); // Starlight edit
         var age = GetAgeRepresentation(ent.Comp.Species, ent.Comp.Age);
         var height = GetHeightRepresentation(ent.Comp.Height); // WL-Height
 
@@ -117,10 +120,16 @@ public sealed partial class HumanoidProfileSystem : EntitySystem
     /// <summary>
     /// Takes ID of the species prototype, returns UI-friendly name of the species.
     /// </summary>
-    public string GetSpeciesRepresentation(ProtoId<SpeciesPrototype> species)
+    public string GetSpeciesRepresentation(ProtoId<SpeciesPrototype> species, string? customespeciename) // Starlight - Edit
     {
         if (ProtoMan.TryIndex(species, out var speciesPrototype))
+        {
+            if (!string.IsNullOrEmpty(customespeciename)) // Starlight
+                return customespeciename + " (" + Loc.GetString(speciesPrototype.Name) + ")"; // Starlight - custom name is player input, not a LocId
+
             return Loc.GetString(speciesPrototype.Name);
+        }
+
 
         Log.Error("Tried to get representation of unknown species: {speciesId}");
         return Loc.GetString("humanoid-appearance-component-unknown-species");
