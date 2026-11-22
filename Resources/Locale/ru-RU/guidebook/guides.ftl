@@ -210,3 +210,7 @@ guide-entry-writing = Разметка письма
 guide-entry-glossary = Словарь терминов
 
 guide-entry-stepfather = Наставления Стефадера
+
+guide-entry-the-artifact = Артефакт
+guide-entry-flooding = Затопление
+guide-entry-storm-array = Штормовой массив

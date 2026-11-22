@@ -1,4 +1,5 @@
 using System.Diagnostics.Contracts;
+using Content.Shared._TP.Light; // TP14
 using Content.Shared.Light.Components;
 using Content.Shared.Maps;
 using Robust.Shared.Map;
@@ -37,6 +38,11 @@ public abstract partial class SharedRoofSystem : EntitySystem
                 return true;
         }
 
+        // TP14-Edit-Start: roof entities on this grid are already in the bitmask, see TP14RoofCacheSystem.
+        if (HasComp<TP14BakedRoofComponent>(grid.Owner))
+            return false;
+        // TP14-Edit-End
+
         _roofSet.Clear();
         _lookup.GetLocalEntitiesIntersecting(grid.Owner, index, _roofSet);
 
@@ -70,6 +76,11 @@ public abstract partial class SharedRoofSystem : EntitySystem
                 return roof.Color;
             }
         }
+
+        // TP14-Edit-Start: roof entities on this grid are already in the bitmask, see TP14RoofCacheSystem.
+        if (HasComp<TP14BakedRoofComponent>(grid.Owner))
+            return null;
+        // TP14-Edit-End
 
         _roofSet.Clear();
         _lookup.GetLocalEntitiesIntersecting(grid.Owner, index, _roofSet);

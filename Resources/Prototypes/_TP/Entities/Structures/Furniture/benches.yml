@@ -1,0 +1,89 @@
+# Ported from _StarLight (Trieste Port-14) — only the bench variants used by diving-bell.yml.
+
+- type: entity
+  name: comfortable bench
+  suffix: End Left. Blue
+  id: BenchBlueComfyEndLeft
+  parent: SeatBase
+  description: A bench with an extremely comfortable backrest.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+    - state: cover
+      color: "#334e6d"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+
+- type: entity
+  name: comfortable bench
+  suffix: End Right. Blue
+  id: BenchBlueComfyEndRight
+  parent: SeatBase
+  description: A bench with an extremely comfortable backrest.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+    - state: cover
+      color: "#334e6d"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+
+- type: entity
+  name: comfortable bench
+  suffix: End Left. Gray
+  id: BenchGrayComfyEndLeft
+  parent: SeatBase
+  description: A bench with an extremely comfortable backrest.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+    - state: cover
+      color: "#767e82"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+
+- type: entity
+  name: comfortable bench
+  suffix: End Right. Gray
+  id: BenchGrayComfyEndRight
+  parent: SeatBase
+  description: A bench with an extremely comfortable backrest.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+    - state: cover
+      color: "#767e82"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
