@@ -1,0 +1,95 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: TP14ClothingHeadBucketBlack
+  suffix: Trieste, Headwear
+  name: black bucket hat
+  description: A generic black bucket hat, keeps the rain out of your eyes.
+  components:
+  - type: Sprite
+    sprite: _TP/Clothing/Head/Hats/BucketHats/bucket_color.rsi
+    color: "#3f3f3f"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#3f3f3f"
+      right:
+      - state: inhand-right
+        color: "#3f3f3f"
+  - type: Clothing
+    sprite: _TP/Clothing/Head/Hats/BucketHats/bucket_color.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#3f3f3f"
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: TP14ClothingHeadBucketBlue
+  suffix: Trieste, Headwear
+  name: blue bucket hat
+  description: A generic blue bucket hat, keeps the rain out of your eyes.
+  components:
+  - type: Sprite
+    sprite: _TP/Clothing/Head/Hats/BucketHats/bucket_color.rsi
+    color: "#52aecc"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#52aecc"
+      right:
+      - state: inhand-right
+        color: "#52aecc"
+  - type: Clothing
+    sprite: _TP/Clothing/Head/Hats/BucketHats/bucket_color.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#52aecc"
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: TP14ClothingHeadBucketLightBrown
+  suffix: Trieste, Headwear
+  name: light brown bucket hat
+  description: A generic light brown bucket hat, keeps the rain out of your eyes.
+  components:
+  - type: Sprite
+    sprite: _TP/Clothing/Head/Hats/BucketHats/bucket_color.rsi
+    color: "#c59431"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#c59431"
+      right:
+      - state: inhand-right
+        color: "#c59431"
+  - type: Clothing
+    sprite: _TP/Clothing/Head/Hats/BucketHats/bucket_color.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        color: "#c59431"
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - ClothMade
+    - Recyclable
+    - HamsterWearable

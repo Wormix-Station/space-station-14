@@ -82724,7 +82724,7 @@ entities:
       parent: 2
       rot: -1.5707963267948966 rad
       pos: 37.5,-12.5
-- proto: JellidPortableScrubber
+- proto: PortableScrubber
   entities:
   - uid: 12968
     components:
@@ -103182,43 +103182,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -6.5,48.5
-- proto: TP14ClosetEmergencyH2OFilledRandom
-  entities:
-  - uid: 15059
-    components:
-    - type: Transform
-      parent: 2
-      pos: 28.5,4.5
-  - uid: 15079
-    components:
-    - type: Transform
-      parent: 2
-      pos: 12.5,-4.5
-  - uid: 15359
-    components:
-    - type: Transform
-      parent: 2
-      pos: -5.5,11.5
-  - uid: 15391
-    components:
-    - type: Transform
-      parent: 2
-      pos: 38.5,-1.5
-- proto: TP14ClosetWallEmergencyH20FilledRandom
-  entities:
-  - uid: 168
-    components:
-    - type: Transform
-      parent: 2
-      pos: 16.5,46.5
-- proto: TP14ClosetWallEmergencyH2O
-  entities:
-  - uid: 4613
-    components:
-    - type: Transform
-      parent: 2
-      rot: 1.5707963267948966 rad
-      pos: 44.5,9.5
 - proto: TP14ClothingMaskAir
   entities:
   - uid: 94
@@ -105294,13 +105257,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 136.5,105.5
-- proto: TP14PlanetarySettlerSpawnerJellid
-  entities:
-  - uid: 11527
-    components:
-    - type: Transform
-      parent: 2
-      pos: 139.5,105.5
 - proto: TP14PlanetarySettlerSpawnerLizard
   entities:
   - uid: 11512
@@ -123912,13 +123868,6 @@ entities:
       parent: 2
       rot: -1.5707963267948966 rad
       pos: 21.5,50.5
-- proto: TP14WaterTankFilled
-  entities:
-  - uid: 60621
-    components:
-    - type: Transform
-      parent: 2
-      pos: 79.816086,95.62572
 - proto: TPSignDivingBell
   entities:
   - uid: 12807

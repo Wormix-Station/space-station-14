@@ -36,3 +36,5 @@ reagent-desc-grey-matter = Thought juice, the stuff that leaks out of your ears.
 
 reagent-name-living-tissue = living tissue
 reagent-desc-living-tissue = A mix of visceral matter from an alien species. You can feel it staring at you.
+reagent-name-fishoil = fish oil
+reagent-desc-fishoil = A slick chemical obtained from fish meat. It smells strong.

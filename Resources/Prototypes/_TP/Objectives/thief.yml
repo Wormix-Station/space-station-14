@@ -1,0 +1,6 @@
+- type: stealTargetGroup
+  id: TP14StealTargetGroupDaisy
+  name: tp14-steal-target-groups-animal-daisy
+  sprite:
+    sprite: _TP/Mobs/Animals/sea-bunny.rsi
+    state: sea-rabbit-moving

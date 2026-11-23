@@ -115,6 +115,8 @@
         sound:
           collection: MetalBreak
 
+  - type: FallSystem # TRIESTE
+
 - type: entity
   id: MechRipley
   parent: BaseMech

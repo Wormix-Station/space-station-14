@@ -62,6 +62,7 @@
     noRot: false
   - type: Pullable
   - type: DamageExaminable
+  - type: FallSystem # TRIESTE
   - type: Rotatable
     increment: 30
 

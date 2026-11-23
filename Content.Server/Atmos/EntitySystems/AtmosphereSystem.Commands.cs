@@ -69,7 +69,7 @@ public sealed partial class AtmosphereSystem
     /// <remarks>Please be responsible with this method. Used only by tests and fixgridatmos.</remarks>
     public void RebuildGridAtmosphere(Entity<GridAtmosphereComponent, MapGridComponent> ent)
     {
-        var mixtures = new GasMixture[9];
+        var mixtures = new GasMixture[11]; // Trieste: added water (9) and trench water (10)
         for (var i = 0; i < mixtures.Length; i++)
         {
             mixtures[i] = new GasMixture(Atmospherics.CellVolume) { Temperature = Atmospherics.T20C };
@@ -106,6 +106,14 @@ public sealed partial class AtmosphereSystem
         // 8: Air (GM)
         mixtures[8].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesGasMiner);
         mixtures[8].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesGasMiner);
+
+        // 9: Water (Trieste)
+        mixtures[9].AdjustMoles(Gas.Water, Atmospherics.WaterMolesStandard);
+        mixtures[9].Temperature = 40f; // god help us all
+
+        // 10: Trench Water, extremely high pressure for bottom of The Trench (Trieste)
+        mixtures[10].AdjustMoles(Gas.Water, Atmospherics.TrenchMolesStandard);
+        mixtures[10].Temperature = 20f;
 
 
         // Force Invalidate & update air on all tiles

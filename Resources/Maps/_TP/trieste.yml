@@ -1978,12 +1978,12 @@ entities:
       - 12803
       - 1851
       - 2205
-- proto: AirAlarmJellid
+- proto: AirAlarm
   entities:
   - uid: 28
     components:
     - type: MetaData
-      name: air alarm (Jellid Room)
+      name: air alarm
     - type: Transform
       parent: 2
       rot: 1.5707963267948966 rad
@@ -2421,7 +2421,7 @@ entities:
   - uid: 65
     components:
     - type: MetaData
-      name: Jellid Power
+      name: Power
     - type: Transform
       parent: 2
       pos: 15.5,26.5
@@ -2491,7 +2491,7 @@ entities:
   - uid: 68
     components:
     - type: MetaData
-      name: Jellid Bar
+      name: Bar
     - type: Transform
       parent: 2
       rot: 3.141592653589793 rad
@@ -3567,7 +3567,7 @@ entities:
     - type: Transform
       parent: 2
       pos: 47.5,22.5
-- proto: AirSensorJellid
+- proto: AirSensor
   entities:
   - uid: 136
     components:
@@ -44294,7 +44294,7 @@ entities:
       parent: 2
       rot: 1.5707963267948966 rad
       pos: 4.5,-23.5
-- proto: GasVentPumpJellid
+- proto: GasVentPump
   entities:
   - uid: 3666
     components:
@@ -44870,7 +44870,7 @@ entities:
       pos: 34.5,51.5
     - type: AtmosPipeColor
       color: '#03FCD3FF'
-- proto: GasVentScrubberJellid
+- proto: GasVentScrubber
   entities:
   - uid: 3671
     components:
@@ -59735,7 +59735,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 16.5,20.5
     - type: SurveillanceCamera
-      id: Jellid Bar Exterior
+      id: Bar Exterior
   - uid: 12423
     components:
     - type: Transform
@@ -63223,25 +63223,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -14.92321,33.670673
-- proto: TP14ClosetEmergencyH2O
-  entities:
-  - uid: 13008
-    components:
-    - type: Transform
-      parent: 2
-      pos: 38.5,-11.5
-- proto: TP14ClosetEmergencyH2OFilledRandom
-  entities:
-  - uid: 5734
-    components:
-    - type: Transform
-      parent: 2
-      pos: 14.5,23.5
-  - uid: 12756
-    components:
-    - type: Transform
-      parent: 2
-      pos: 2.5,32.5
 - proto: TP14ClothingHeadBucketBlack
   entities:
   - uid: 7181
@@ -79896,20 +79877,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -0.5,-39.5
-- proto: TPSignJellid
-  entities:
-  - uid: 7432
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 15.5,28.5
-  - uid: 7433
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 15.5,20.5
 - proto: TPSignWaste
   entities:
   - uid: 13319

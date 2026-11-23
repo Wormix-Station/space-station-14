@@ -1,0 +1,25 @@
+- type: entity
+  parent: ChemistryEmptyVial
+  id: TP14ChemistryVialCrudeOil
+  description: A vial containing a sample of crude oil.
+  suffix: Trieste, Crude Oil
+  components:
+  - type: Label
+    localizedLabel: reagent-name-crude-oil
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CrudeOil
+        Quantity: 30
+  - type: Tag
+    tags:
+    - CentrifugeCompatible
+
+
+## D ##
+
+
+## E ##
+
+
+## F ##

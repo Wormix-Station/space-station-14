@@ -1,0 +1,39 @@
+# Brig
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalBrig, TP14SignDirectionalBrigAlt1, TP14SignDirectionalBrigAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Security, Wall-Sign
+  name: brig wall sign
+  description: A direction sign, pointing out which way the Security Brig is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#FF8104" # Red-ish orange
+    - state: text_brig
+
+# Security
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalSec, TP14SignDirectionalSecAlt1, TP14SignDirectionalSecAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Security, Wall-Sign
+  name: security wall sign
+  description: A direction sign, pointing out which way the Security department is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#FF8104" # Red-ish orange
+    - state: text_sec

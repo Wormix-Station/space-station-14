@@ -1,0 +1,59 @@
+# Atmospherics
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalAtmos, TP14SignDirectionalAtmosAlt1, TP14SignDirectionalAtmosAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Engi, Atmos, Wall-Sign
+  name: atmos wall sign
+  description: A direction sign, pointing out which way the Atmospherics department is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background # Colorable background layer
+      color: "#FFC300" # Yellow-ish Orange
+    - state: text_atmos # The text
+
+# Engineering
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalEngi, TP14SignDirectionalEngiAlt1, TP14SignDirectionalEngiAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Engi, Wall-Sign
+  name: engineering wall sign
+  description: A direction sign, pointing out which way the Engineering department is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background # Colorable background layer
+      color: "#FFC300" # Yellow-ish Orange
+    - state: text_engi # The text
+
+# Petrochem
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalPetrochem, TP14SignDirectionalPetrochemAlt1, TP14SignDirectionalPetrochemAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Petrochem, Wall-Sign
+  name: petrochem wall sign
+  description: A direction sign, pointing out which way the Petrochem department is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background # Colorable background layer
+      color: "#800080" # Ourple
+    - state: text_petrochem # The text

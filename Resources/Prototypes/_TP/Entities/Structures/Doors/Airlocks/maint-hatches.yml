@@ -1,0 +1,19 @@
+- type: entity  
+  parent: AirlockHatchMaintenance
+  id: AirlockHatchMaintCommandLocked
+  suffix: Command, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCommand ]
+  - type: Wires
+    layoutId: AirlockCommand
+
+- type: entity #naming it Overseer for TP14, its the Captain access
+  parent: AirlockHatchMaintCommandLocked
+  id: AirlockHatchMaintOverseerLocked
+  suffix: Overseer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCaptain ]

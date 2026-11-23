@@ -600,14 +600,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 1.5,0.5
-- proto: TP14ClosetWallEmergencyH20FilledRandom
-  entities:
-  - uid: 2
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 3.5,2.5
 - proto: TP14ComputerDivingBell
   entities:
   - uid: 69

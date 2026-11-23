@@ -3,12 +3,14 @@ using Content.Shared.Actions.Components;
 using Content.Shared.Cloning.Events;
 using Content.Shared.Gravity;
 using Content.Shared.Movement.Components;
+using Content.Shared._TP.Movement.Components; // TP14
 using Content.Shared.Popups;
 using Content.Shared.Standing;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics.Events;
+using Robust.Shared.Timing; // TP14
 
 namespace Content.Shared.Movement.Systems;
 
@@ -21,6 +23,30 @@ public sealed partial class SharedJumpAbilitySystem : EntitySystem
     [Dependency] private SharedStunSystem _stun = default!;
     [Dependency] private StandingStateSystem _standing = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private IGameTiming _timing = default!; // TP14
+
+    // TP14-Edit-Start: track jump landing so the fall system can drop jumpers into open air.
+    public override void Update(float frameTime)
+    {
+        foreach (var entity in EntityQuery<JumpingComponent>())
+        {
+            // To start, we check if an entity is jumping - if not,
+            // continue to the next entity.
+            if (!entity.IsJumping)
+            {
+                continue;
+            }
+
+            // Now if an entity IS jumping, we set "WasJumping" to true, and
+            // "IsJumping" to false afterward.
+            if (_timing.CurTime >= entity.LastJumped + TimeSpan.FromSeconds(1))
+            {
+                entity.WasJumping = entity.IsJumping;
+                entity.IsJumping = false;
+            }
+        }
+    }
+    // TP14-Edit-End
 
     public override void Initialize()
     {
@@ -76,6 +102,11 @@ public sealed partial class SharedJumpAbilitySystem : EntitySystem
             return;
         }
 
+        // TP14-Edit-Start: mark the jump so the fall system can catch the landing.
+        EnsureComp<JumpingComponent>(args.Performer, out var jump);
+        jump.IsJumping = true;
+        jump.LastJumped = _timing.CurTime;
+        // TP14-Edit-End
         var xform = Transform(args.Performer);
         var throwing = xform.LocalRotation.ToWorldVec() * entity.Comp.JumpDistance;
         var direction = xform.Coordinates.Offset(throwing); // to make the character jump in the direction he's looking

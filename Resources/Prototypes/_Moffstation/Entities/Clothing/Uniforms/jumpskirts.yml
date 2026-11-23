@@ -1,0 +1,14 @@
+
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtPerformerRed
+  name: dark performer's wig # TP - match old name
+  description: The true AI, once hired by SolGov to fight off Hatsune Miku. Real story. # TP - match old description
+  components:
+  - type: Sprite
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/performer-red.rsi
+  - type: Clothing
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/performer-red.rsi
+
+# Yellow Performer (Akita Neru)

@@ -96,3 +96,5 @@ reagent-desc-phosphoric-acid = An acidic chemical often used in agriculture. Kee
 
 reagent-name-hardlight-toxin = hardlight toxin
 reagent-desc-hardlight-toxin = A highly advanced toxin which inundates a victim's nervous system with ionizing radiation when metabolized.
+reagent-name-drifter-toxin = drifter toxin
+reagent-desc-drifter-toxin = A very effective sedative only gathered from Drifters.

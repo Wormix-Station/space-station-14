@@ -1,0 +1,44 @@
+- type: reagent
+  id: DrifterToxin
+  name: reagent-name-drifter-toxin
+  group: Toxins
+  desc: reagent-desc-drifter-toxin
+  flavor: sour
+  color: "#000067"
+  physicalDesc: reagent-physical-desc-nondescript
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: DrifterToxin
+          min: 0.5
+        type: Local
+        visualType: Medium
+        messages: [ "effect-drifter" ]
+        probability: 0.1
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.65
+        sprintSpeedModifier: 0.65
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: DrifterToxin
+          min: 7 #More efficient than Chloral Hydrate, and it doesn't OD you. Could be useful.
+        effectProto: StatusEffectForcedSleeping
+        time: 6
+        type: Update
+
+- type: reagent
+  id: Mimicrium
+  name: reagent-name-mimicrium
+  group: Toxins
+  desc: reagent-desc-mimicrium
+  physicalDesc: reagent-physical-desc-electric
+  flavor: shocking
+  color: "#FDD023"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:Electrocute # mimics generally only have enough of this shit to do one good shock, so it's fineeee

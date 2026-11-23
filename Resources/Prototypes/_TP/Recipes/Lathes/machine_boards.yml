@@ -1,0 +1,13 @@
+- type: latheRecipe
+  parent: [ BaseCircuitboardRecipe, BaseServiceMachineRecipeCategory ]
+  id: TP14CoffeeMakerCircuitboardRecipe
+  result: TP14CoffeeMakerCircuitboard
+
+
+
+- type: latheRecipe
+  parent: [ BaseCircuitboardRecipe, BaseMedicalMachineRecipeCategory ]
+  id: IncubatorMachineCircuitboard
+  result: IncubatorMachineCircuitboard
+
+# Power

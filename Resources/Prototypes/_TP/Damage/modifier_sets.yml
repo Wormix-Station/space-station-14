@@ -1,0 +1,12 @@
+- type: damageModifierSet
+  id: TP14TelecommsDMS
+  coefficients:
+    Shock: 1.2
+    Heat: 0.5
+    Structural: 0.25
+  flatReductions:
+    Blunt: 25
+    Slash: 25
+    Piercing: 25
+    Heat: 25
+    Structural: 30

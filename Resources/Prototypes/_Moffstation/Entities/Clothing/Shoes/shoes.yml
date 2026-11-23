@@ -1,0 +1,14 @@
+
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsPerformerRed
+  name: dark performer's boots # TP - match old name
+  description: With these, you could dance, and be a ninja in the night! # TP - match old description
+  components:
+  - type: Sprite
+    sprite: _Moffstation/Clothing/Shoes/performer-red.rsi
+  - type: Clothing
+    sprite: _Moffstation/Clothing/Shoes/performer-red.rsi
+
+# Yellow Performer (Akita Neru)

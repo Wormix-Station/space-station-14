@@ -1,0 +1,79 @@
+# Chem
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalChem, TP14SignDirectionalChemAlt1, TP14SignDirectionalChemAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Medical, Wall-Sign
+  name: chem wall sign
+  description: A direction sign, pointing out which way the chem lab is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#008008" # Green. Had to hehe.
+    - state: text_chem
+
+# Examination
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalExam, TP14SignDirectionalExamAlt1, TP14SignDirectionalExamAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Medical, Wall-Sign
+  name: exam wall sign
+  description: A direction sign, pointing out which way the medical examination room is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#008008" # Green
+    - state: text_exam
+
+# ICU
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalICU, TP14SignDirectionalICUAlt1, TP14SignDirectionalICUAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Medical, Wall-Sign
+  name: ICU wall sign
+  description: A direction sign, pointing out which way the ICU is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#008008" # Green
+    - state: text_icu
+
+# Medical
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalMedical, TP14SignDirectionalMedicalAlt1, TP14SignDirectionalMedicalAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Medical, Wall-Sign
+  name: medical wall sign
+  description: A direction sign, pointing out which way the Medical department is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#008008" # Green. Had to hehe.
+    - state: text_med

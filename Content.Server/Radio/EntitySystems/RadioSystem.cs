@@ -113,6 +113,7 @@ public sealed partial class RadioSystem : SharedRadioSystem
         var sourceMapId = Transform(radioSource).MapID;
         var hasActiveServer = HasActiveServer(sourceMapId, channel.ID);
         var sourceServerExempt = _exemptQuery.HasComp(radioSource);
+        var isRelayActive = IsAnyRelayActive(sourceMapId); // Trieste
 
         var radioMessages = new Dictionary<EntityUid, string>(); // WL-Changes
         var radioQuery = EntityQueryEnumerator<ActiveRadioComponent, TransformComponent>();
@@ -125,10 +126,13 @@ public sealed partial class RadioSystem : SharedRadioSystem
                     continue;
             }
 
-            if (!channel.LongRange && transform.MapID != sourceMapId && !radio.GlobalReceive)
+            var isLongRange = channel.LongRange || isRelayActive; // Trieste
+
+            if (!isLongRange && transform.MapID != sourceMapId && !radio.GlobalReceive)
                 continue;
 
-            var needServer = !channel.LongRange && !sourceServerExempt;
+            // don't need telecom server for long range channels or relay-boosted channels
+            var needServer = !isLongRange && !sourceServerExempt;
             if (needServer && !hasActiveServer)
                 continue;
 
@@ -217,4 +221,20 @@ public sealed partial class RadioSystem : SharedRadioSystem
         return false;
     }
     // WL-Changes-end
+
+    // Trieste-Edit-Start
+    /// <summary>
+    ///     Returns whether any radio relay is active on the map, boosting all channels to long range.
+    /// </summary>
+    private bool IsAnyRelayActive(MapId mapId)
+    {
+        var relays = EntityQuery<RelayComponent, TransformComponent>();
+        foreach (var (relay, transform) in relays)
+        {
+            if (transform.MapID == mapId && relay.IsActive)
+                return true;
+        }
+        return false;
+    }
+    // Trieste-Edit-End
 }

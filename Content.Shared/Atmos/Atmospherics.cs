@@ -101,6 +101,9 @@ namespace Content.Shared.Atmos
         public const float OxygenMolesStandard = MolesCellStandard * OxygenStandard;
         public const float NitrogenMolesStandard = MolesCellStandard * NitrogenStandard;
 
+        public const float WaterMolesStandard = MolesCellStandard * WaterStandard; // Trieste
+        public const float TrenchMolesStandard = MolesCellStandard * TrenchStandard; // Trieste
+
         public const float OxygenMolesFreezer = MolesCellFreezer * OxygenStandard;
         public const float NitrogenMolesFreezer = MolesCellFreezer * NitrogenStandard;
 

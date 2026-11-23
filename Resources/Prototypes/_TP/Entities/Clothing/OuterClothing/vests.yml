@@ -1,0 +1,18 @@
+- type: entity
+  parent:
+  - ClothingOuterArmorBaseCarapace
+  - BaseCommandContraband
+  id: TP14ClothingOuterVestOverseerArmoredVest
+  suffix: Trieste, Vest
+  name: overseer's body armor
+  description: The overseer's custom body armor, it's got a little badge on the front, how cute.
+  components:
+  - type: Sprite
+    sprite: _TP/Clothing/OuterClothing/Vests/overseerarmored.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _TP/Clothing/OuterClothing/Vests/overseerarmored.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon

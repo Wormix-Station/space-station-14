@@ -1,0 +1,38 @@
+- type: entity
+  parent: AirlockShuttle
+  id: TP14AirlockExternalBell
+  suffix: Trieste, Bell
+  name: bell dock
+  description: Necessary for connecting the various bells with an air-tight seal.
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExternal ]
+  - type: Docking
+
+- type: entity
+  parent: TP14AirlockExternalBell
+  id: TP14AirlockExternalDivingBellSweetwater
+  suffix: Trieste, Diving Bell, Sweetwater
+  name: diving bell dock
+  description: Necessary for connecting the Diving Bell with an air-tight seal.
+  components:
+  - type: BellPort
+    bellType: TP14BellTypeDivingBell
+    portName: bell-type-diving-sweetwater
+    stormShelter: true # Flash Storms send the bell here.
+  - type: PriorityDock
+    tag: TP14TagDivingBell
+
+- type: entity
+  parent: TP14AirlockExternalBell
+  id: TP14AirlockExternalDivingBellTrieste
+  suffix: Trieste, Diving Bell, Port
+  name: diving bell dock
+  description: Necessary for connecting the Diving Bell with an air-tight seal.
+  components:
+  - type: BellPort
+    bellType: TP14BellTypeDivingBell
+    portName: bell-type-diving-trieste
+  - type: PriorityDock
+    tag: TP14TagDivingBell

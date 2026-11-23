@@ -137,3 +137,15 @@
       PowerUse: 5
     - type: Tag
       tags: *lightTags
+
+# Fork addition from Trieste Port-14: waterproof variant of the small light.
+- type: entity
+  id: PoweredSmallLightWaterProof
+  suffix: Waterproof
+  parent: PoweredSmallLightEmpty
+  components:
+  - type: Sprite
+    state: base
+  - type: PointLight
+    enabled: true
+  - type: PoweredLight

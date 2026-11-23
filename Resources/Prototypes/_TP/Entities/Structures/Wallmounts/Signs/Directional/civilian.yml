@@ -1,0 +1,139 @@
+# Cryo
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalCryo, TP14SignDirectionalCryoAlt1, TP14SignDirectionalCryoAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Civilian, Wall-Sign
+  name: cryo wall sign
+  description: A direction sign, pointing out which way cryogenic stasis is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#C4A484" # Light-brown
+    - state: text_cryo
+
+# Dorms
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalDorms, TP14SignDirectionalDormsAlt1, TP14SignDirectionalDormsAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Civilian, Wall-Sign
+  name: dorms wall sign
+  description: A direction sign, pointing out which way dorms are.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#C4A484" # Light-brown
+    - state: text_dorms
+
+# Airlock
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalAirlock, TP14SignDirectionalAirlockAlt1, TP14SignDirectionalAirlockAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Civilian, Wall-Sign
+  name: airlock wall sign
+  description: A direction sign, pointing out which way the exterior airlock is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#C4A484" # Light-brown
+    - state: text_airlock
+
+# Evac
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalEvac, TP14SignDirectionalEvacAlt1, TP14SignDirectionalEvacAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Civilian, Wall-Sign
+  name: evac wall sign
+  description: A direction sign, pointing out which way evacuation is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#C4A484" # Light-brown
+    - state: text_evac
+
+# Pods
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalPods, TP14SignDirectionalPodsAlt1, TP14SignDirectionalPodsAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Civilian, Wall-Sign
+  name: pods wall sign
+  description: A direction sign, pointing out which way the Evacuation Pods are.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#C4A484" # Light-brown
+    - state: text_pods
+
+# Wash
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalWall, TP14SignDirectionalWallAlt1, TP14SignDirectionalWallAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Civilian, Wall-Sign
+  name: washroom wall sign
+  description: A direction sign, pointing out which way the Washrooms are.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#C4A484" # Light-brown
+    - state: text_wash
+
+# Ladder
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalLadder, TP14SignDirectionalLadderAlt1, TP14SignDirectionalLadderAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Civilian, Wall-Sign
+  name: ladder wall sign
+  description: A direction sign, pointing out which way the ladder is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#C4A484" # Light-brown
+    - state: text_ladder

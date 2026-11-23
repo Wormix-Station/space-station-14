@@ -1,0 +1,139 @@
+# Aquaponics
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalAquaponics, TP14SignDirectionalAquaponicsAlt1, TP14SignDirectionalAquaponicsAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Service, Wall-Sign
+  name: aquaponics wall sign
+  description: A direction sign, pointing out which way the Aquaponics department is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#90EE90" # Light-green
+    - state: text_aqua
+
+# Bar
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalBar, TP14SignDirectionalBarAlt1, TP14SignDirectionalBarAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Service, Wall-Sign
+  name: bar wall sign
+  description: A direction sign, pointing out which way the Bar is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#90EE90" # Light-green
+    - state: text_bar
+
+# Chapel
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalChapel, TP14SignDirectionalChapelAlt1, TP14SignDirectionalChapelAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Service, Wall-Sign
+  name: chapel wall sign
+  description: A direction sign, pointing out which way the chapel is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#90EE90" # Light-green
+    - state: text_chapel
+
+# Kitchen
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalFood, TP14SignDirectionalFoodAlt1, TP14SignDirectionalFoodAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Service, Wall-Sign
+  name: food wall sign
+  description: A direction sign, pointing out which way the Cafeteria is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#90EE90" # Light-green
+    - state: text_food
+
+# Hydroponics
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalHydroponics, TP14SignDirectionalHydroponicsAlt1, TP14SignDirectionalHydroponicsAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Service, Wall-Sign
+  name: hydroponics wall sign
+  description: A direction sign, pointing out which way the Hydroponics department is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#90EE90" # Light-green
+    - state: text_hydro
+
+# Janitorial
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalJanitor, TP14SignDirectionalJanitorAlt1, TP14SignDirectionalJanitorAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Service, Wall-Sign
+  name: janitor wall sign
+  description: A direction sign, pointing out which way the Janitor room is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#90EE90" # Light-green
+    - state: text_jani
+
+# Library
+- type: entity
+  parent: TP14BaseSignDirectional
+  id: !type:CreateVariants
+    values: [ TP14SignDirectionalLibrary, TP14SignDirectionalLibraryAlt1, TP14SignDirectionalLibraryAlt2 ]
+  categories: !type:CreateVariants
+    sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
+  suffix: Trieste, Service, Wall-Sign
+  name: library wall sign
+  description: A direction sign, pointing out which way the Library is.
+  components:
+  - type: Sprite
+    offset: !type:CreateVariants
+      values: [ "0, 0", "0, 0.25", "0, -0.25" ]
+    layers:
+    - state: overlay
+    - state: background
+      color: "#90EE90" # Light-green
+    - state: text_library
