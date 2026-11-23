@@ -8,6 +8,7 @@
     - id: CockroachMigration
     - id: MouseMigration
     - id: RandomCritterHorde
+    - id: WhaleMigration # TRIESTE
 
 - type: entityTable
   id: SpicyPestEventsTable

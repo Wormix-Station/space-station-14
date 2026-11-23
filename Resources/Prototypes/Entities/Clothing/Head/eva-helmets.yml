@@ -111,3 +111,15 @@
     tags:
     - HelmetEVA
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetCosplay
+  name: Scrappy Helmet
+  description: It's stuffy, hot and hard to see out of.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/eva_cosplay.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/eva_cosplay.rsi

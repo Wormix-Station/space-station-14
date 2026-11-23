@@ -25,6 +25,10 @@ public sealed partial class MassHallucinationsRuleComponent : Component
     [DataField("sounds", required: true)]
     public SoundSpecifier Sounds = default!;
 
+    // TRIESTE SPECIFIC
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool SweetwaterOnly;
+
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public List<EntityUid> AffectedEntities = new();
 }

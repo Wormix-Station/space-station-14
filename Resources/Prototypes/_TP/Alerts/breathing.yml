@@ -15,3 +15,12 @@
     state: drowning
   name: alerts-short-circuit-name
   description: alerts-short-circuit-desc
+
+- type: alert
+  id: TP14AlertLysis
+  category: Breathing
+  icons:
+  - sprite: /Textures/_TP/Interface/Alerts/breathing.rsi
+    state: drowning
+  name: alerts-lysis-name
+  description: alerts-lysis-desc

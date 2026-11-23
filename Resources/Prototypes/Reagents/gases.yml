@@ -26,6 +26,12 @@
         ratios:
           CarbonDioxide: 1.0
           Oxygen: -1.0
+      - !type:ModifyLungGas # TRIESTE
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Jellid, TP14WaterBreather ]
+        ratios:
+          Water: -1.0
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
@@ -79,6 +85,22 @@
         conditions:
           - !type:MetabolizerTypeCondition
             type: [ Vox ]
+        clear: true
+        time: 5
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Jellid ]
+        ignoreResistances: true
+        damage:
+          types:
+            Slash: 0.7
+      - !type:AdjustAlert
+        alertType: TP14AlertLysis
+        minScale: 0.5
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Jellid ]
         clear: true
         time: 5
 

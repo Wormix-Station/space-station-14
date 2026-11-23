@@ -3,3 +3,5 @@ alerts-drowning-desc = You are [color=red]drowning[/color]! Turn on [color=green
 
 alerts-short-circuit-name = [color=red]Short Circuit[/color]
 alerts-short-circuit-desc = You're [color=yellow]short-circuiting[/color]! Get out of the [color=blue]water[/color] immediately!.
+alerts-lysis-name = [color=red]Plasmolysis[/color]
+alerts-lysis-desc = Your membrane is [color=red]falling apart[/color]! You need [color=green]seawater[/color]!

@@ -1,4 +1,4 @@
-bell-console-title           = УПРАВЛЕНИЕ КОЛОКОЛАМИ ТРИЕСТА v2
+bell-console-title           = УПРАВЛЕНИЕ КОЛОКОЛОМ
 bell-console-status-locked   = [ ЗАБЛОКИРОВАН ]
 bell-console-status-transit  = [ В ПУТИ ]
 bell-console-status-docked   = [ {$location} ]
@@ -9,3 +9,5 @@ bell-console-status-liftoff  = [ ЗАПУСК ]
 bell-console-location-unknown = н/д
 
 bell-type-diving            = Водолазный колокол
+bell-type-diving-trieste = ПЛАТФОРМА
+bell-type-diving-sweetwater = ПОДВОДНАЯ БАЗА
