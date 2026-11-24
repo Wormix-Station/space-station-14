@@ -9,7 +9,7 @@ namespace Content.Shared.Speech.Components;
 /// Replaces full sentences or words within sentences with new strings.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-[Access(typeof(ReplacementAccentSystem))]
+[Access(typeof(ReplacementAccentSystem), typeof(Content.Shared._TP.Speech.EntitySystems.AddAccentClothingSystem))] // Trieste: re-added AddAccentClothingSystem access (from Trieste Port 14)
 public sealed partial class ReplacementAccentComponent : BaseAccentComponent
 {
     [DataField(required: true)]

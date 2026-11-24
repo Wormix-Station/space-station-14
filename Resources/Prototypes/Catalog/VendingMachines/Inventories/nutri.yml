@@ -21,6 +21,9 @@
     BoxAgrichem: 1
     MortarAndPestle: 1
     HandheldJuicer: 1
+    # Trieste-start: from Trieste Port 14
+    TP14ClothingHeadBucketBotany: 2
+    # Trieste-end
   contrabandInventory:
     ChemistryBottleUnstableMutagen: 1
     Joint: 1

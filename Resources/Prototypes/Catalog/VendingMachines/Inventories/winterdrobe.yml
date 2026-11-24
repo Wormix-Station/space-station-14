@@ -75,6 +75,55 @@
     ClothingOuterBomberLeather: 3
     # WL-change-end
     ClothingHeadHatCanadaBeanie: 4
+    # Trieste-start: TP14 beanies from Trieste Port 14
+    TP14ClothingHeadBeanie: 4
+    TP14ClothingHeadBlackBeanie: 4
+    TP14ClothingHeadBlueBeanie: 4
+    TP14ClothingHeadDarkBlueBeanie: 4
+    TP14ClothingHeadTealBeanie: 4
+    TP14ClothingHeadGreenBeanie: 4
+    TP14ClothingHeadDarkGreenBeanie: 4
+    TP14ClothingHeadOrangeBeanie: 4
+    TP14ClothingHeadPinkBeanie: 4
+    TP14ClothingHeadRedBeanie: 4
+    TP14ClothingHeadYellowBeanie: 4
+    TP14ClothingHeadPurpleBeanie: 4
+    TP14ClothingHeadLightBrownBeanie: 4
+    TP14ClothingHeadBrownBeanie: 4
+    TP14ClothingHeadMaroonBeanie: 4
+    # Trieste-end
+    # Trieste-start: TP14 bucket hats from Trieste Port 14
+    TP14ClothingHeadBucket: 4
+    TP14ClothingHeadBucketBlack: 4
+    TP14ClothingHeadBucketBlue: 4
+    TP14ClothingHeadBucketDarkBlue: 4
+    TP14ClothingHeadBucketTeal: 4
+    TP14ClothingHeadBucketGreen: 4
+    TP14ClothingHeadBucketDarkGreen: 4
+    TP14ClothingHeadBucketOrange: 4
+    TP14ClothingHeadBucketPink: 4
+    TP14ClothingHeadBucketRed: 4
+    TP14ClothingHeadBucketYellow: 4
+    TP14ClothingHeadBucketPurple: 4
+    TP14ClothingHeadBucketLightBrown: 4
+    TP14ClothingHeadBucketBrown: 4
+    TP14ClothingHeadBucketMaroon: 4
+    TP14ClothingHeadBucketOlive: 4
+    TP14ClothingHeadBucketKhaki: 4
+    # Trieste-end
+    # Trieste-start: from Trieste Port 14
+    TP14ClothingUniformJumpsuitItsTime: 2
+    TP14EntClothesBlackWinterBoots: 2
+    TP14EntClothesWhiteWinterBoots: 2
+    TP14EntClothesBlueWinterBoots: 2
+    TP14EntClothesDarkBlueWinterBoots: 2
+    TP14EntClothesBrownWinterBoots: 2
+    TP14EntClothesGreenWinterBoots: 2
+    TP14EntClothesOrangeWinterBoots: 2
+    TP14EntClothesRedWinterBoots: 2
+    TP14EntClothesYellowWinterBoots: 2
+    TP14EntClothesPurpleWinterBoots: 2
+    # Trieste-end
     ClothingHeadHatSantahat: 2
     ClothingHeadHatXmasCrown: 2
   emaggedInventory:

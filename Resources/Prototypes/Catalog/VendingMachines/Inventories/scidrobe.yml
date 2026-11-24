@@ -18,6 +18,10 @@
     ClothingShoesColorWhite: 3
     ClothingNeckTieSci: 3
     ClothingHeadsetScience: 3
+    # Trieste-start: from Trieste Port 14
+    TP14ClothingHeadScienceBucket: 2
+    TP14ClothingUniformJumpskirtScience: 2
+    # Trieste-end
     ClothingMaskGas: 3
     ClothingOuterWinterSci: 2
     ClothingNeckScarfStripedPurple: 3

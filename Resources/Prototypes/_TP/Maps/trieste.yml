@@ -9,6 +9,12 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: "Trieste Port"
+        # No extra grids (trade stations, ruins, dungeon wrecks) on the water world.
+        - type: GridSpawn
+          groups: {}
+        # Cargo shuttle is a grid too; point it at the empty dummy map like Corvax terra does.
+        - type: StationCargoShuttle
+          path: /Maps/Test/empty.yml
         - type: MultiMapManager
           maps:
             "Sweetwater": TP14GameMapSweetwater

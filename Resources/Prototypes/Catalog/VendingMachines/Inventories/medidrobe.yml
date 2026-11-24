@@ -7,6 +7,10 @@
     # Optional Clothing
     ClothingHeadHatBeretMedic: 2
     ClothingHeadNurseHat: 2
+    # Trieste-start: from Trieste Port 14
+    TP14ClothingHeadMedicalBucket: 2
+    TP14ClothingUniformJumpskirtMedicalNurseDress: 2
+    # Trieste-end
     ClothingHeadHatParamedicsoft: 1
     ClothingHeadHatSurgcapGreen: 2
     ClothingHeadHatSurgcapBlue: 2

@@ -12,3 +12,38 @@
     sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/performer-red.rsi
 
 # Yellow Performer (Akita Neru)
+
+# Trieste-start: ported from Trieste Port 14
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtPerformerYellow
+  name: bright performer's jumpskirt # TP - match old name
+  description: The lesser known AI, but that hasn't stopped her from making a name for herself! # TP - match old description
+  components:
+  - type: Sprite
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/performer-yellow.rsi
+  - type: Clothing
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/performer-yellow.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpskirtDetSleuth
+  name: sleuth suit
+  description: An outfit for a sleuth who has just one more thing to tell you about.
+  components:
+  - type: Sprite
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/sleuth.rsi
+  - type: Clothing
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/sleuth.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpskirtDetInvestigator
+  name: Investigator Skirt
+  description: An outfit for an Ace Investigator in search of missing animals.
+  components:
+  - type: Sprite
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/investigator.rsi
+  - type: Clothing
+    sprite: _Moffstation/Clothing/Uniforms/Jumpskirt/investigator.rsi
+# Trieste-end

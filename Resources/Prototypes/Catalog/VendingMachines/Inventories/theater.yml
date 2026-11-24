@@ -1,6 +1,19 @@
 - type: vendingMachineInventory
   id: AutoDrobeInventory
   startingInventory:
+
+    # Trieste-start: from Trieste Port 14
+    TP14ClothingUniformCogSuit: 2
+    TP14ClothingUniformEclipseThiefSuit: 2
+    TP14ClothingUniformGastroenterologistSuit: 2
+    TP14ClothingUniformHotstreakSuit: 2
+    TP14ClothingUniformKillerSuit: 2
+    TP14ClothingUniformMidnightSuit: 2
+    TP14ClothingUniformPinstripedSuit: 2
+    TP14ClothingUniformRevengeSuit: 2
+    TP14ClothingUniformSuspiciousSuit: 2
+    TP14ClothingUniformTVSuit: 2
+    # Trieste-end
     ClothingHeadHatJester: 1
     ClothingUniformJumpsuitJester: 1
     ClothingHeadHatJesterAlt: 1

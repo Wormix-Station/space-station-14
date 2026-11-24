@@ -12,6 +12,13 @@
     ClothingUniformJumpsuitCentcomFormal: 3
     ClothingUniformJumpskirtCentcomFormalDress: 3
     ClothingHeadHatCentcom: 3
+    # Trieste-start: from Trieste Port 14
+    TP14ClothingHeadSolgovBucket: 2
+    TP14PlushieLizardJobOverseer: 1
+    TP14ClothingUniformJumpskirtOverseer: 2
+    TP14ClothingUniformFormalJumpskirtOverseer: 2
+    TP14ClothingUniformHighVisJumpskirtOverseer: 2
+    # Trieste-end
     ClothingHeadHatCentcomcap: 3
     ClothingMaskGasCentcom: 3
     ClothingHeadsetCentCom: 3
