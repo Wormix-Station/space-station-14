@@ -17,6 +17,10 @@
     - id: RadioHandheld
     - id: AppraisalTool
     - id: FireExtinguisher
+    # Trieste-start: from Trieste Port 14
+    - id: MiningDrill
+    - id: EmergencyBeacon
+    # Trieste-end
     - id: Flare
       prob: 0.3
       rolls: !type:ConstantNumberSelector

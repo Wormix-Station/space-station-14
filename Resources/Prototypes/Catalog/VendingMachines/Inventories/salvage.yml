@@ -3,12 +3,23 @@
   startingInventory:
     Crowbar: 2
     Pickaxe: 4
+    # Trieste-start: from Trieste Port 14
+    MiningDrill: 2
+    # Trieste-end
     OreBag: 4
     Flare: 4
     FlashlightLantern: 2
     HandheldGPSBasic: 2
     RadioHandheld: 2
     WeaponGrapplingGun: 4
-    WeaponProtoKineticAccelerator: 4
+    # Trieste-start: harpoons replace the proto-kinetic accelerator (from Trieste Port 14)
+    #WeaponProtoKineticAccelerator: 4
+    TP14HarpoonGun: 4
+    TP14Harpoon: 8
+    # Trieste-end
   contrabandInventory:
     PlushieCarp: 1
+    # Trieste-start: from Trieste Port 14
+    TP14HarpoonBomb: 2
+    TP14PiezoHarpoon: 2
+    # Trieste-end

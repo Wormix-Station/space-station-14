@@ -22,6 +22,8 @@
   - HandheldStationMap
   - ClothingHeadHatWelding
   - ClothingHeadHatCone
+  - EmergencyBeacon         # Trieste: from Trieste Port 14
+  - EmergencyBeaconLocator  # Trieste
   - Binoculars
 
 - type: latheRecipePack

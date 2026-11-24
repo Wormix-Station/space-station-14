@@ -123,6 +123,10 @@
     - id: JetInjector
     - id: HandheldHealthAnalyzer
     - id: BoxBodyBag
+    # Trieste-start: from Trieste Port 14
+    - id: EmergencyBeaconLocator
+    - id: SurvivalKnife
+    # Trieste-end
     - !type:GroupSelector
       children:
       - id: RollerBedSpawnFolded
