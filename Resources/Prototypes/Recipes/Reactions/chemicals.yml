@@ -56,17 +56,19 @@
   products:
     Phenol: 2
 
-- type: reaction
-  id: Acetone
-  reactants:
-    Oil:
-      amount: 1
-    WeldingFuel:
-      amount: 1
-    Oxygen:
-      amount: 1
-  products:
-    Acetone: 2
+# Trieste-start: replaced by _TP petroleum-based Acetone reaction, from Trieste Port 14
+#- type: reaction
+#  id: Acetone
+#  reactants:
+#    Oil:
+#      amount: 1
+#    WeldingFuel:
+#      amount: 1
+#    Oxygen:
+#      amount: 1
+#  products:
+#    Acetone: 2
+# Trieste-end: replaced by _TP petroleum-based Acetone reaction, from Trieste Port 14
 
 - type: reaction
   id: FoamingAgent

@@ -1,0 +1,8 @@
+- type: marking
+  id: TP14MarkingReptileTattooBackDragon
+  bodyPart: Chest
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Reptilian/tattoos.rsi
+    state: tattoo_back_dragon_primary
+  - sprite: _TP/Mobs/Customization/Markings/Reptilian/tattoos.rsi
+    state: tattoo_back_dragon_secondary

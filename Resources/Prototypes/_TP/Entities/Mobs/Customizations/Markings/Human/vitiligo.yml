@@ -1,0 +1,55 @@
+- type: marking
+  id: TP14MarkingsHumanVitiligoPartialArmLeft
+  bodyPart: LArm
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_arm_partial_left
+
+- type: marking
+  id: TP14MarkingsHumanVitiligoPartialArmRight
+  bodyPart: LArm
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_arm_partial_right
+
+- type: marking
+  id: TP14MarkingsHumanVitiligoChestLeft
+  bodyPart: Chest
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_chest_left
+
+- type: marking
+  id: TP14MarkingsHumanVitiligoChestRight
+  bodyPart: Chest
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_chest_right
+
+- type: marking
+  id: TP14MarkingsHumanVitiligoChestSymmetrical
+  bodyPart: Chest
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_chest_symmetrical
+
+- type: marking
+  id: TP14MarkingsHumanVitiligoFaceLeft
+  bodyPart: Head
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_face_left
+
+- type: marking
+  id: TP14MarkingsHumanVitiligoFaceRight
+  bodyPart: Head
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_face_right
+
+- type: marking
+  id: TP14MarkingsHumanVitiligoFaceSymmetrical
+  bodyPart: Head
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/vitiligo.rsi
+    state: vitiligo_face_symmetrical

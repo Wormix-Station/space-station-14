@@ -1,0 +1,18 @@
+marking-TP14MarkingsHumanEarsAnimalFluffy-animalears_fluffy_primary = Основной
+marking-TP14MarkingsHumanEarsAnimalFluffy-animalears_fluffy_secondary = вторичный
+marking-TP14MarkingsHumanEarsAnimalFluffy = Звериные уши (Пушистые)
+
+marking-TP14MarkingsHumanEarsAnimalFolded-animalears_folded = Звериные уши
+marking-TP14MarkingsHumanEarsAnimalFolded = Звериные уши (Прижатые)
+
+marking-TP14MarkingsHumanEarsAnimalPointed-animalears_pointed_primary = Основной
+marking-TP14MarkingsHumanEarsAnimalPointed-animalears_pointed_secondary = вторичный
+marking-TP14MarkingsHumanEarsAnimalPointed = Звериные уши (Заострённые)
+
+marking-TP14MarkingsHumanEarsAnimalRounded-animalears_rounded_primary = Основной
+marking-TP14MarkingsHumanEarsAnimalRounded-animalears_rounded_secondary = вторичный
+marking-TP14MarkingsHumanEarsAnimalRounded = Звериные уши (Округлые)
+
+marking-TP14MarkingsHumanEarsAnimalSemiFolded-animalears_semifolded_primary = Основной
+marking-TP14MarkingsHumanEarsAnimalSemiFolded-animalears_semifolded_secondary = вторичный
+marking-TP14MarkingsHumanEarsAnimalSemiFolded = Звериные уши (Полуприжатые)

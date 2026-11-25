@@ -9,5 +9,3 @@ bell-console-status-liftoff  = [ ЗАПУСК ]
 bell-console-location-unknown = н/д
 
 bell-type-diving            = Водолазный колокол
-bell-type-diving-trieste = ПЛАТФОРМА
-bell-type-diving-sweetwater = ПОДВОДНАЯ БАЗА

@@ -1,0 +1,26 @@
+marking-TP14MarkingMothWings1-mothwings_1 = Основной
+marking-TP14MarkingMothWings1-mothwings_1_secondary = Вторичный
+marking-TP14MarkingMothWings1 = Крылья (1)
+
+marking-TP14MarkingMothWings2-mothwings_2_primary = Основной
+marking-TP14MarkingMothWings2-mothwings_2_secondary = Вторичный
+marking-TP14MarkingMothWings2-mothwings_2_tertiary = Третичный
+marking-TP14MarkingMothWings2 = Крылья (2)
+
+marking-TP14MarkingMothWingsBooster-booster_wings_primary = Основной
+marking-TP14MarkingMothWingsBooster-booster_wings_secondary = Вторичный
+marking-TP14MarkingMothWingsBooster-booster_wings_tertiary = Третичный
+marking-TP14MarkingMothWingsBooster = Крылья-ускорители
+
+marking-TP14MarkingMothWingsKaleido-kaleido_moth_wings = Крылья
+marking-TP14MarkingMothWingsKaleido-kaleido_moth_wings_markings_primary = Основной узор
+marking-TP14MarkingMothWingsKaleido-kaleido_moth_wings_markings_secondary = Вторичный узор
+marking-TP14MarkingMothWingsKaleido-kaleido_moth_wings_markings_tertiary = Третичный узор
+marking-TP14MarkingMothWingsKaleido-kaleido_moth_wings_markings_quaternary = Четверичный узор
+marking-TP14MarkingMothWingsKaleido = Калидоскопные крылья
+
+marking-TP14MarkingMothWingsOrnateTiger-ornate_tiger_moth_wings_primary = Основные крылья
+marking-TP14MarkingMothWingsOrnateTiger-ornate_tiger_moth_wings_secondary = Вторичные крылья
+marking-TP14MarkingMothWingsOrnateTiger-ornate_tiger_moth_wings_markings_primary = Основной узор
+marking-TP14MarkingMothWingsOrnateTiger-ornate_tiger_moth_wings_markings_secondary = Вторичный узор
+marking-TP14MarkingMothWingsOrnateTiger = Крылья пёстрой тигровой моли

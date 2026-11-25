@@ -1,0 +1,7 @@
+marking-TP14MarkingsHumanChestCyberHeartLeft = Кибернетическое сердце (Слева)
+marking-TP14MarkingsHumanChestCyberHeartLeft-cybernetic_heart_left = Основной
+marking-TP14MarkingsHumanChestCyberHeartLeft-cybernetic_heart_left_recolorable_light = Вторичный
+
+marking-TP14MarkingsHumanChestCyberHeartRight = Кибернетическое сердце (Справа)
+marking-TP14MarkingsHumanChestCyberHeartRight-cybernetic_heart_right = Основной
+marking-TP14MarkingsHumanChestCyberHeartRight-cybernetic_heart_right_recolorable_light = Вторичный

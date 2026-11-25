@@ -1,0 +1,3 @@
+marking-TP14MarkingReptileTattooBackDragon-tattoo_back_dragon_primary = Основной
+marking-TP14MarkingReptileTattooBackDragon-tattoo_back_dragon_secondary = Вторичный
+marking-TP14MarkingReptileTattooBackDragon = Татуировка на спине (Дракон)

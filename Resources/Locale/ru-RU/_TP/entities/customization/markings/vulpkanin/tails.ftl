@@ -1,0 +1,9 @@
+marking-TP14MarkingVulpkaninTailFluffy-tail_fluffy_primary = Основной
+marking-TP14MarkingVulpkaninTailFluffy-tail_fluffy_secondary = Вторичный
+marking-TP14MarkingVulpkaninTailFluffy-tail_fluffy_tertiary = Третичный
+marking-TP14MarkingVulpkaninTailFluffy = Вульпканин (Дикий)
+
+marking-TP14MarkingVulpkaninTailStitched-tail_stitched_primary = Основной
+marking-TP14MarkingVulpkaninTailStitched-tail_stitched_secondary = Вторичный
+marking-TP14MarkingVulpkaninTailStitched-tail_stitched_tertiary = Третичный
+marking-TP14MarkingVulpkaninTailStitched = Вульпканин (Сшитый)

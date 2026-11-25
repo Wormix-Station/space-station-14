@@ -1,0 +1,24 @@
+# Шляпы и головные уборы
+ent-TP14ClothingHeadHatWearyClownHat = старый цилиндр
+    .desc = Потрёпанный, старый, выцветший цилиндр.
+ent-TP14ClothingHeadHatPierrot = шляпа Пьеро
+    .desc = Старая шляпа мима, давно вышедшая из моды.
+ent-TP14ClothingHeadHatSouwester = макинтош-кепка
+    .desc = Культовая яркая непромокаемая кепка, защищает от дождя.
+ent-TP14ClothingHeadHatBeretCommand = командный берет
+    .desc = Берет с эмблемой порта Триест. Излучает ауру власти.
+ent-TP14ClothingHeadHatBeretOverseer = берет надзирателя
+    .desc = Берет морской пены, успокаивает экипаж и подтверждает власть.
+ent-TP14ClothingHeadHatAmnesiacsSailorCap = бескозырка амнезийца
+    .desc = Эта шапка пришла из ниоткуда, из ничего, из земли.
+ent-TP14ClothingHeadHatEclipseThiefTophat = цилиндр вора затмения
+    .desc = Добро пожаловать во тьму тьмы!
+ent-TP14ClothingHeadHatMidnightHeistTophat = цилиндр полуночного ограбления
+    .desc = Добро пожаловать в сияющую ночь!
+ent-TP14ClothingHeadHatSuspiciousCap = подозрительная кепка
+    .desc = Как ни крути, эта кепка всегда возвращается.
+ent-TP14ClothingHeadHatHoodRainSlicker = капюшон дождевика
+ent-TP14ClothingHeadHelmetHardsuitBasic = базовый скафандр
+    .desc = Обычный скафандр, дающий лёгкую защиту от кошмаров моря.
+ent-ClothingHeadHelmetAbyssal = абиссальный шлем G.I.L.L.Y
+    .desc = Тяжёлый шлем, способный выдержать неописуемое давление. Оснащён встроенной камерой для обзора.

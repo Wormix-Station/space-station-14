@@ -1,0 +1,13 @@
+- type: marking
+  id: TP14MarkingsHumanHornsAntlers
+  bodyPart: HeadTop
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/horns.rsi
+    state: horns_antlers
+
+- type: marking
+  id: TP14MarkingsHumanHornsPointed
+  bodyPart: HeadTop
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/horns.rsi
+    state: horns_pointed

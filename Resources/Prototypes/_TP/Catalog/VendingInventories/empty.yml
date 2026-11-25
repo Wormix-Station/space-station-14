@@ -1,4 +1,0 @@
-# Empty inventory for ported Trieste vending machines whose stock was intentionally not ported.
-- type: vendingMachineInventory
-  id: TP14EmptyVendInventory
-  startingInventory: {}

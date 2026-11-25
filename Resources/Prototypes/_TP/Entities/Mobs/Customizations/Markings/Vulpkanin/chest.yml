@@ -1,0 +1,6 @@
+- type: marking
+  id: TP14VulpTorsoStitched
+  bodyPart: Chest
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Vulpkanin/chest.rsi
+    state: torso_stitched

@@ -1,0 +1,6 @@
+- type: marking
+  id: TP14MarkingReptileTailChameleon
+  bodyPart: Tail
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Reptilian/tails.rsi
+    state: tail_chameleon

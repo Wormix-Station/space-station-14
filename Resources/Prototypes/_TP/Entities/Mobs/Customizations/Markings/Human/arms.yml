@@ -1,0 +1,126 @@
+#birdclaw
+
+- type: marking
+  id: TP14MarkingsBirdClawLeftArm
+  bodyPart: LArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: bird_claw_arm_left
+
+- type: marking
+  id: TP14MarkingsBirdClawRightArm
+  bodyPart: RArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: bird_claw_arm_right
+
+- type: marking
+  id: TP14MarkingsBirdClawLeftHand
+  bodyPart: LHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: bird_claw_hand_left
+
+- type: marking
+  id: TP14MarkingsBirdClawRightHand
+  bodyPart: RHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: bird_claw_hand_right
+
+#Claws
+
+- type: marking
+  id: TP14MarkingsClawsLeftHand
+  bodyPart: LHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: claws_hand_left
+
+- type: marking
+  id: TP14MarkingsClawsRightHand
+  bodyPart: RHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: claws_hand_right
+
+#Hatched
+
+- type: marking
+  id: TP14MarkingsHatchedLeftArm
+  bodyPart: LArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: hatched_left_arm
+
+- type: marking
+  id: TP14MarkingsHatchedRightArm
+  bodyPart: RArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: hatched_right_arm
+
+- type: marking
+  id: TP14MarkingsHatchedLeftHand
+  bodyPart: LHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: hatched_left_hand
+
+- type: marking
+  id: TP14MarkingsHatchedRightHand
+  bodyPart: RHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#e5e3d1"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Humans/arms.rsi
+    state: hatched_right_hand
+

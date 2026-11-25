@@ -1,0 +1,216 @@
+
+#Azurus
+
+- type: marking
+  id: TP14MarkingsAzurusLeftArm
+  bodyPart: LArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: l_arm_azurus_primary
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: l_arm_azurus_secondary
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: l_arm_azurus_tertiary
+
+- type: marking
+  id: TP14MarkingsAzurusRightArm
+  bodyPart: RArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: r_arm_azurus_primary
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: r_arm_azurus_secondary
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: r_arm_azurus_tertiary
+
+- type: marking
+  id: TP14MarkingsAzurusLeftHand
+  bodyPart: LHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: l_hand_azurus_primary
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: l_hand_azurus_secondary
+
+- type: marking
+  id: TP14MarkingsAzurusRightHand
+  bodyPart: RHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: r_hand_azurus_primary
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: r_hand_azurus_secondary
+
+#Corroded
+
+- type: marking
+  id: TP14MarkingsCorrodedLeftArm
+  bodyPart: LArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: l_arm_corroded
+
+- type: marking
+  id: TP14MarkingsCorrodedRightArm
+  bodyPart: RArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: r_arm_corroded
+
+- type: marking
+  id: TP14MarkingsCorrodedLeftHand
+  bodyPart: LHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: l_hand_corroded
+
+- type: marking
+  id: TP14MarkingsCorrodedRightHand
+  bodyPart: RHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: r_hand_corroded
+
+#Robo
+
+- type: marking
+  id: TP14MarkingsRoboLeftArm
+  bodyPart: LArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: left_arm_robo
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: left_arm_robo_short
+
+- type: marking
+  id: TP14MarkingsRoboRightArm
+  bodyPart: RArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: right_arm_robo
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: right_arm_robo_short
+
+- type: marking
+  id: TP14MarkingsRoboLeftHand
+  bodyPart: LHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: left_hand_robo
+
+- type: marking
+  id: TP14MarkingsRoboRightHand
+  bodyPart: RHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: right_hand_robo
+
+#Rusted
+
+- type: marking
+  id: TP14MarkingsRustedLeftArm
+  bodyPart: LArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: left_arm_rusted
+
+- type: marking
+  id: TP14MarkingsRustedRightArm
+  bodyPart: RArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: right_arm_rusted
+
+- type: marking
+  id: TP14MarkingsRustedLeftHand
+  bodyPart: LHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: left_hand_rusted
+
+- type: marking
+  id: TP14MarkingsRustedRightHand
+  bodyPart: RHand
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _TP/Mobs/Customization/Markings/Cybernetics/arms.rsi
+    state: right_hand_rusted

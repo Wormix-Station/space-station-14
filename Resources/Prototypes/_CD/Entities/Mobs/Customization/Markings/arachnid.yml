@@ -1,0 +1,111 @@
+# Chest
+
+- type: marking
+  id: ArachnidEyesDefault
+  bodyPart: Eyes
+  groupWhitelist: [ Arachnid ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: Mobs/Species/Arachnid/parts.rsi
+    state: eyes
+
+- type: marking
+  id: ArachnidEyesJumperGlowing
+  bodyPart: Eyes
+  groupWhitelist: [ Arachnid ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: jumper1
+    shader: unshaded
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: jumper2
+    shader: unshaded
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: jumper3
+    shader: unshaded
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: jumper4
+    shader: unshaded
+
+- type: marking
+  id: ArachnidEyesRoundGlowing
+  bodyPart: Eyes
+  groupWhitelist: [ Arachnid ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: round1
+    shader: unshaded
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: round2
+    shader: unshaded
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: round3
+    shader: unshaded
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: round4
+    shader: unshaded
+
+- type: marking
+  id: SpiderGlowEyes
+  bodyPart: Eyes
+  groupWhitelist: [ Arachnid ]
+  forcedColoring: true
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _CD/Mobs/Customization/Arachnid/eyes.rsi
+    state: glow
+    shader: unshaded
+
+# RArm
+
+- type: marking
+  id: ArachnidCheliceraeBig
+  bodyPart: HeadSide
+  groupWhitelist: [ Arachnid ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Arachnid/headside.rsi
+    state: big
+
+- type: marking
+  id: ArachnidCheliceraeSolifugid
+  bodyPart: HeadSide
+  groupWhitelist: [ Arachnid ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Arachnid/headside.rsi
+    state: solifugid
+
+- type: marking
+  id: ArachnidCheliceraeLongjaw
+  bodyPart: HeadSide
+  groupWhitelist: [ Arachnid ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Arachnid/headside.rsi
+    state: longjaw
+
+# HeadTop
+
+# Tail
+
+- type: marking
+  id: AppendagesScorpion
+  bodyPart: Tail
+  groupWhitelist: [ Arachnid ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Arachnid/tail.rsi
+    state: scorpion
+
+# RArmExtension

@@ -7,7 +7,7 @@
   description: An industrial vending machine for clothing.
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: ClothesMateInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -36,7 +36,7 @@
   description: An industrial vending machine for pride clothing
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: PrideDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -66,7 +66,7 @@
   description: A heavy duty vending machine specializing in petrochem uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: EngiDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -98,7 +98,7 @@
   description: A heavy duty vending machine specializing in bartender uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: BarDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -130,7 +130,7 @@
   description: A heavy duty vending machine specializing in cargo uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: CargoDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -161,7 +161,7 @@
   description: A heavy duty vending machine specializing in expeditionary uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: SalvageEquipmentInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -192,7 +192,7 @@
   description: A heavy duty vending machine specializing in chaplain uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: PietyVendInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -223,7 +223,7 @@
   description: A heavy duty vending machine specializing in chef uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: ChefDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -254,7 +254,7 @@
   description: A heavy duty vending machine specializing in chemistry uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: ChemDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -285,7 +285,7 @@
   description: A heavy duty vending machine specializing in detective uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: DetDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -317,7 +317,7 @@
   description: A heavy duty vending machine specializing in atmos uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: AtmosDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -348,7 +348,7 @@
   description: A heavy duty vending machine specializing in engineer uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: EngiDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -380,7 +380,7 @@
   description: A heavy duty vending machine specializing in hydroponics uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: HyDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -411,7 +411,7 @@
   description: A heavy duty vending machine specializing in janitorial uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: JaniDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -442,7 +442,7 @@
   description: A heavy duty vending machine specializing in medical uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: MediDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -473,7 +473,7 @@
   description: A heavy duty vending machine specializing in roboticist uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: RoboDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -504,7 +504,7 @@
   description: A heavy duty vending machine specializing in science uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: SciDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -535,7 +535,7 @@
   description: A heavy duty vending machine specializing in SEC uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: SecDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -566,7 +566,7 @@
   description: A heavy duty vending machine specializing in librarian uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: ClothesMateInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -597,7 +597,7 @@
   description: A heavy duty vending machine specializing in lawyer uniforms
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: LawDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -628,7 +628,7 @@
   description: A heavy duty vending machine specializing in theater costumes
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: AutoDrobeInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -659,7 +659,7 @@
   description: A heavy duty vending machine specializing in clown and mime costumes
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: HonkClothesVendInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed
@@ -691,7 +691,7 @@
   - type: AccessReader
     access: [["Maintenance"]]
 
-# Ported from Trieste Port-14 (originally _Moffstation); stock intentionally empty.
+# Ported from Trieste Port-14 (originally _Moffstation).
 - type: entity
   parent: VendingMachine
   id: VendingMachineSwimsuits
@@ -699,7 +699,7 @@
   description: A vending machine for swimsuits.
   components:
   - type: VendingMachine
-    pack: TP14EmptyVendInventory
+    pack: SwimsuitVendInventory
   - type: VendingMachineVisuals # off/broken/normal states are inherited from VendingMachine
     denyState: deny-unshaded
   - type: SpeakOnUIClosed

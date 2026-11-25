@@ -1,0 +1,69 @@
+# Chest
+
+- type: marking
+  id: MothChestGlow
+  bodyPart: Chest
+  groupWhitelist: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/chest.rsi
+    state: glow
+    shader: unshaded
+
+- type: marking
+  id: MothHeadGlow
+  bodyPart: Head
+  groupWhitelist: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/head.rsi
+    state: glow
+    shader: unshaded
+
+- type: marking
+  id: MothGlowAntenna
+  bodyPart: HeadTop
+  groupWhitelist: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/headtop.rsi
+    state: glowantenna
+    shader: unshaded
+
+- type: marking
+  id: MothWingsMembral
+  bodyPart: Tail
+  groupWhitelist: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/tail.rsi
+    state: membral_primary
+  - sprite: _CD/Mobs/Customization/Moth/tail.rsi
+    state: membral_secondary
+
+- type: marking
+  id: MothFirefly
+  bodyPart: Tail
+  groupWhitelist: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/tail.rsi
+    state: firefly2
+  - sprite: _CD/Mobs/Customization/Moth/tail.rsi
+    state: firefly1
+    shader: unshaded
+
+- type: marking
+  id: WingsPyrausta
+  bodyPart: Tail
+  groupWhitelist: [ Moth ]
+  sprites:
+  - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
+    state: pyr_neck
+  - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
+    state: pyr_wing_behind
+  - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
+    state: pyr_wing_front
+  - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
+    state: pyr_inner_behind
+  - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
+    state: pyr_inner_front
+  - sprite: _CD/Mobs/Customization/Moth/taillayers.rsi
+    state: pyr_stripes_front
+
+# RArmExtension
