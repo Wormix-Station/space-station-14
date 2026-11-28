@@ -1,4 +1,5 @@
 using Content.Client.UserInterface.Systems.Sandbox;
+using Content.Shared.Eye;
 using Content.Shared.SubFloor;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
@@ -12,25 +13,52 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
     [Dependency] private SpriteSystem _sprite = default!;
     [Dependency] private IUserInterfaceManager _ui = default!;
 
-    private bool _showAll;
+    private VisibilityFlags _shownLayers; // Wormix
 
     [ViewVariables(VVAccess.ReadWrite)]
     public bool ShowAll
     {
-        get => _showAll;
-        set
-        {
-            if (_showAll == value) return;
-            _showAll = value;
-            _ui.GetUIController<SandboxUIController>().SetToggleSubfloors(value);
-
-            var ev = new ShowSubfloorRequestEvent()
-            {
-                Value = value,
-            };
-            RaiseNetworkEvent(ev);
-        }
+        get => (_shownLayers & SubfloorCategories.All) == SubfloorCategories.All;
+        // Wormix: the panel and the command work with individual category layers.
+        set => SetLayers(value ? SubfloorCategories.All : VisibilityFlags.None);
     }
+
+    // Wormix-start
+    public VisibilityFlags ShownLayers => _shownLayers;
+
+    public void ToggleLayers(VisibilityFlags layers)
+    {
+        layers &= SubfloorCategories.All;
+        if (layers == VisibilityFlags.None)
+            return;
+
+        SetLayers((_shownLayers & layers) == layers
+            ? _shownLayers & ~layers
+            : _shownLayers | layers);
+    }
+
+    private void SetLayers(VisibilityFlags value)
+    {
+        // A category bit without its generic subfloor bit draws nothing, so keep them paired.
+        value &= SubfloorCategories.All;
+        var categories = VisibilityFlags.SubfloorWires | VisibilityFlags.SubfloorPipes | VisibilityFlags.SubfloorDisposals;
+        if ((value & categories) == 0)
+            value &= ~VisibilityFlags.Subfloor;
+
+        if (_shownLayers == value)
+            return;
+
+        _shownLayers = value;
+        _ui.GetUIController<SandboxUIController>().SetSubfloorState(value);
+
+        RaiseNetworkEvent(new ShowSubfloorRequestEvent { Mask = (int) value });
+    }
+
+    private bool IsRevealed(SubFloorHideComponent component)
+    {
+        return (_shownLayers & SubfloorCategories.Mask(component.Category)) != 0;
+    }
+    // Wormix-end
 
     [SubscribeLocalEvent]
     private void OnPlayerDetached(LocalPlayerDetachedEvent ev)
@@ -55,9 +83,10 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
         args.TryGetData<bool>(SubFloorVisuals.Covered, out var covered);
         args.TryGetData<bool>(SubFloorVisuals.ScannerRevealed, out var scannerRevealed);
 
-        scannerRevealed &= !ShowAll; // no transparency for show-subfloor mode.
+        var shown = IsRevealed(component); // Wormix
+        scannerRevealed &= !shown; // no transparency for show-subfloor mode. // Wormix
 
-        var revealed = !covered || ShowAll || scannerRevealed;
+        var revealed = !covered || shown || scannerRevealed;
 
         // set visibility & color of each layer
         foreach (var layer in args.Sprite.AllLayers)
@@ -81,7 +110,7 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
 
         _sprite.SetVisible((uid, args.Sprite), hasVisibleLayer || revealed);
 
-        if (ShowAll)
+        if (shown) // Wormix
         {
             // Allows sandbox mode to make wires visible over other stuff.
             component.OriginalDrawDepth ??= args.Sprite.DrawDepth;

@@ -43,6 +43,7 @@
         sound:
           path: /Audio/Effects/cig_snuff.ogg # Temporary but fits weirdly well
   - type: SubFloorHide
+    category: Wires # Wormix
   - type: Electrified
     onHandInteract: false
     onInteractUsing: false # wire-cutting handled separately.

@@ -8,10 +8,11 @@
     xmlns:lobbyUi="clr-namespace:Content.Client.Lobby.UI"
     xmlns:corvaxLobby="clr-namespace:Content.Client.Corvax.Lobby.UI"
     xmlns:info="clr-namespace:Content.Client.Info"
-    xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Chat.Widgets">
-    <!-- Background -->
-    <TextureRect Access="Public" VerticalExpand="True" HorizontalExpand="True" Name="Background"
-                 Stretch="KeepAspectCovered" />
+    xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Chat.Widgets"
+    xmlns:parallax="clr-namespace:Content.Client.Parallax">
+    <!-- Orion-Edit-Start: parallax background instead of static lobby images -->
+    <parallax:ParallaxControl Name="BackgroundParallax" SpeedX="20"/>
+    <!-- Orion-Edit-End -->
     <BoxContainer Name="MainContainer" VerticalExpand="True" HorizontalExpand="True" Orientation="Horizontal"
                   Margin="10 10 10 10" SeparationOverride="2">
         <SplitContainer State="Auto" ResizeMode="NotResizable" HorizontalExpand="True">
@@ -63,7 +64,6 @@
                         <PanelContainer StyleClasses="BackgroundPanel" Margin="3 3 3 3">
                             <BoxContainer Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="3 3 3 3">
                                 <RichTextLabel Name="LobbySong" Access="Public" HorizontalAlignment="Left" />
-                                <RichTextLabel Name="LobbyBackground" Access="Public" HorizontalAlignment="Left" />
                             </BoxContainer>
                         </PanelContainer>
                     </BoxContainer>

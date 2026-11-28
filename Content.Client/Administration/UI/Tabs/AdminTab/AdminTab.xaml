@@ -16,6 +16,8 @@
             <cc:CommandButton Command="adminlogs" Text="{Loc admin-player-actions-window-admin-logs}"/>
             <cc:CommandButton Command="faxui" Text="{Loc admin-player-actions-window-admin-fax}"/>
             <cc:CommandButton Command="achatwindow" Text="{Loc admin-player-actions-window-admin-chat}"/>
+            <!-- Wormix: playtime grant window. -->
+            <cc:CommandButton Command="playtimegrantui" Text="{Loc playtime-grant-window-title}" />
             <!-- Wormix-Changes: ported from ADT -->
             <cc:UICommandButton Command="echo-chat-panel" Text="{Loc admin-player-actions-window-echo-chat-panel}" WindowType="{x:Type at:EchoChatPanelWindow}"/>
         </GridContainer>

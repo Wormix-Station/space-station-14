@@ -2,6 +2,9 @@
 - type: roleLoadout
   id: JobCaptain
   groups:
+  - CaptainGloves # Wormix: ported from Goobstation
+  - CaptainMask # Wormix: ported from Goobstation
+  - CaptainShoes # Wormix: ported from Goobstation
   # - Inventory # Corvax-Loadouts #Corvax-WL-Remove
   - FormInventory # WL-Changes: Form inventory loadout
   - CaptainHead
@@ -15,10 +18,13 @@
   #- CaptainJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
   groups:
+  - HoPGloves # Wormix: ported from Goobstation
   # - Inventory # Corvax-Loadouts #Corvax-WL-Remove
   - FormInventory # WL-Changes: Form inventory loadout
   - GroupTankHarness
@@ -34,6 +40,8 @@
   - WLNeck # WL-Changes: Neck add
   - WLHoPGlasses # WL-Changes: Glasses add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # Silicons
 - type: roleLoadout
@@ -67,6 +75,8 @@
   #- PassengerJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobBartender
@@ -86,6 +96,8 @@
   - WLNeck # WL-Changes: Neck add
   - BartenderJobTrinkets
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -102,6 +114,8 @@
   #- ServiceWorkerJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobChef
@@ -121,6 +135,8 @@
   #- ChefJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobLibrarian
@@ -138,6 +154,8 @@
   #- LibrarianJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobLawyer
@@ -156,6 +174,8 @@
   - WLNeck # WL-Changes: Neck add
   - WLLawyerGlasses # WL-Changes: Glasses add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobChaplain
@@ -179,6 +199,8 @@
   #- ChaplainJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobJanitor
@@ -198,6 +220,8 @@
   - WLNeck # WL-Changes: Neck add
   - JanitorJobTrinkets
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobBotanist
@@ -216,6 +240,8 @@
   #- BotanistJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobClown
@@ -235,6 +261,8 @@
   - Trinkets
   - WLNeck # WL-Changes: Neck add
   - ClownJobTrinkets
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobMime
@@ -255,6 +283,8 @@
   - Trinkets
   #- MimeJobTrinkets
   - WLNeck # WL-Changes: Neck add
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobMusician
@@ -275,6 +305,8 @@
   - WLNeck # WL-Changes: Neck add
   #WL-Changes: remove duplicate loadout group - Instruments
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # Cargo
 - type: roleLoadout
@@ -297,6 +329,8 @@
   - WLNeck # WL-Changes: Neck add
   - WLQMGlasses # WL-Changes: Glasses add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobCargoTechnician
@@ -317,10 +351,14 @@
   #- CargoTechnicianJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobSalvageSpecialist
   groups:
+  - SalvageSpecialistJumpsuit # Wormix: ported from Goobstation
+  - SalvageSpecialistNeck # Wormix: ported from Goobstation
   # - Inventory # Corvax-Loadouts #Corvax-WL-Remove
   - FormInventory # WL-Changes: Form inventory loadout
   - GroupTankHarness
@@ -334,6 +372,8 @@
   #- SalvageSpecialistJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # Engineering
 - type: roleLoadout
@@ -355,6 +395,8 @@
   - WLNeck # WL-Changes: Neck add
   - WLCEGlasses # WL-Changes: Glasses add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobTechnicalAssistant
@@ -370,6 +412,8 @@
   #- TechnicalAssistantJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobStationEngineer
@@ -389,6 +433,8 @@
   #- StationEngineerJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
@@ -407,6 +453,8 @@
   #- AtmosphericTechnicianJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # Science
 - type: roleLoadout
@@ -430,6 +478,8 @@
   - WLNeck # WL-Changes: Neck add
   - WLRDGlasses # WL-Changes: Glasses add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobScientist
@@ -452,6 +502,8 @@
   #- ScientistJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobResearchAssistant
@@ -468,11 +520,14 @@
   #- ResearchAssistantJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # Security
 - type: roleLoadout
   id: JobHeadOfSecurity
   groups:
+  - HeadofSecurityShoes # Wormix: ported from Goobstation
   # - Inventory # Corvax-Loadouts #Corvax-WL-Remove
   - FormInventory # WL-Changes: Form inventory loadout
   - HeadofSecurityHead
@@ -490,6 +545,8 @@
   - WLHOSGlasses # WL-Changes: Glasses add
   - HeadofSecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobWarden
@@ -509,10 +566,13 @@
   - WardenBadges # WL-Changes
   - WardenJobTrinkets
   - GroupSpeciesBreathToolSecurity
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
+  - SecurityNeck # Wormix: ported from Goobstation
   # - Inventory # Corvax-Loadouts #Corvax-WL-Remove
   - FormInventory # WL-Changes: Form inventory loadout
   - SecurityHead
@@ -529,10 +589,13 @@
   - OfficerBadges # WL-Changes
   - SecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobDetective
   groups:
+  - DetectiveGloves # Wormix: ported from Goobstation
   # - Inventory # Corvax-Loadouts #Corvax-WL-Remove
   - FormInventory # WL-Changes: Form inventory loadout
   - DetectiveHead
@@ -548,6 +611,8 @@
   - DetectiveJobTrinkets
   - GroupSpeciesBreathToolSecurity
   - PhotoGroup # WL-Changes: Photo to lodauts
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobSecurityCadet
@@ -563,6 +628,8 @@
   - WLNeck # WL-Changes: Neck add
   - CadetBadges # WL-Changes
   - GroupSpeciesBreathToolSecurity
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # Wildcards
 - type: roleLoadout
@@ -583,6 +650,8 @@
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
   - PhotoGroup # WL-Changes: Photo to lodauts
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobPsychologist
@@ -599,6 +668,8 @@
   #- PsychologistJobTrinkets
   - WLNeck # WL-Changes: Neck add
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobTramDriver
@@ -615,6 +686,8 @@
   - Trinkets
   #- TramDriverJobTrinkets
   - GroupSpeciesBreathTool
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
 # They will be used without player configuration, thus they will only ever apply what is forced by MinLimit
@@ -626,6 +699,8 @@
   groups:
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 # gives vox a nitrogen breathing tank
 # other species get nothing
@@ -633,6 +708,8 @@
   id: RoleSurvivalVoxTank
   groups:
   - GroupEVATankVox
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalStandard
@@ -640,12 +717,16 @@
   - Survival
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalClown
   groups:
   - SurvivalClown
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalExtended
@@ -653,6 +734,8 @@
   - SurvivalExtended
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalExtendedAntag # Used by antagonists that spawn off-station (e.g wizards)
@@ -660,6 +743,8 @@
   - SurvivalExtendedAntag
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalMedical
@@ -667,6 +752,8 @@
   - SurvivalMedical
   - GroupSpeciesBreathToolMedical
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalSecurity
@@ -674,6 +761,8 @@
   - SurvivalSecurity
   - GroupSpeciesBreathToolSecurity
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalSyndicate
@@ -681,11 +770,15 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalMilitaryDouble
   groups:
   - SurvivalMilitaryDouble
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalNukie
@@ -693,20 +786,28 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupPocketTankDouble
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalEVA
   groups:
   - GroupEVATank
   - SurvivalExtended
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalEVAAntag # Used by antagonists that spawn off-station AND in space (e.g ninjas)
   groups:
   - GroupEVATank
   - SurvivalExtendedAntag
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: RoleSurvivalSpaceNinja
   groups:
   - GroupEVATank
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation

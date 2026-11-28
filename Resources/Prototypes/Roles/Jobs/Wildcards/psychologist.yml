@@ -5,7 +5,7 @@
   playTimeTracker: JobPsychologist
   requirements:
     - !type:AgeRequirement
-      age: 4 # WL-Changes-AgeRequirement
+      age: 7 # Wormix-Changes-AgeRequirement
   subnames:
   - Male: психиатр
   startingGear: PsychologistGear

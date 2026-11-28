@@ -1,0 +1,833 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork: job loadouts (clothing items)
+# Loadout ids that already exist in this fork got a "Goob" suffix.
+
+# cargo_technician
+- type: loadout # goob
+  id: CargoTechMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCargo
+
+
+# Back
+
+- type: loadout
+  id: CargoTechnicianHeadMail
+  equipment:
+    head: ClothingHeadMailCarrier
+
+
+# Jumpsuit
+
+- type: loadout
+  id: CargoTechnicianJumpskirtMail
+  equipment:
+    jumpsuit: ClothingUniformSkirtMailCarrier
+
+
+# OuterClothing
+
+- type: loadout
+  id: CargoTechnicianJumpsuitMail
+  equipment:
+    jumpsuit: ClothingUniformMailCarrier
+
+- type: loadout
+  id: CargoTechnicianOveralls
+  equipment:
+    jumpsuit: ClothingUniformOverallsCargo
+
+- type: loadout
+  id: CargoTechnicianWintercoatMail
+  equipment:
+    outerClothing: ClothingOuterWinterCoatMail
+
+- type: loadout
+  id: MailCarrierMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryMailCarrier
+
+# quartermaster
+- type: loadout
+  id: QMSummerShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitQMSummer
+
+- type: loadout # Goobstation - Ensembles
+  id: QuartermasterEnsemble
+  equipment:
+    neck: ClothingNeckEnsembleQuarterMaster
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterQM
+# OuterClothing
+
+- type: loadout # goob
+  id: QuartermasterMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryQM
+
+
+# Head
+
+# bartender
+- type: loadout
+  id: BartenderJumpskirtGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBartender
+
+- type: loadout
+  id: BartenderJumpsuitGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartender
+
+- type: loadout
+  id: BartenderJumpsuitPurpleGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartenderPurple
+
+
+# Outer clothing
+
+# botanist
+- type: loadout
+  id: BotanistBeret
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterBotanist
+  equipment:
+    head: ClothingHeadHatBeretSeniorBotanist
+
+- type: loadout # goob
+  id: HydroMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryHydroponics
+
+
+# Back
+
+# chef
+- type: loadout
+  id: ChefJumpskirtGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtChef
+
+
+# Outer clothing
+
+- type: loadout
+  id: ChefJumpsuitGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+
+# librarian
+- type: loadout
+  id: CuratorJumpskirtGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCurator
+
+- type: loadout
+  id: CuratorJumpsuitGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCurator
+
+- type: loadout
+  id: LibrarianJumpskirtGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtLibrarian
+
+- type: loadout
+  id: LibrarianJumpsuitGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLibrarian
+
+# captain
+- type: loadout # Goobstation - Ensembles
+  id: CaptainCapcapSenior
+  equipment:
+    head: ClothingHeadHatCapcapSenior
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterCap
+
+
+# Mask - Tbh idk if this should be here or in _goob but this is easier.
+
+- type: loadout # Goobstation - Ensembles
+  id: CaptainEnsemble
+  equipment:
+    neck: ClothingNeckEnsembleCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterCap
+
+# Back
+
+- type: loadout
+  id: CaptainGloves
+  equipment:
+    gloves: ClothingHandsGlovesCaptain
+
+- type: loadout
+  id: CaptainHeels
+  equipment:
+    shoes: ClothingShoesHighheelBoots
+
+- type: loadout
+  id: CaptainJacket
+  equipment:
+    outerClothing: ClothingOuterCapJacket
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
+- type: loadout # goob
+  id: CaptainJumpsuitMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCaptain
+
+
+# Head
+
+- type: loadout
+  id: CaptainLeatherShoes
+  equipment:
+    shoes: ClothingShoesLeather
+
+- type: loadout
+  id: CaptainMask
+  equipment:
+    mask: FoodSnackLollypopCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCap
+
+# Neck
+
+- type: loadout
+  id: CaptainSummerShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptainSummer
+
+- type: loadout
+  id: CaptainWintercoatGoob
+  equipment:
+    outerClothing: ClothingOuterWinterCapArmored # Goob edit
+
+- type: loadout
+  id: VeteranCaptainCloak
+  equipment:
+    neck: ClothingNeckCloakVetCap
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 360000 #100 hrs
+
+# head_of_personnel
+- type: loadout # Goobstation - Ensembles
+  id: HeadOfPersonnelEnsemble
+  equipment:
+    neck: ClothingNeckEnsembleHeadOfPersonnel
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterHoP
+
+# Back
+
+- type: loadout
+  id: HoPGloves
+  equipment:
+    gloves: ClothingHandsGlovesHop
+
+- type: loadout # goob
+  id: HoPJumpsuitMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryHoP
+
+
+# Head
+
+- type: loadout
+  id: HoPLongcoat
+  equipment:
+    outerClothing: ClothingOuterCoatHoPLong
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoP
+
+- type: loadout
+  id: HoPSummerShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoPSummer
+
+# atmospheric_technician
+- type: loadout # goob
+  id: AtmosMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryAtmospherics
+
+
+# Back
+
+# chief_engineer
+- type: loadout
+  id: CESummerShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCESummer
+
+- type: loadout # goob
+  id: ChiefEngineerMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryEngineeringChief
+
+# Head
+
+- type: loadout
+  id: ClothingNeckCloakGreenCe # Goobstation
+  equipment:
+    neck: ClothingNeckCloakGreenCe # Goobstation
+  groupBy: "cecloak"
+
+- type: loadout
+  id: ClothingNeckCloakWhiteCe # Goobstation?
+  equipment:
+    neck: ClothingNeckCloakWhiteCe # Goobstation
+  groupBy: "cecloak"
+
+- type: loadout # Goobstation - Ensembles
+  id: ClothingNeckEnsembleChiefEngineerGreen
+  equipment:
+    neck: ClothingNeckEnsembleChiefEngineerGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterCE
+  groupBy: "ce_ensemble"
+# OuterClothing
+
+- type: loadout # Goobstation - Ensembles
+  id: ClothingNeckEnsembleChiefEngineerWhite
+  equipment:
+    neck: ClothingNeckEnsembleChiefEngineerWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterCE
+  groupBy: "ce_ensemble"
+
+- type: loadout
+  id: ClothingNeckMantleOrangeCE # Goobstation
+  equipment:
+    neck: ClothingNeckMantleOrangeCE # Goob edit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCE
+  groupBy: "cemantle"
+
+- type: loadout
+  id: ClothingNeckMantleWhiteCE # Goobstation
+  equipment:
+    neck: ClothingNeckMantleWhiteCE # Goob edit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterCE
+  groupBy: "cemantle"
+
+# station_engineer
+- type: loadout # goob
+  id: EngiMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryEngineering
+
+
+# Back
+
+- type: loadout
+  id: StationEngineerJumpsuitCasual
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCasualEngineer
+
+# chemist
+- type: loadout # goob
+  id: ChemistMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryChemistry
+
+
+# Back
+
+# chief_medical_officer
+- type: loadout # goob
+  id: CMOMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCMO
+
+
+# Head
+
+- type: loadout # Goobstation - Ensembles
+  id: ChiefMedicalOfficerEnsemble
+  equipment:
+    neck: ClothingNeckEnsembleChiefMedicalOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterCMO
+
+# Outer clothing
+
+# medical_doctor
+- type: loadout # goob
+  id: MedicMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryMedicalDoctor
+
+
+# Back
+
+# paramedic
+- type: loadout # goob
+  id: ParamedMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryParamedic
+
+
+# Outer clothing
+
+- type: loadout
+  id: ParamedicDavidsJacket
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: CyberParamedic
+  equipment:
+    outerClothing: ClothingOuterDavidsJacket
+
+# research_director
+- type: loadout
+  id: RDSummerShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRDSummer
+
+- type: loadout # Goobstation - Ensembles
+  id: ResearchDirectorEnsemble
+  equipment:
+    neck: ClothingNeckEnsembleResearchDirector
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterRD
+
+# OuterClothing
+
+- type: loadout
+  id: ResearchDirectorJumpskirtAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtResearchDirectorAlt
+
+# Goob end
+
+- type: loadout
+  id: ResearchDirectorJumpsuitAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitResearchDirectorAlt
+
+- type: loadout
+  id: ResearchDirectorLabCoatPurple
+  equipment:
+    outerClothing: ClothingOuterCoatRDPurple
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterRD
+
+- type: loadout # goob
+  id: ResearchDirectorMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryResearchDirector
+
+# scientist
+- type: loadout # goob
+  id: ResearchMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryScientist
+
+- type: loadout # goob
+  id: ScientistFormal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientistFormal
+
+# Back
+
+- type: loadout
+  id: SeniorResearcherMJ
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorResearcher
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySeniorResearcher
+
+# head_of_security
+- type: loadout
+  id: AdvancedJackBoots
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+  equipment:
+    shoes: ClothingShoesBootsJackAdvanced
+
+- type: loadout # Goobstation - Ensembles
+  id: HeadOfSecurityEnsemble
+  equipment:
+    neck: ClothingNeckEnsembleHeadOfSecurity
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GrandMasterHoS
+
+# OuterClothing
+
+- type: loadout
+  id: HeadofSecurityGreatCoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+  equipment:
+    outerClothing: ClothingOuterArmorHoSExperimental
+
+- type: loadout
+  id: HeadofSecuritySpecialBeret
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+  equipment:
+    head: ClothingHeadHatBeretHeadOfSecurityAdvanced
+
+- type: loadout
+  id: HeadofSecurityVestWeb
+  equipment:
+    outerClothing: ClothingOuterArmorHoSVestWeb
+
+- type: loadout
+  id: HoSMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryHoS
+
+- type: loadout
+  id: HoSSummerShirt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSSummer
+
+# security_officer
+- type: loadout
+  id: ClothingNeckCWPSec
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    neck: ClothingNeckCWPSec
+
+- type: loadout
+  id: ClothingNeckMantleVeteranSecurity
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: VeteranOfficer
+  equipment:
+    neck: ClothingNeckMantleVeteranSecurity
+
+- type: loadout
+  id: JackBootsGoob
+  equipment:
+    shoes: ClothingShoesBootsJack # Goobstation
+
+- type: loadout # Goobstation
+  id: SecurityHelmetAlt
+  equipment:
+    head: ClothingHeadHelmetBasicAlt
+
+- type: loadout
+  id: SecurityMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySecurity
+
+- type: loadout
+  id: SecurityMJSenior
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySecuritySeniorOfficer
+
+- type: loadout
+  id: SecurityOfficerWintercoatGoob
+  equipment:
+    outerClothing: ClothingOuterWinterSecArmored # Goobstation
+
+# Shoes
+
+- type: loadout
+  id: SecurityWinterBootsGoob
+  equipment:
+    shoes: ClothingShoesWinterCombatBoots # Goobstation
+
+# PDA
+
+- type: loadout
+  id: SideCap
+  equipment:
+    head: ClothingHeadHatPilotkaSec
+
+# Jumpsuit
+
+- type: loadout
+  id: VeteranOfficerArmor
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: VeteranOfficer
+  equipment:
+    outerClothing: ClothingOuterArmorVeteranSecurity
+
+- type: loadout
+  id: VeteranOfficerBlackJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: VeteranOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitVeteranSecurity
+
+- type: loadout
+  id: WinterCoatSeniorSecArmored
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    outerClothing: ClothingOuterWinterSeniorSecArmored
+
+# reporter
+- type: loadout
+  id: JournalistJumpsuitGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitJournalist
+
+- type: loadout
+  id: ReporterDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtReporter
+
+- type: loadout
+  id: ReporterJumpsuitGoob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitReporter
+
+# salvage_specialist
+- type: startingGear
+  id: LostFrontierProspectorSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    shoes: ClothingShoesBootsSalvage
+    id: SalvagePDA
+    back: ClothingBackpackSalvage
+    ears: ClothingHeadsetCargo
+
+- type: loadout
+  id: LostFrontierProspectorSuit
+  startingGear: LostFrontierProspectorSuit
+
+- type: loadout
+  id: MinerCloak
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterMiner
+  equipment:
+    neck: ClothingNeckCloakSalvagerSupreme
+
+- type: loadout
+  id: SalvageSpecialistJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSalvageSpecialist
+
+- type: loadout
+  id: SalvageSpecialistJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+
+- type: loadout
+  id: SalvageSpecialistMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySalvageSpecialist
+
+
+# Shaft Miner
+
+- type: loadout
+  id: SalvageSpecialistOveralls
+  equipment:
+    jumpsuit: ClothingUniformOverallsSalvageSpecialist
+
+- type: loadout
+  id: ShaftMinerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtShaftMiner
+
+- type: loadout
+  id: ShaftMinerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShaftMiner
+
+- type: loadout
+  id: ShaftMinerMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryShaftMiner
+
+- type: loadout
+  id: ShaftMinerOveralls
+  equipment:
+    jumpsuit: ClothingUniformOverallsShaftMiner
+
+# janitor
+- type: loadout
+  id: JanitorHeadSenior
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorJanitorial
+  equipment:
+    head: ClothingHeadHatJanitorCap
+
+# passenger
+- type: loadout
+  id: BlackMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlack
+
+- type: loadout
+  id: BlackMJAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlackAlt
+
+# service jumpsuit - putting it here because frontier's only service jumpsuits are hydroponics and general lmao # goob change btw
+
+- type: loadout
+  id: BlueMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlue
+
+- type: loadout
+  id: BrownMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBrown
+
+- type: loadout
+  id: ContractorJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryContractor
+
+- type: loadout
+  id: ContractorJumpsuitTac
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryContractorTac
+
+- type: loadout
+  id: DarkBlueMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorDarkBlue
+
+- type: loadout
+  id: DarkGreenMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorDarkGreen
+
+- type: loadout
+  id: GreenMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorGreen
+
+- type: loadout
+  id: GreyMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorGrey
+
+- type: loadout
+  id: JumpsuitRecruit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Noob
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRecruitNT
+
+#colored military jumpsuits
+
+- type: loadout
+  id: LightBrownMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorLightBrown
+
+- type: loadout
+  id: MaroonMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorMaroon
+
+- type: loadout
+  id: OrangeMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorOrange
+
+- type: loadout
+  id: PinkMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorPink
+
+- type: loadout
+  id: PurpleMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorPurple
+
+- type: loadout
+  id: QuarterzipJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SophisticatedTider
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPassengerQuarterzip
+
+# Overalls
+
+- type: loadout
+  id: RedMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRed
+
+- type: loadout
+  id: ServiceMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryService
+
+- type: loadout
+  id: TealMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorTeal
+
+- type: loadout
+  id: YellowMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorYellow
+
+# brigmedic
+- type: loadout
+  id: BrigmedicMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryBrigmedic
+
+# detective
+- type: loadout
+  id: DetectiveGloves
+  equipment:
+    gloves: ClothingHandsGlovesForensic
+
+# warden
+- type: loadout
+  id: WardenCoatBlue
+  equipment:
+    outerClothing: ClothingOuterCoatWardenBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorWarden
+
+- type: loadout
+  id: WardenMJ
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryWarden

@@ -6,6 +6,8 @@ using Content.Client.Sandbox;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.DecalPlacer;
 using Content.Client.UserInterface.Systems.Sandbox.Windows;
+using Content.Shared.Eye; // Wormix
+using Content.Shared.SubFloor; // Wormix
 using Content.Shared.Input;
 using JetBrains.Annotations;
 using Robust.Client.Input;
@@ -143,6 +145,15 @@ public sealed partial class SandboxUIController : UIController, IOnStateChanged<
         _window.ToggleShadowsButton.OnToggled += _ => _sandbox.ToggleShadows();
         _window.SuicideButton.OnPressed += _ => _sandbox.Suicide();
         _window.ToggleSubfloorButton.OnPressed += _ => _sandbox.ToggleSubFloor();
+        // Wormix-start
+        _window.ShowWiresButton.OnPressed += _ => _sandbox.ToggleSubfloorCategory("wires");
+        _window.ShowPipesButton.OnPressed += _ => _sandbox.ToggleSubfloorCategory("pipes");
+        _window.ShowDisposalsButton.OnPressed += _ => _sandbox.ToggleSubfloorCategory("disposals");
+        _window.ShowDeviceLinksButton.OnPressed += _ =>
+        {
+            _window.ShowDeviceLinksButton.Pressed = _sandbox.ToggleDeviceLinks();
+        };
+        // Wormix-end
         _window.ShowMarkersButton.OnPressed += _ => _sandbox.ShowMarkers();
         _window.ShowBbButton.OnPressed += _ => _sandbox.ShowBb();
         _window.ToggleThermalVisionButton.OnToggled += _ => _sandbox.ToggleThermalVision();
@@ -221,13 +232,18 @@ public sealed partial class SandboxUIController : UIController, IOnStateChanged<
 
     #region Buttons
 
-    public void SetToggleSubfloors(bool value)
+    // Wormix-start
+    public void SetSubfloorState(VisibilityFlags layers)
     {
         if (_window == null)
             return;
 
-        _window.ToggleSubfloorButton.Pressed = value;
+        _window.ToggleSubfloorButton.Pressed = (layers & SubfloorCategories.All) == SubfloorCategories.All;
+        _window.ShowWiresButton.Pressed = (layers & VisibilityFlags.SubfloorWires) != 0;
+        _window.ShowPipesButton.Pressed = (layers & VisibilityFlags.SubfloorPipes) != 0;
+        _window.ShowDisposalsButton.Pressed = (layers & VisibilityFlags.SubfloorDisposals) != 0;
     }
+    // Wormix-end
 
     #endregion
 }

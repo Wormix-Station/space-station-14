@@ -1,0 +1,48 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Wormix-Edit-Start (ported from Goobstation for WinterDrobe)
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterDavidsJacket
+  name: EMT jacket
+  description: A bright yellow signal jacket, beloved by paramedics of the end of the 21st century.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Coats/david_jacket.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Coats/david_jacket.rsi
+
+- type: entity
+  parent: [ClothingOuterDavidsJacket, BaseMajorContraband]
+  id: ClothingOuterDavidsJacketValid
+  name: edgerunner jacket
+  description: You're right on the edge. Show 'em you got this.
+  components:
+  - type: Clothing
+    clothingVisuals:
+      outerClothing:
+      - state: valid-equipped-OUTERCLOTHING
+      outerClothing-vox:
+      - state: valid-equipped-OUTERCLOTHING-vox
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: StaminaResistance
+    damageCoefficient: 0.7
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterCosmic
+  name: cosmic winter coat
+  description: An expensive machine-made winter coat.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/cosmic.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/cosmic.rsi
+# Wormix-Edit-End

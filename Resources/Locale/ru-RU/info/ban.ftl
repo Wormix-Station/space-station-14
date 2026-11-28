@@ -84,5 +84,10 @@ server-ban-string = { $admin } created a { $severity } severity server ban that 
 server-ban-string-no-pii = { $admin } установил серверный бан { $severity } тяжести, который истечёт { $expires } у { $name } с причиной: { $reason }
 server-ban-string-never = никогда
 
+# Wormix: шаблоны панели банов
+ban-panel-presets = Шаблоны
+ban-presets-title = Шаблоны банов
+ban-panel-submit-watchlist = В список наблюдения
+
 # Kick on ban
 ban-kick-reason = Вы были забанены

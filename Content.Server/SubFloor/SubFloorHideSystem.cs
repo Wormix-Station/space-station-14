@@ -11,7 +11,7 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private SharedEyeSystem _eye = default!;
 
-    private HashSet<ICommonSession> _showFloors = new();
+    private readonly Dictionary<ICommonSession, VisibilityFlags> _shownLayers = new(); // Wormix
 
     public override void Initialize()
     {
@@ -27,7 +27,7 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
         if (e.NewStatus == SessionStatus.Connected)
             return;
 
-        _showFloors.Remove(e.Session);
+        _shownLayers.Remove(e.Session); // Wormix
 
         if (e.Session.AttachedEntity != null)
             _eye.RefreshVisibilityMask(e.Session.AttachedEntity.Value);
@@ -38,9 +38,9 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
         if (!TryComp(ev.Entity, out ActorComponent? actor))
             return;
 
-        if (_showFloors.Contains(actor.PlayerSession))
+        if (_shownLayers.TryGetValue(actor.PlayerSession, out var layers)) // Wormix
         {
-            ev.VisibilityMask |= (int)VisibilityFlags.Subfloor;
+            ev.VisibilityMask |= (int) layers;
         }
     }
 
@@ -52,20 +52,19 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
         if (!TryComp(ent, out EyeComponent? eyeComp))
             return;
 
-        if (ev.Value)
-        {
-            _showFloors.Add(args.SenderSession);
-        }
+        // Wormix-start: store the requested category mask per player.
+        var mask = (VisibilityFlags) ev.Mask & SubfloorCategories.All;
+        if (mask == VisibilityFlags.None)
+            _shownLayers.Remove(args.SenderSession);
         else
-        {
-            _showFloors.Remove(args.SenderSession);
-        }
+            _shownLayers[args.SenderSession] = mask;
+        // Wormix-end
 
         _eye.RefreshVisibilityMask((ent.Value, eyeComp));
 
         RaiseNetworkEvent(new ShowSubfloorRequestEvent()
         {
-            Value = ev.Value,
+            Mask = (int) mask, // Wormix
         }, args.SenderSession);
     }
 }

@@ -28,7 +28,7 @@ public sealed partial class OutfitSystem : EntitySystem
     [Dependency] private ItemSlotsSystem _itemSlotsSystem = default!;
     [Dependency] private StorageSystem _storageSystem = default!;
 
-    public bool SetOutfit(EntityUid target, string gear, Action<EntityUid, EntityUid>? onEquipped = null, bool unremovable = false)
+    public bool SetOutfit(EntityUid target, string gear, Action<EntityUid, EntityUid>? onEquipped = null, bool unremovable = false, bool doSpecial = false) // Goobstation edit
     {
         if (!TryComp(target, out InventoryComponent? inventoryComponent))
             return false;
@@ -114,6 +114,12 @@ public sealed partial class OutfitSystem : EntitySystem
         {
             if (job.StartingGear != gear)
                 continue;
+
+            // Goobstation edit start - Implants for set-outfits
+            if (doSpecial)
+                foreach (var jobSpecial in job.Special)
+                    jobSpecial.AfterEquip(target);
+            // Goobstation edit end
 
             var jobProtoId = LoadoutSystem.GetJobPrototype(job.ID);
             if (!ProtoMan.TryIndex<RoleLoadoutPrototype>(jobProtoId, out var jobProto))

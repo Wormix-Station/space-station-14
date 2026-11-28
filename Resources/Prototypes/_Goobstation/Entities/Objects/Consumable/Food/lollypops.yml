@@ -1,0 +1,81 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Objects/Consumable/Food/lollypops.yml
+# Wormix: PassiveConsumable component omitted (missing in this fork),
+#         SolutionContainerManager omitted (FoodBase parent already provides the "food" solution)
+
+- type: entity
+  parent: [FoodBase, FoodInjectableBase]
+  id: FoodSnackLollypopBase
+  abstract: true
+  description: A plain old lollypop. It's cherry flavoured.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - cherry
+  - type: Edible
+  - type: Tag
+    tags:
+    - FoodSnack
+    - ClothMade
+  - type: Clothing
+    quickEquip: false # You want to eat it, not stick it in your mouth.
+    sprite: _Goobstation/Objects/Consumable/Food/lollypop.rsi
+    slots: [ mask ]
+  - type: Sprite # I kinda hope this... doesn't work?
+    sprite: _Goobstation/Objects/Consumable/Food/lollypop.rsi
+    layers:
+    - state: lollypop
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: color
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#FFC0CB" # Change this to change the lollypop color. Default is pink.
+  - type: Item
+    sprite: _Goobstation/Objects/Consumable/Food/lollypop.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#FFC0CB"
+      right:
+      - state: inhand-right
+        color: "#FFC0CB"
+
+- type: entity
+  parent: FoodSnackLollypopBase
+  id: FoodSnackLollypopBaseNanotrasen
+  abstract: true
+  name: nanotrasen lollypop
+  description: An expensive tasting lollypop.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - cola
+  - type: Tag
+    tags:
+    - FoodSnack
+  - type: Sprite # Don't think about it. Don't think about it. Don't think about it.
+    sprite: _Goobstation/Objects/Consumable/Food/lollypop.rsi
+    layers:
+    - state: lollypop
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: lollypop-captain
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+
+- type: entity
+  parent: FoodSnackLollypopBaseNanotrasen
+  id: FoodSnackLollypopCaptain
+  name: captains' lollypop
+  description: A blueish lollypop containing a potentially unhealthy amount of gold leaf. Only for the goodest of captains.
+  components:
+  - type: Tag
+    tags:
+    - FoodSnack
+    - ClothMade
+  - type: Sprite # Don't think about it. Don't think about it. Don't think about it.
+    sprite: _Goobstation/Objects/Consumable/Food/lollypop.rsi
+    layers:
+    - state: lollypop
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: lollypop-captain
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+

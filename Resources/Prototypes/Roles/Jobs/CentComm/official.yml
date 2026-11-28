@@ -7,6 +7,9 @@
   startingGear: CentcommGear
   icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom # Corvax-JobSupervisors
+  requirements: # Wormix-Changes-AgeRequirement
+  - !type:AgeRequirement
+    age: 3
   accessGroups:
   - AllAccess
   access:

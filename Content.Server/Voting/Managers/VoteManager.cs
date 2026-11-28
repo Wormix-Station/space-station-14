@@ -6,6 +6,7 @@ using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
+using Content.Server.Discord; // Wormix-Changes
 using Content.Server.GameTicking;
 using Content.Server.Maps;
 using Content.Shared.Administration;
@@ -23,6 +24,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Serilog; // Wormix-Changes
 
 namespace Content.Server.Voting.Managers
 {
@@ -51,6 +53,11 @@ namespace Content.Server.Voting.Managers
         private readonly HashSet<ICommonSession> _playerCanCallVoteDirty = new();
         private readonly StandardVoteType[] _standardVoteTypeValues = Enum.GetValues<StandardVoteType>();
 
+        // Wormix-Changes-start
+        [Dependency] private DiscordWebhook _discord = default!;
+        private WebhookData? _webhook;
+        // Wormix-Changes-end
+
         public void Initialize()
         {
             _netManager.RegisterNetMessage<MsgVoteData>();
@@ -72,6 +79,14 @@ namespace Content.Server.Voting.Managers
                     DirtyCanCallVoteAll();
                 });
             }
+
+            // Wormix-Changes-start
+            var value = _cfg.GetCVar(CCVars.DiscordVoteResultsWebhook);
+            if (!string.IsNullOrEmpty(value))
+            {
+                _discord.TryGetWebhook(value, val => _webhook = val);
+            }
+            // Wormix-Changes-end
         }
 
         private void ReceiveVoteMenu(MsgVoteMenu message)
@@ -411,7 +426,63 @@ namespace Content.Server.Voting.Managers
             var args = new VoteFinishedEventArgs(winners.Length == 1 ? winners[0] : null, winners, voteTally);
             v.OnFinished?.Invoke(_voteHandles[v.Id], args);
             DirtyCanCallVoteAll();
+
+            NotifyDiscord(v); // Wormix-Changes
         }
+
+        // Wormix-Changes-start
+        private async void NotifyDiscord(VoteReg v)
+        {
+            try
+            {
+                if (_webhook is null)
+                    return;
+
+                var hook = _webhook.Value.ToIdentifier();
+
+                var title = Loc.GetString("vote-notify-discord-head", ("name", v.Title));
+                var color = 0x17A03D; // green
+
+                var mainEmbed = new WebhookEmbed
+                {
+                    Title = title,
+                    Description = $"Инициатор: {v.InitiatorText}",
+                    Color = color,
+                    Timestamp = DateTime.UtcNow,
+                    Fields = new List<WebhookEmbedField>(),
+                };
+
+                for (int i = 0; i < v.Entries.Length; i++)
+                {
+                    var voteEntity = new WebhookEmbedField()
+                    {
+                        Name = v.Entries[i].Text,
+                    };
+
+                    foreach (var player in v.CastVotes)
+                    {
+                        if (player.Value == i)
+                        {
+                            voteEntity.Value += $"{player.Key}; ";
+                        }
+                    }
+
+                    mainEmbed.Fields.Add(voteEntity);
+                }
+
+                var payload = new WebhookPayload
+                {
+                    Embeds = new List<WebhookEmbed> { mainEmbed },
+                };
+
+                await _discord.CreateMessage(hook, payload);
+            }
+            catch (Exception e)
+            {
+                Log.Error($"Failed to send vote information to webhook!\n{e}");
+            }
+        }
+        // Wormix-Changes-end
 
         private void CancelVote(VoteReg v)
         {

@@ -15,6 +15,11 @@ sandbox-window-toggle-lights-button = Переключить освещение
 sandbox-window-toggle-fov-button = Переключить FOV
 sandbox-window-toggle-shadows-button = Переключить тени
 sandbox-window-toggle-subfloor-button = Переключить пол
+# Wormix: переключатели слоёв для мапперов
+sandbox-window-show-wires-button = Показать проводку
+sandbox-window-show-pipes-button = Показать сеть атмоса
+sandbox-window-show-disposals-button = Показать сеть утилизации
+sandbox-window-show-device-links-button = Показать связи устройств
 sandbox-window-toggle-suicide-button = Самоубийство
 sandbox-window-show-spawns-button = Показать спавны
 sandbox-window-show-bb-button = Показать BB

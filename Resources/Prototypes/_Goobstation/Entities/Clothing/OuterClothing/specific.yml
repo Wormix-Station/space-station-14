@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Ported from Goob-station-Master: Prototypes\_Goobstation\Entities\Clothing\OuterClothing\specific.yml
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterSuitPickle
+  name: pickle suit
+  description: Smells horribly of vinegar.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Misc/pickle.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Misc/pickle.rsi
+    quickEquip: true
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+    - HeadSide

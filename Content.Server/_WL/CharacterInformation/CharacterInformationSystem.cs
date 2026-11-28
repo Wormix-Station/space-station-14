@@ -52,7 +52,7 @@ public sealed partial class CharacterInformationSystem : EntitySystem
             return;
 
         var charName = Identity.Name(targetUid, EntityManager);
-        var state = new CharacterInformationBuiState(GetNetEntity(targetUid), charName, charInfo.FlavorText, charInfo.OocText);
+        var state = new CharacterInformationBuiState(GetNetEntity(targetUid), charName, charInfo.FlavorText, charInfo.OocText, charInfo.ERPStatus); // Wormix-ERPStatus
         _userInterfaceSystem.SetUiState(uid, CharacterInformationUiKey.Key, state);
     }
 }

@@ -1,187 +1,365 @@
 # DO NOT ADD MORE, USE UNIFORM DYING
+
 - type: vendingMachineInventory
+
   id: ClothesMateInventory
+
   startingInventory:
+    # Wormix-Start (селекторы одежды)
+    UndeterminedClothingSwimshorts: 16
+    UndeterminedClothingSwimsuit: 16
+    UndeterminedClothingTowel: 16
+    UndeterminedClothingJumpsuit: 16
+    UndeterminedClothingShoes: 16
+    UndeterminedClothingFlatcap: 16
+    UndeterminedClothingSoftcap: 16
+    UndeterminedClothingCasualJumpsuit: 16
+    UndeterminedClothingGloves: 16
+    # Wormix-End
     ClothingBackpack: 5
+
     ClothingBackpackDuffel: 5
+
     ClothingBackpackSatchel: 3
+
     ClothingBackpackSatchelLeather: 24
+
     ClothingRandomSpawner: 8
+
     ClothingUniformRandomShorts: 4
+
     ClothingHeadHatBeret: 4
-    ClothingHeadHatBeretCivilian: 3 # WL-berets-resprite
+
+    ClothingHeadHatBeretCivilian: 3 # Wormix-berets-resprite
+
     ClothingHeadBandBlack: 2
+
     ClothingHeadBandBlue: 2
+
     ClothingHeadBandGreen: 2
+
     ClothingHeadBandRed: 2
+
     ClothingHeadBandSkull: 2
-    ClothingHeadHatGreyFlatcap: 3
     # Trieste-start: from Trieste Port 14
     TP14ClothingHeadCivilianBucket: 2
     # Trieste-end
 
-    # Trieste-start: swimsuits, towels, amnesiacs sailor uniform - from Trieste Port 14
-    ClothingUniformCoconutSkirt: 2
-    ClothingUniformFishsuit: 2
-    ClothingUniformGrassSkirt: 2
-    ClothingUniformHeartOnepiece: 2
-    ClothingUniformHonkini: 2
-    ClothingUniformMedShorts: 2
-    ClothingUniformMedkini: 2
-    ClothingUniformMermaid: 2
-    ClothingUniformNinjaSurfsuit: 2
-    ClothingUniformNtBikini: 2
-    ClothingUniformOldtimeyOnepiece: 2
-    ClothingUniformShirtkini: 2
-    ClothingUniformSpeedo: 2
-    ClothingUniformSundress: 2
-    ClothingUniformSyndikini: 2
-    ClothingUniformWetsuitOrange: 2
-    ClothingUniformBikiniWhite: 2
-    ClothingUniformBikiniBlack: 2
-    ClothingUniformBikiniBlue: 2
-    ClothingUniformBikiniRed: 2
-    ClothingUniformBikiniGreen: 2
-    ClothingUniformBikiniYellow: 2
-    ClothingUniformBikiniPink: 2
-    ClothingUniformOnepieceWhite: 2
-    ClothingUniformOnepieceBlack: 2
-    ClothingUniformOnepieceBlue: 2
-    ClothingUniformOnepieceRed: 2
-    ClothingUniformOnepieceGreen: 2
-    ClothingUniformOnepieceYellow: 2
-    ClothingUniformOnepiecePink: 2
-    ClothingUniformShortsWhite: 2
-    ClothingUniformShortsBlack: 2
-    ClothingUniformShortsBlue: 2
-    ClothingUniformShortsRed: 2
-    ClothingUniformShortsGreen: 2
-    ClothingUniformShortsYellow: 2
-    ClothingUniformShortsPink: 2
-    TP14TowelColorPurple: 2
-    TP14TowelColorRed: 2
-    TP14TowelColorBlue: 2
-    TP14TowelColorDarkBlue: 2
-    TP14TowelColorLightBlue: 2
-    TP14TowelColorTeal: 2
-    TP14TowelColorBrown: 2
-    TP14TowelColorLightBrown: 2
-    TP14TowelColorGray: 2
-    TP14TowelColorGreen: 2
-    TP14TowelColorDarkGreen: 2
-    TP14TowelColorGold: 2
-    TP14TowelColorOrange: 2
-    TP14TowelColorBlack: 2
-    TP14TowelColorPink: 2
-    TP14TowelColorYellow: 2
-    TP14TowelColorMaroon: 2
-    TP14TowelColorSilver: 2
-    TP14TowelColorMime: 2
+    # Trieste-start: amnesiacs sailor uniform - from Trieste Port 14
     TP14ClothingUniformJumpsuitAmnesiacsSailorUniform: 2
     # Trieste-end
-    ClothingHeadHatBrownFlatcap: 3
-    ClothingUniformJumpsuitColorGrey: 8
-    ClothingUniformJumpskirtColorGrey: 8
-    ClothingUniformJumpsuitColorWhite: 3
-    ClothingUniformJumpskirtColorWhite: 3
-    ClothingUniformJumpsuitColorBlack: 3
-    ClothingUniformJumpskirtColorBlack: 3
-    ClothingUniformJumpsuitColorBlue: 2
-    ClothingUniformJumpskirtColorBlue: 2
-    ClothingUniformJumpsuitColorYellow: 2
-    ClothingUniformJumpskirtColorYellow: 2
-    ClothingUniformJumpsuitColorGreen: 2
-    # DO NOT ADD MORE, USE UNIFORM DYING
-    ClothingUniformJumpskirtColorGreen: 2
-    ClothingUniformJumpsuitColorOrange: 2
-    ClothingUniformJumpskirtColorOrange: 2
-    ClothingUniformJumpsuitColorRed: 2
-    ClothingUniformJumpskirtColorRed: 2
-    ClothingUniformJumpsuitColorPurple: 2
-    ClothingUniformJumpskirtColorPurple: 2
-    ClothingUniformJumpsuitColorPink: 2
-    ClothingUniformJumpskirtColorPink: 2
-    ClothingUniformJumpsuitColorDarkBlue: 2
-    ClothingUniformJumpskirtColorDarkBlue: 2
-    ClothingUniformJumpsuitColorDarkGreen:  2
-    ClothingUniformJumpskirtColorDarkGreen: 2
-    ClothingUniformJumpsuitColorTeal: 2
-    ClothingUniformJumpskirtColorTeal: 2
     ClothingUniformJumpsuitHawaiBlack: 2
+
     ClothingUniformJumpsuitHawaiBlue: 2
+
     ClothingUniformJumpsuitHawaiRed: 2
+
     ClothingUniformJumpsuitHawaiYellow: 2
+
     ClothingUniformJumpsuitFlannel: 2
-    ClothingUniformJumpsuitCasualBlue: 2
-    ClothingUniformJumpskirtCasualBlue: 2
-    ClothingUniformJumpsuitCasualPurple: 2
-    ClothingUniformJumpskirtCasualPurple: 2
-    ClothingUniformJumpsuitCasualRed: 2
-    ClothingUniformJumpskirtCasualRed: 2
-    ClothingUniformJumpsuitCasualGreen: 2
-    ClothingUniformJumpskirtCasualGreen: 2
-    # DO NOT ADD MORE, USE UNIFORM DYING
-    ClothingShoesColorBlack: 8
-    ClothingShoesColorBrown: 4
-    ClothingShoesColorWhite: 3
-    ClothingShoesColorBlue: 2
-    ClothingShoesColorYellow: 2
-    ClothingShoesColorGreen: 2
-    ClothingShoesColorOrange: 2
-    ClothingShoesColorRed: 2
-    ClothingShoesColorPurple: 2
-    ClothingHeadHatGreysoft: 8
-    ClothingHeadHatMimesoft: 3
-    ClothingHeadHatBluesoft: 2
-    ClothingHeadHatYellowsoft: 2
-    ClothingHeadHatGreensoft: 2
-    ClothingHeadHatOrangesoft: 2
-    ClothingHeadHatRedsoft: 2
-    # DO NOT ADD MORE, USE UNIFORM DYING
-    ClothingHeadHatBlacksoft: 2
-    ClothingHeadHatPurplesoft: 2
-    ClothingHeadHatCorpsoft: 2
-    #ClothingHeadFishCap: 2 # WL-Changes: Clothing mates global change
+    #ClothingHeadFishCap: 2 # Wormix-Changes: Clothing mates global change
     ClothingHeadRastaHat: 2
-    #ClothingHeadPropellerHat: 2 # WL-Changes: Clothing mates global change
+    #ClothingHeadPropellerHat: 2 # Wormix-Changes: Clothing mates global change
     ClothingBeltStorageWaistbag: 3
     ClothingEyesGlasses: 6
-    ClothingHandsGlovesColorBlack: 4
-    ClothingHandsGlovesColorGray: 4
-    ClothingHandsGlovesColorBrown: 2
-    ClothingHandsGlovesColorWhite: 2
-    ClothingHandsGlovesColorRed: 2
-    ClothingHandsGlovesColorBlue: 2
-    ClothingHandsGlovesColorTeal: 2
-    ClothingHandsGlovesColorGreen: 2
-    ClothingHandsGlovesColorOrange: 2
-    ClothingHandsGlovesColorPurple: 2
-    ClothingHandsGlovesFingerless: 2 # WL-changes
     ClothingEyesGlassesCheapSunglasses: 3
-    ClothingOuterTrenchcoatTan: 3 # WL-change: unarmored trenchcoats
-    ClothingOuterTrenchcoatBlue: 3 # WL-change: unarmored trenchcoats
-    ClothingOuterTrenchcoatKhaki: 3 # WL-change: unarmored trenchcoats
-    # WL-change-start: tracksuits are kept at the bottom of the regular inventory
+
+    ClothingOuterTrenchcoatTan: 3 # Wormix-change: unarmored trenchcoats
+
+    ClothingOuterTrenchcoatBlue: 3 # Wormix-change: unarmored trenchcoats
+
+    ClothingOuterTrenchcoatKhaki: 3 # Wormix-change: unarmored trenchcoats
+
+    # Wormix-change-start: tracksuits are kept at the bottom of the regular inventory
+
     ClothingUniformJumpsuitTracksuitBlackwhiteBluewhite: 3
+
     ClothingUniformJumpsuitTracksuitBlackwhiteRedgold: 3
+
     ClothingUniformJumpsuitTracksuitBluewhite: 3
+
     ClothingUniformJumpsuitTracksuitBluewhiteBlackwhite: 3
+
     ClothingUniformJumpsuitTracksuitReddark: 3
+
     ClothingUniformJumpsuitTracksuitRedgold: 3
+
     ClothingUniformJumpsuitTracksuitRedgoldBlackwhite: 3
+
     ClothingUniformJumpsuitTracksuitTanwhite: 3
+
     ClothingUniformJumpsuitTracksuitTanwhiteWhitegold: 3
+
     ClothingUniformJumpsuitTracksuitWhitedark: 3
+
     ClothingUniformJumpsuitTracksuitWhitegold: 3
+
     ClothingUniformJumpsuitTracksuitWhitegoldTanwhite: 3
-    # WL-change-end
+
+    # Wormix-change-end
+
+    # Wormix-Start
+
+    ADTClothingNeckDarkGreyCloak: 3
+
+    ClothingHeadEnglishHatBlue: 2
+
+    ClothingHeadEnglishHatViolet: 2
+
+    ClothingHeadEnglishHatRed: 2
+
+    ClothingNeckCloakTgmcwhiteCloak: 1
+
+    ClothingNeckCloakEnglishBlue: 2
+
+    ClothingNeckCloakEnglishViolet: 2
+
+    ClothingNeckCloakEnglishRed: 2
+
+    ClothingUniformJumpsuitEnglishRed: 2
+
+    ClothingUniformJumpsuitEnglishBlue: 2
+
+    ClothingUniformJumpsuitEnglishViolet: 2
+
+    ClothingUniformJumpskirtYukataAquamarine: 1
+
+    ClothingUniformJumpskirtYukataBlack: 1
+
+    ClothingUniformJumpskirtYukataBlue: 1
+
+    ClothingUniformJumpskirtYukataGreen: 1
+
+    ClothingUniformJumpskirtYukataLightblue: 1
+
+    ClothingUniformJumpskirtYukataOrange: 1
+
+    ClothingUniformJumpskirtYukataPink: 1
+
+    ClothingUniformJumpskirtYukataRed: 1
+
+    ClothingUniformJumpskirtYukataViolet: 1
+
+    ClothingUniformJumpskirtYukataYellow: 1
+
+    ClothingUniformJumpskirtKimonoMiku: 1
+
+    UniformSchoolgirlRed: 1
+
+    UniformSchoolgirlBlack: 1
+
+    UniformSchoolgirlBlue: 1
+
+    UniformSchoolgirlCyan: 1
+
+    UniformSchoolgirlGreen: 1
+
+    UniformSchoolgirlOrange: 1
+
+    UniformSchoolgirlPink: 1
+
+    UniformSchoolgirlPurple: 1
+
+    UniformSchoolgirlDusk: 1
+
+    UniformSchoolgirlBlazerTan: 1
+
+    ClothingCostumeArcDress: 1
+
+    ClothingKimonoBlue: 1
+
+    ClothingKimonoPink: 1
+
+    ClothingKimonoPurple: 1
+
+    ClothingKimonoSky: 1
+
+    ClothingKimonoGreen: 1
+
+    ClothingJumpsuitDressBlack: 2
+
+    ClothingJumpsuitDressRed: 2
+
+    ClothingJumpsuitDress: 2
+
+    ClothingJumpsuitDressTutu: 1
+
+    ClothingJumpsuitCivilianJuteDress: 5
+
+    ClothingUniformJumpsuitmaidblack: 1
+
+    ClothingUniformJumpsuitmaidblue: 1
+
+    ClothingUniformJumpsuitmaidpink: 1
+
+    ClothingUniformJumpsuitSuitSssp: 1
+
+    ClothingUniformVamp: 1
+
+    ClothingUniformJumpsuitRichard: 2
+
+    ClothingUniformJumpsuitbiker: 2
+
+    ClothingUniformJumpsuitPants: 3
+
+    ADTClothingUniformJumpsuitDenimPants: 3
+
+    ADTClothingUniformJumpsuitBlackPants: 3
+
+    ADTClothingUniformJumpsuitWhitePants: 3
+
+    ADTClothingUniformJumpsuitOldBrownSuit: 3
+
+    ADTClothingUniformJumpsuitOldGreySuit: 3
+
+    ADTClothingUniformJumpsuitTuxedo: 3
+
+    ADTClothingUniformJumpsuitTuxedoWhite: 3
+
+    ADTClothingUniformJumpsuitTuxedoHell: 3
+
+    ADTClothingUniformJumpsuitTuxedoRed: 3
+
+    ADTClothingUniformJumpsuitWhiteShirt: 3
+
+    ADTClothingUniformJumpsuitBlackShirt: 3
+
+    ADTClothingUniformJumpsuitBlueShirt: 3
+
+    ADTClothingUniformJumpsuitRedShirt: 3
+
+    ADTClothingUniformJumpsuitRedPlaidShirt: 3
+
+    ADTClothingUniformJumpsuitPurpleShirt: 3
+
+    ADTClothingUniformJumpsuitFancyShirt: 3
+
+    ClothingUniformJumpsuitVergil: 2
+
+    ClothingUniformJumpsuitJeester: 2
+
+    ClothingUniformJumpsuitdirF: 2
+
+    ClothingUniformJumpsuitWorkerViF: 2
+
+    ClothingUniformJumpsuitCamo: 1
+
+    ClothingUniformJumpsuitCamoB: 1
+
+    AgentUniformOneSuit: 1
+
+    AgentUniformTwoSuit: 1
+
+    ClothingSkirtEGovGrey: 2
+
+    ClothingUniformJumpsuitExplorer: 2
+
+    ClothingOuterExplorerCoat: 2
+
+    ClothingUniformTShirtKhakiPants: 1
+
+    ClothingUniformJumpsuitAlxLaiho: 2
+
+    ClothingUniformJumpsuitPsychologistCrimson: 2
+
+    ClothingUniformJumpsuitNull: 2
+
+    ADTClothingNeckBlueTie: 2
+
+    ADTClothingNeckGoldTie: 2
+
+    ClothingNeckCloakBlackCloak: 1
+
+    ADTMaskCoif: 2
+
+    ClothingShoesBootsBerrci: 5
+
+    ClothingNeckAlexSpikedChoker: 3
+
+    # Wormix-End
+
+    # Goobstation/NF/Monolith vending clothes
+
+    ClothingUniformJumpskirtDressOpenShoulder: 1 # Goobstation
+
+    ClothingShoesSandals: 1 # Goobstation
+
+    ClothingOuterCoatBomberPunkRed: 3 # NF
+
+    ClothingOuterCoatJacketLeather: 3 # NF
+
+    ClothingOuterCoatJacketBiker: 3 # NF
+
+    ClothingOuterCoatJacketJamrock: 3 # NF
+
+    ClothingOuterCoatBomberAerostatic: 3 # NF
+
+    ClothingOuterCoatJacketLettermanBlue: 3 # NF
+
+    ClothingOuterCoatJacketLettermanBrown: 3 # NF
+
+    ClothingOuterCoatJacketLettermanRed: 3 # NF
+
+    ClothingOuterCoatJacketLettermanMagenta: 3 # NF
+
+    ClothingOuterCoatBomberPinkSleeves: 3 # NF
+
+    ClothingNeckCloakCOG: 3 # Monolith
+
+    ClothingShoesClothwrap: 3 # NF
+
+    ClothingNeckPonchoBlack: 3 # Monolith
+
+    ClothingNeckPonchoArctic: 3 # Monolith
+
+    ClothingNeckPonchoSyndicate: 3 # Monolith
+
+    ClothingNeckPonchoSmallPink: 3 # Monolith
+
+    ClothingNeckPonchoSmallRed: 3 # Monolith
+
+    ClothingNeckPonchoSmallPurple: 3 # Monolith
+
+    ClothingNeckPonchoSmallBlack: 3 # Monolith
+
+    ClothingNeckPonchoSmallWhite: 3 # Monolith
+
+    # Wormix-End
     # DO NOT ADD MORE, USE UNIFORM DYING
+    ClothingHeadHatPropeller: 2
+
   contrabandInventory:
+
     ClothingMaskNeckGaiter: 2
-    ClothingUniformJumpsuitTacticool: 1
-    ClothingUniformJumpskirtTacticool: 1
+
+    ClothingUniformJumpsuitTurtleneckTactick: 2 # _CorvaxGoob
+
+    ClothingUniformJumpsuitTacticool: 2 # +1 Goobstation
+
+    ClothingUniformJumpskirtTacticool: 2 # +1 Goobstation
+
     ToyFigurinePassenger: 1
+
     ToyFigurineGreytider: 1
+
     ClothingBackpackSatchelSmugglerUnanchored: 1
+
     ClothingHeadHatSolidHeadband: 2
+
+    ClothingUniformJumpsuitCasualSyndicate: 2 # Goobstation
+
+    ClothingUniformJumpsuitMercer: 1 # Goobstation
+
+    ClothingOuterCoatZeusJacket: 1 # Goobstation
+
+    ClothingShoesRealJordans: 1 # Wormix-Edit (Goobstation)
+
+    ClothingNeckFellForItAward: 1 # Goobstation
+    BeePack: 3 # Wormix
+
+  emaggedInventory: # Goobstation, Wormix-Edit
+
+    ClothingOuterCoatSyndieCapArmored: 1
+
   # DO NOT ADD MORE, USE UNIFORM DYING
+

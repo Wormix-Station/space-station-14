@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingNeckCloakNanotrasen
+  id: ClothingNeckAlexSpikedChoker
+  name: black spiked choker
+  description: A black choker decorated with metal spikes.
+  components:
+  - type: Sprite
+    sprite: _Wormix/Clothing/Neck/Choker/spikedblack.rsi
+  - type: Clothing
+    sprite: _Wormix/Clothing/Neck/Choker/spikedblack.rsi
+  - type: Item
+    inhandVisuals:
+      left: []
+      right: []

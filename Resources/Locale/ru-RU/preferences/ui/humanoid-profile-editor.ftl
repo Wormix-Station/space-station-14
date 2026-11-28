@@ -32,6 +32,7 @@ humanoid-profile-editor-open-image-button = Открыть изображени�
 humanoid-profile-editor-save-button = Сохранить
 humanoid-profile-editor-reset-button = Сбросить
 humanoid-profile-editor-spawn-priority-label = Приоритет спавна:
+humanoid-profile-editor-erp-status-label = ERP-статус:
 humanoid-profile-editor-eyes-label = Цвет глаз:
 humanoid-profile-editor-jobs-tab = Должности
 humanoid-profile-editor-preference-unavailable-stay-in-lobby-button = Остаться в лобби, если должность недоступна.

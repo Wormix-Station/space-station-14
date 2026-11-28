@@ -16,7 +16,7 @@
 #    - !type:OverallPlaytimeRequirement
 #      time: 36000 #10 hrs
     - !type:AgeRequirement
-      age: 0 # WL-Changes-AgeRequirement
+      age: 3 # Wormix-Changes-AgeRequirement
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm

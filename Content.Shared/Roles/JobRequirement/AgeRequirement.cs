@@ -56,7 +56,7 @@ public sealed partial class AgeRequirement : JobRequirement
             if (profile.Age < specie.MinAge + Age)
             {
                 reason = FormattedMessage.FromMarkupPermissive(Loc.GetString("role-timer-age-too-young",
-                    ("age", Age)));
+                    ("minAge", specie.MinAge + Age)));
                 return false;
             }
         }

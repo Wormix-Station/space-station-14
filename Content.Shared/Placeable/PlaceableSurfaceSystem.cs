@@ -76,6 +76,10 @@ public sealed partial class PlaceableSurfaceSystem : EntitySystem
             surface.PlaceCentered ? Transform(uid).Coordinates.Offset(surface.PositionOffset) : args.ClickLocation);
 
         args.Handled = true;
+
+        // ES START
+        args.SpawnInteractionParticles = false;
+        // ES END
     }
 
     private void OnStorageInteractUsingAttempt(Entity<PlaceableSurfaceComponent> ent, ref StorageInteractUsingAttemptEvent args)

@@ -1,41 +1,89 @@
 - type: vendingMachineInventory
+
   id: SecDrobeInventory
+
   startingInventory:
+
     ClothingBackpackSecurity: 3
+
     ClothingBackpackSatchelSecurity: 3
+
     ClothingBackpackDuffelSecurity: 3
+
     ClothingUniformJumpsuitSec: 3
-    ClothingUniformJumpsuitDSS: 3 # Corvax WL
+
+    ClothingUniformJumpsuitDSS: 3 # Corvax Wormix
+
     ClothingShoesBootsJack: 3
-    ClothingShoesBootsJackToeless: 3 # WL-Changes
+
+    ClothingShoesBootsJackToeless: 3 # Wormix-Changes
+
     ClothingHeadHatBeretSecurity: 3
-    ClothingHeadHatBeretDSS: 3 # Corvax WL
-    ClothingHeadHatDSSSoft: 3 # Corvax WL
+    ClothingHeadHatPilotkaSec: 2
+
+    ClothingHeadHatBeretDSS: 3 # Corvax Wormix
+
+    ClothingHeadHatDSSSoft: 3 # Corvax Wormix
+
     ClothingHeadHatSecsoft: 3
+
     ClothingHeadBandRed: 3
-    ClothingEyesBallisticSecurity: 6 # WL-Changes: Ballistic glasses
+
+    ClothingEyesBallisticSecurity: 6 # Wormix-Changes: Ballistic glasses
+
     ClothingMaskNeckGaiterRed: 3
+
     ClothingHandsGlovesColorBlack: 3
+
     ClothingHandsGlovesFingerless: 3
+
     ClothingUniformJumpskirtSec: 3
+
     ClothingUniformJumpsuitSecGrey: 3
+
     ClothingUniformJumpskirtSecGrey: 3
-    # ClothingUniformJumpsuitSecBlue: 3 # WL-Changes: Clothing migration
+
+    # ClothingUniformJumpsuitSecBlue: 3 # Wormix-Changes: Clothing migration
+
     ClothingHeadsetSecurity: 3
+
     ClothingOuterWinterSec: 2
+
     ClothingOuterArmorBasic: 2
-    ClothingOuterVestArmorSec: 2 # Corvax WL
+
+    ClothingOuterVestArmorSec: 2 # Corvax Wormix
+
     ClothingNeckScarfStripedRed: 3
-    # ClothingOuterArmorBasicSlim: 2 # WL-Changes-RemovingSlimArmorFromSec
+
+    # ClothingOuterArmorBasicSlim: 2 # Wormix-Changes-RemovingSlimArmorFromSec
+
     ClothingEyesBlindfold: 1
+
     ClothingShoesBootsCombat: 1
+
     ClothingShoesBootsWinterSec: 2
+
     ClothingShoesBootsCowboyBlack: 1
+
     ClothingHeadHatCowboyBlack: 1
+
     ClothingHeadHelmetJustice: 1
+
+    ClothingHeadHelmetBasic: 2
+
+    ClothingHeadHelmetBasicAlt: 2
+
+    ClothingUniformJumpsuitSecBlue: 3
+
   contrabandInventory:
+
     ClothingMaskClownSecurity: 1
+
     ClothingMaskMimeSecurity: 1
+
     ToyFigurineSecurity: 1
+
     ToyFigurineWarden: 1
+
     ToyFigurineHeadOfSecurity: 1
+

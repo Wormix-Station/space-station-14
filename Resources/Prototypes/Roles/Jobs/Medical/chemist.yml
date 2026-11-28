@@ -8,7 +8,7 @@
       department: Medical
       time: 5h
     - !type:AgeRequirement
-      age: 6 # WL-Changes-AgeRequirement
+      age: 7 # Wormix-Changes-AgeRequirement
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo

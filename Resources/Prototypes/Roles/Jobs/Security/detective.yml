@@ -9,7 +9,7 @@
   requirements:
     # WL-Changes: Age start
     - !type:AgeRequirement
-      age: 4 # WL-Changes-AgeRequirement
+      age: 3 # Wormix-Changes-AgeRequirement
     # WL-Changes: Age end
     - !type:DepartmentTimeRequirement
       department: Security

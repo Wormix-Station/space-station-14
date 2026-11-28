@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Clothing/Head/helmets.yml
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetBasicAlt
+  suffix: Alt
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Helmets/security.rsi
+    layers: # Wormix: parent's folded visor layer uses a state this RSI lacks
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon
+      map: [ "foldedLayer" ]
+      visible: false
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Helmets/security.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Ported from Goob-station-Master: Prototypes\_Goobstation\Entities\Clothing\Head\helmets.yml
+# Goob port: Armor component removed from head-wear (Vanila ArmorComponent has no coverage field; full-body armor from a hat would be wrong)
+
+- type: entity
+  parent: [ClothingHeadHatArmored, ClothingHeadHatCowboyBrown, BaseMajorContraband]
+  id: ClothingHeadHatCowboyBrownRobust
+  name: authentic brown cowboy hat
+  description: "\"This station ain't big enough for the two of us.\""
+# Shitchap

@@ -11,7 +11,7 @@
       department: Engineering
       time: 10h #10 hrs # Corvax-RoleTime
     - !type:AgeRequirement
-      age: 4 # WL-Changes-AgeRequirement
+      age: 3 # Wormix-Changes-AgeRequirement
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce

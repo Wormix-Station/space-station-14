@@ -1,18 +1,64 @@
-<DefaultWindow
-    xmlns="https://spacestation14.io"
-    Title="{Loc admin-announce-title}"
-    MinWidth="500">
-    <GridContainer Columns="1">
-        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-            <LineEdit Name="Announcer" Access="Public" PlaceHolder="{Loc admin-announce-announcer-placeholder}" Text="{Loc admin-announce-announcer-default}" HorizontalExpand="True" SizeFlagsStretchRatio="2"/>
-            <Control HorizontalExpand="True" SizeFlagsStretchRatio="1" />
-            <OptionButton Name="AnnounceMethod" Access="Public" HorizontalExpand="True" SizeFlagsStretchRatio="2"/>
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+               Title="{Loc admin-announce-title}"
+               MinSize="540 380"
+               SetSize="680 430">
+    <!-- Wormix: extended announce panel with sender signature, color, sound and map targets. -->
+    <BoxContainer Orientation="Vertical" SeparationOverride="6">
+        <BoxContainer Orientation="Horizontal" SeparationOverride="6">
+            <LineEdit Name="Announcer"
+                      Access="Public"
+                      PlaceHolder="{Loc admin-announce-announcer-placeholder}"
+                      Text="{Loc admin-announce-announcer-default}"
+                      HorizontalExpand="True" />
+            <LineEdit Name="SenderInput"
+                      Access="Public"
+                      PlaceHolder="{Loc admin-announce-sender-placeholder}"
+                      HorizontalExpand="True" />
         </BoxContainer>
-        <TextEdit Name="Announcement" Access="Public" VerticalExpand="True" MinHeight="100" />
 
-        <GridContainer Rows="1">
-            <CheckBox Name="KeepWindowOpen" Access="Public" Text="{Loc 'admin-announce-keep-open'}" />
-            <Button Name="AnnounceButton" Access="Public" Disabled="True" Text="{Loc admin-announce-button}" HorizontalAlignment="Center"/>
-        </GridContainer>
-    </GridContainer>
+        <BoxContainer Orientation="Horizontal" SeparationOverride="6">
+            <Button Name="ColorSwatch"
+                    Access="Public"
+                    MinSize="34 0" />
+            <LineEdit Name="ColorInput"
+                      Access="Public"
+                      PlaceHolder="{Loc admin-announce-color-placeholder}"
+                      HorizontalExpand="True" />
+            <LineEdit Name="SoundInput"
+                      Access="Public"
+                      PlaceHolder="{Loc admin-announce-sound-placeholder}"
+                      HorizontalExpand="True"
+                      SizeFlagsStretchRatio="2" />
+            <LineEdit Name="VolumeInput"
+                      Access="Public"
+                      PlaceHolder="{Loc admin-announce-volume-placeholder}"
+                      Text="5"
+                      MinSize="60 0" />
+        </BoxContainer>
+
+        <TextEdit Name="Announcement"
+                  Access="Public"
+                  VerticalExpand="True"
+                  MinHeight="100" />
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="6">
+            <CheckBox Name="KeepWindowOpen"
+                      Access="Public"
+                      Text="{Loc 'admin-announce-keep-open'}" />
+            <Button Name="PresetsButton"
+                    Access="Public"
+                    Text="{Loc admin-announce-presets-button}" />
+            <Control HorizontalExpand="True" />
+            <OptionButton Name="AnnounceMethod"
+                          Access="Public"
+                          MinSize="140 0" />
+            <Button Name="AnnounceButton"
+                    Access="Public"
+                    Disabled="True"
+                    Text="{Loc admin-announce-button}"
+                    HorizontalExpand="True"
+                    MinSize="160 0" />
+        </BoxContainer>
+    </BoxContainer>
 </DefaultWindow>

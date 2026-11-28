@@ -22,5 +22,21 @@ permissions-eui-edit-admin-rank-window-title = Редактирование ад
 permissions-eui-edit-admin-window-save-button = Сохранить
 permissions-eui-edit-admin-window-remove-flag-button = Удалить
 
+# Wormix: таблицы админов с поиском
+permissions-eui-admins-search = Поиск админов: имя, ID, ранг, флаги
+permissions-eui-ranks-search = Поиск рангов: название, флаги
+permissions-eui-search-empty = Ничего не найдено.
+permissions-eui-header-action = Действие
+permissions-eui-header-admin = Админ
+permissions-eui-header-rank = Ранг
+permissions-eui-header-title = Должность
+permissions-eui-header-flags = Флаги
+permissions-eui-flag-column-inherit = Наследовать
+permissions-eui-flag-column-deny = Запретить
+permissions-eui-flag-column-grant = Выдать
+permissions-eui-flag-column-right = Право
+permissions-eui-rank-flags-grant = Выдать все
+permissions-eui-rank-flags-clear = Снять все
+
 cmd-permissions-desc = Открывает меню прав администрации.
 cmd-permissions-help = Использование: permissions

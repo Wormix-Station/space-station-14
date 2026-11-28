@@ -1,0 +1,10 @@
+﻿# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Objects/base_contraband.yml
+
+- type: entity
+  parent: BaseRestrictedContraband
+  id: BaseWardenContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedJobs: [ Warden ]

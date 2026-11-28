@@ -1226,6 +1226,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("employment_record");
 
+                    b.Property<int>("ERPStatus")
+                        .HasColumnType("integer")
+                        .HasColumnName("erpstatus");
+
                     b.Property<string>("EyeColor")
                         .IsRequired()
                         .HasColumnType("text")

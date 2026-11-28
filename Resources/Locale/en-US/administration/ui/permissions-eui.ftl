@@ -22,5 +22,21 @@ permissions-eui-edit-admin-rank-window-title = Edit Admin Rank
 permissions-eui-edit-admin-window-save-button = Save
 permissions-eui-edit-admin-window-remove-flag-button = Remove
 
+# Wormix: searchable admin tables
+permissions-eui-admins-search = Search admins: name, ID, rank, flags
+permissions-eui-ranks-search = Search ranks: name, flags
+permissions-eui-search-empty = Nothing matches the search.
+permissions-eui-header-action = Action
+permissions-eui-header-admin = Admin
+permissions-eui-header-rank = Rank
+permissions-eui-header-title = Title
+permissions-eui-header-flags = Flags
+permissions-eui-flag-column-inherit = Inherit
+permissions-eui-flag-column-deny = Deny
+permissions-eui-flag-column-grant = Grant
+permissions-eui-flag-column-right = Right
+permissions-eui-rank-flags-grant = Grant all
+permissions-eui-rank-flags-clear = Clear all
+
 cmd-permissions-desc = Opens the admin permissions panel.
 cmd-permissions-help = Usage: permissions

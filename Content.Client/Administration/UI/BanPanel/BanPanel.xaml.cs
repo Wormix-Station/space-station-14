@@ -3,6 +3,8 @@ using System.Net;
 using System.Net.Sockets;
 using System.Numerics;
 using Content.Client.Stylesheets;
+using Content.Client._Wormix.Administration.UI; // Wormix
+using Content.Shared._Wormix.Administration; // Wormix
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
@@ -27,6 +29,11 @@ public sealed partial class BanPanel : DefaultWindow
 {
     public event Action<Ban>? BanSubmitted;
     public event Action<string>? PlayerChanged;
+    // Wormix-start: presets window and watchlist submit path.
+    public event Action<string, string>? WatchlistSubmitted;
+    private BanPresetWindow? _presetWindow;
+    private bool _watchlistSubmit;
+    // Wormix-end
     private string? PlayerUsername { get; set; }
     private (IPAddress, int)? IpAddress { get; set; }
     private ImmutableTypedHwid? Hwid { get; set; }
@@ -119,6 +126,10 @@ public sealed partial class BanPanel : DefaultWindow
             OnHwidChanged();
         };
         SubmitButton.OnPressed += SubmitButtonOnOnPressed;
+        // Wormix-start
+        PresetsButton.OnPressed += OnPresetsPressed;
+        OnClose += OnWindowClosed;
+        // Wormix-end
 
         IpCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanIpBanDefault);
         HwidCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanHwidBanDefault);
@@ -492,6 +503,8 @@ public sealed partial class BanPanel : DefaultWindow
 
     private void OnTypeChanged()
     {
+        // Wormix: leaving the panel type resets a pending watchlist submit.
+        _watchlistSubmit = false; // Wormix
         TypeOption.ModulateSelfOverride = null;
         Tabs.SetTabVisible((int) TabNumbers.Roles, TypeOption.SelectedId == (int) Types.Role);
             NoteSeverity? newSeverity = null;
@@ -560,6 +573,13 @@ public sealed partial class BanPanel : DefaultWindow
 
     private void SubmitButtonOnOnPressed(BaseButton.ButtonEventArgs obj)
     {
+        // Wormix: a preset chosen from the watchlist list submits a remark instead of a ban.
+        if (_watchlistSubmit)
+        {
+            SubmitWatchlist();
+            return;
+        }
+
         ProtoId<JobPrototype>[]? jobs = null;
         ProtoId<AntagPrototype>[]? antags = null;
 
@@ -652,6 +672,96 @@ public sealed partial class BanPanel : DefaultWindow
         BanSubmitted?.Invoke(ban);
     }
 
+    // Wormix-start
+    private void OnPresetsPressed(BaseButton.ButtonEventArgs args)
+    {
+        if (_presetWindow is { Disposed: false })
+        {
+            _presetWindow.OpenCentered();
+            return;
+        }
+
+        if (_presetWindow is { } old)
+        {
+            old.PresetChosen -= OnPresetChosen;
+            _presetWindow = null;
+        }
+
+        _presetWindow = new BanPresetWindow();
+        _presetWindow.PresetChosen += OnPresetChosen;
+        _presetWindow.OpenCentered();
+    }
+
+    private void OnPresetChosen(BanPresetPrototype preset)
+    {
+        _watchlistSubmit = preset.Watchlist;
+        ReasonTextEdit.TextRope = new Rope.Leaf(preset.Reason);
+        ResetSubmitText();
+    }
+
+    private void SubmitWatchlist()
+    {
+        var reason = Rope.Collapse(ReasonTextEdit.TextRope);
+        if (string.IsNullOrWhiteSpace(reason))
+        {
+            ReasonTextEdit.ModulateSelfOverride = Color.Red;
+            ReasonTextEdit.OnKeyBindDown += ResetTextEditor;
+            return;
+        }
+
+        var player = PlayerNameLine.Text;
+        if (string.IsNullOrWhiteSpace(player))
+        {
+            PlayerNameLine.ModulateSelfOverride = Color.Red;
+            return;
+        }
+
+        // Same double-press confirmation as a normal ban.
+        if (ButtonResetOn is null)
+        {
+            ButtonResetOn = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(3));
+            SubmitButton.ModulateSelfOverride = Color.Red;
+            SubmitButton.Text = Loc.GetString("ban-panel-confirm");
+            return;
+        }
+
+        WatchlistSubmitted?.Invoke(player, reason);
+    }
+
+    private void ResetSubmitText()
+    {
+        ButtonResetOn = null;
+        SubmitButton.ModulateSelfOverride = null;
+        SubmitButton.Text = Loc.GetString(_watchlistSubmit
+            ? "ban-panel-submit-watchlist"
+            : "ban-panel-submit");
+    }
+
+    private void OnWindowClosed()
+    {
+        _presetWindow?.Close();
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+        {
+            PresetsButton.OnPressed -= OnPresetsPressed;
+            OnClose -= OnWindowClosed;
+
+            if (_presetWindow is { } preset)
+            {
+                preset.PresetChosen -= OnPresetChosen;
+                if (!preset.Disposed)
+                    preset.Dispose();
+                _presetWindow = null;
+            }
+        }
+
+        base.Dispose(disposing);
+    }
+    // Wormix-end
+
     protected override void FrameUpdate(FrameEventArgs args)
     {
         base.FrameUpdate(args);
@@ -659,9 +769,8 @@ public sealed partial class BanPanel : DefaultWindow
         // This checks for null for free, do not invert it as null always produces a false value
         if (_gameTiming.CurTime > ButtonResetOn)
         {
-            ButtonResetOn = null;
-            SubmitButton.ModulateSelfOverride = null;
-            SubmitButton.Text = Loc.GetString("ban-panel-submit");
+            // Wormix: reset also switches the label back for the watchlist mode.
+            ResetSubmitText(); // Wormix
         }
     }
 }

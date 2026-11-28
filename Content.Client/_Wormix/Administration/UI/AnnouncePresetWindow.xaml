@@ -1,0 +1,11 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               Title="{Loc admin-announce-presets-title}"
+               MinSize="340 320"
+               SetSize="420 440">
+    <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
+        <BoxContainer Name="PresetList"
+                      Orientation="Vertical"
+                      SeparationOverride="4"
+                      Margin="4" />
+    </ScrollContainer>
+</DefaultWindow>

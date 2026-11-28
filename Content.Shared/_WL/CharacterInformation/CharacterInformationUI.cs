@@ -13,10 +13,12 @@ public sealed class CharacterInformationBuiState(
         NetEntity uid,
         string characterName,
         string flavorText,
-        string? oocText) : BoundUserInterfaceState
+        string? oocText,
+        EnumERPStatus erpStatus) : BoundUserInterfaceState // Wormix-ERPStatus
 {
     public NetEntity Uid = uid;
     public string CharacterName = characterName;
     public string FlavorText = flavorText;
     public string? OocText = oocText;
+    public EnumERPStatus ERPStatus = erpStatus; // Wormix-ERPStatus
 }

@@ -156,7 +156,9 @@ namespace Content.Shared.SubFloor
         private void SetUnderCover(Entity<SubFloorHideComponent> entity, bool value)
         {
             // If it's not undercover or it always has visible layers then normal visibility.
-            _visibility.SetLayer(entity.Owner, value && entity.Comp.VisibleLayers.Count == 0 ? (ushort) VisibilityFlags.Subfloor : (ushort) VisibilityFlags.Normal);
+            // Wormix: hidden entities sit on their category's layer instead of the generic subfloor one.
+            var hidden = value && entity.Comp.VisibleLayers.Count == 0;
+            _visibility.SetLayer(entity.Owner, (ushort) (hidden ? SubfloorCategories.Mask(entity.Comp.Category) : VisibilityFlags.Normal));
 
             if (entity.Comp.IsUnderCover == value)
                 return;
@@ -210,7 +212,8 @@ namespace Content.Shared.SubFloor
         [Serializable, NetSerializable]
         protected sealed class ShowSubfloorRequestEvent : EntityEventArgs
         {
-            public bool Value;
+            // Wormix: bitmask of SubfloorCategories.All bits, mirrors the sandbox toggles.
+            public int Mask;
         }
     }
 

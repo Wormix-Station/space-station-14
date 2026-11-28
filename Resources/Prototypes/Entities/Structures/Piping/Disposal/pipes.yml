@@ -17,6 +17,7 @@
   - type: Visibility
     layer: 1
   - type: SubFloorHide
+    category: Disposals # Wormix
   - type: Clickable
   - type: InteractionOutline
   - type: Physics

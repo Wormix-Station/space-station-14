@@ -126,6 +126,13 @@
                                     <Control HorizontalExpand="True"/>
                                     <OptionButton Name="SpawnPriorityButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
+                                <!-- Wormix-ERPStatus-Start -->
+                                <BoxContainer HorizontalExpand="True">
+                                    <Label Text="{Loc 'humanoid-profile-editor-erp-status-label'}" />
+                                    <Control HorizontalExpand="True"/>
+                                    <OptionButton Name="ErpStatusButton" HorizontalAlignment="Right" />
+                                </BoxContainer>
+                                <!-- Wormix-ERPStatus-End -->
                             </BoxContainer>
                             <!-- Skin -->
                             <BoxContainer Margin="10" HorizontalExpand="True" Orientation="Vertical">

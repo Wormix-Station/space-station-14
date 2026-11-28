@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Ported from Goob-station-Master: Prototypes\Entities\Clothing\OuterClothing\misc.yml
+
+- type: entity
+  parent: ClothingOuterBase # Goob edit
+  id: ClothingOuterWizard
+  name: wizard robes
+  description: A bizarre gem-encrusted blue robe that radiates magical energies.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Misc/wizard.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Misc/wizard.rsi
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - WhitelistChameleon

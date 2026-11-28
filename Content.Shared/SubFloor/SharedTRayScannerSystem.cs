@@ -82,7 +82,7 @@ public abstract partial class SharedTRayScannerSystem : EntitySystem
 
     private void OnUserGetVis(Entity<TRayScannerUserComponent> scanner, ref GetVisMaskEvent args)
     {
-        args.VisibilityMask |= (int)VisibilityFlags.Subfloor;
+        args.VisibilityMask |= (int)SubfloorCategories.All; // Wormix
     }
 
     private void OnEquip(EntityUid user)

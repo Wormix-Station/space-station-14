@@ -389,6 +389,7 @@ public sealed partial class StationSpawningSystem : EntitySystem
 
             EnsureComp<CharacterInformationComponent>(entity.Value).FlavorText = profile.FlavorText; // WL-CharacterInformation
             EnsureComp<CharacterInformationComponent>(entity.Value).OocText = profile.OocText;
+            EnsureComp<CharacterInformationComponent>(entity.Value).ERPStatus = profile.ERPStatus; // Wormix-ERPStatus
             // WL-Changes-End
         }
 

@@ -6,6 +6,8 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 2.5h
+    - !type:AgeRequirement # Wormix-Changes-AgeRequirement
+      age: 5 # Wormix-Changes-AgeRequirement
   startingGear: LawyerGear
   setPreference: false # Corvax-IAA
   icon: "JobIconLawyer"

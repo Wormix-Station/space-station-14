@@ -1,0 +1,12 @@
+﻿# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckFellForItAward
+  name: nanotrasen gullibility award
+  description: An award given out by nanotrasen to mark extreme cases of gullibility
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Neck/Misc/fellforitaward.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Neck/Misc/fellforitaward.rsi

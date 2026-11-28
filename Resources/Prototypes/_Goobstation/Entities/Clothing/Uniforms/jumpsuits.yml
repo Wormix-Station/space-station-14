@@ -1,0 +1,235 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# durathread jumpsuit
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualSyndicate
+  name: casual syndicate jumpsuit
+  description: Short sleeves, short temper.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualsyndicate.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualsyndicate.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMercer
+  name: manhattan streetwear
+  description: Only someone who would try to run away with Earth's deadliest bioweapon would want to wear this.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Civilian/mercer.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Civilian/mercer.rsi
+
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Clothing/Uniforms/jumpsuits.yml
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCESummer
+  name: chief engineer's summer shirt
+  description: The chief engineer's custom-commissioned summer outfit, for when you just want to lay down and look at the tesla.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_ce.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_ce.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCaptainSummer
+  name: captain's summer shirt
+  description: The captain's custom-commissioned summer outfit, for when you've been in the green for a while.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_captain.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_captain.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualEngineer
+  name: casual engineering jumpsuit
+  description: Sparks? Fiberglass? What about 'em?
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualengineer.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualengineer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitHoPSummer
+  name: head of personnel's summer shirt
+  description: The head of personnel's custom-commissioned summer outfit, for when you want to comfortably do paperwork.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_hop.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_hop.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitHoSSummer
+  name: head of security's summer shirt
+  description: The head of security's custom-commissioned summer outfit, for when chasing tiders gets hot.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_hos.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_hos.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPassengerQuarterzip
+  name: grey quarterzip
+  description: A quarterzip for the sophisticated assistant.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Civilian/passenger_quarterzip.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Civilian/passenger_quarterzip.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitQMSummer
+  name: quartermaster's summer shirt
+  description: The quartermaster's custom-commissioned summer outfit, for when you want to show off your cash to the other departments.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_qm.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_qm.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitRDSummer
+  name: research director's summer shirt
+  description: The research director's custom-commissioned summer outfit, for when those fire anomalies are making you sweat.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_rd.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Casual/casualshirt_rd.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitResearchDirectorAlt
+  name: research director's turtleneck
+  description: It's a turtleneck worn by those with the know-how to achieve the position of Research Director. Its fabric provides minor protection from biological contaminants.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/RND/rndturtle.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/RND/rndturtle.rsi
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#620b73"
+        sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/color/color.rsi
+      right:
+      - state: inhand-right
+        color: "#620b73"
+        sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/color/color.rsi
+
+#senior sec
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitShaftMiner
+  name: shaft miner's jumpsuit
+  description: It's a snappy jumpsuit, looks a bit burnt.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Cargo/shaft_miner.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Cargo/shaft_miner.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitVeteranSecurity
+  name: Airy Security Jumpsuit
+  description: An airy version of the standard security jumpsuit, normally given on shifts with a lacking atmos department
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Security/security_black.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Security/security_black.rsi
+
+# Golden liaison jumpsuit
+
+- type: entity # todo <mailfix>
+  parent: ClothingUniformBase
+  id: ClothingUniformMailCarrier
+  name: clothing-uniform-mail-carrier
+  description: clothing-uniform-mail-carrier-desc
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Cargo/mailman.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Cargo/mailman.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformOverallsCargo
+  name: cargo tech's overalls
+  description: It's a sturdy set of overalls. It's a bit dusty.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Other/Overalls/Cargo/cargotech.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Other/Overalls/Cargo/cargotech.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformOverallsSalvageSpecialist
+  name: salvage specialist's overalls
+  description: It's a sturdy set of overalls. It's very dirty.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Other/Overalls/Cargo/salvage.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Other/Overalls/Cargo/salvage.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformOverallsShaftMiner
+  name: shaft miner's overalls
+  description: It's a sturdy set of overalls, looks a bit burnt.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Other/Overalls/Cargo/shaft_miner.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Other/Overalls/Cargo/shaft_miner.rsi
+
+# RND
+
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# durathread jumpsuit
+# Ported from Goob-station-Master: Prototypes\_Goobstation\Entities\Clothing\Uniforms\jumpsuits.yml
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseCentcommContraband ]
+  id: ClothingUniformJumpsuitGoldenLiaison
+  name: Golden Liaison CentCom Jumpsuit
+  description: A finely-tailored white-and-gold uniform worn by senior officials of Central Command.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Centcom/golden_liaison.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Centcom/golden_liaison.rsi
+
+# Chaplain
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingCostumeAbductor
+  name: Alien Costume
+  description: The tag reads- Donk Co. not responsible for any security shootings caused by this product.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Clothing/Uniforms/Jumpsuit/abductor.rsi
+  - type: Clothing
+    sprite: _Shitmed/Clothing/Uniforms/Jumpsuit/abductor.rsi

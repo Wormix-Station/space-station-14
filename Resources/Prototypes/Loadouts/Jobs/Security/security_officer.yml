@@ -6,17 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 6h # Corvax-RoleTime-Start
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobDetective
-      time: 2h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 6h # Corvax-RoleTime-End
+      time: 6h # Wormix: aligned with Goobstation (was: Warden 6h + Detective 2h + SecOfficer 6h)
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement

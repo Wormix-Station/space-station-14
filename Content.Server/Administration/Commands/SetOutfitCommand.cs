@@ -57,7 +57,20 @@ namespace Content.Server.Administration.Commands
                 return;
             }
 
-            if (!_outfitSystem.SetOutfit(target.Value, args[1]))
+            // Default to true if not specified - Goobstation edit
+            var doSpecial = true;
+
+            // Parse optional boolean argument - Goobstation edit
+            if (args.Length == 3)
+            {
+                if (!bool.TryParse(args[2], out doSpecial))
+                {
+                    shell.WriteLine(Loc.GetString("shell-argument-must-be-boolean"));
+                    return;
+                }
+            }
+
+            if (!_outfitSystem.SetOutfit(target.Value, args[1], doSpecial: doSpecial)) // Goobstation edit
                 shell.WriteLine(Loc.GetString("cmd-setoutfit-invalid-outfit-id-error"));
         }
     }

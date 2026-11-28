@@ -1,0 +1,98 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Clothing/OuterClothing/armour.yml
+
+- type: entity
+  parent: [ClothingOuterArmorHoS, ClothingOuterStorageBase, BaseSecurityCommandContraband]
+  id: ClothingOuterArmorHoSVestWeb
+  name: head of security's web vest
+  description: A high-quality armored vest made from a hard synthetic material. It is surprisingly flexible and light, despite formidable armor plating.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Armor/web_vest_hos.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Armor/web_vest_hos.rsi
+
+# Captain
+
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: ClothingOuterArmorVeteranSecurity
+  name: Veteran security's old armor
+  description: An old version of the standard NanoTrasen bulletproof vest, its design provides better protection against surprise attacks by clowns, it still meets NT's protection standards
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Armor/veteran_security.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Armor/veteran_security.rsi
+
+- type: entity
+  parent: [ ClothingOuterArmorCaptainCarapace, ClothingOuterStorageBase ]
+  id: ClothingOuterCapJacket
+  name: captain's armored jacket
+  description: An extremely expensive jacket with extra durathread protection at the chest.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Armor/captain_jacket.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Armor/captain_jacket.rsi
+  - type: Item
+    size: Normal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.45
+        Heat: 0.35
+        Caustic: 0.6
+
+- type: entity
+  parent: [ ClothingOuterArmorCaptainCarapace, ClothingOuterWinterCoatToggleable ]
+  id: ClothingOuterWinterCapArmored
+  name: captain's fancy winter coat
+  description: An ornate winter coat with a ballistic plate made for the station's finest.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/cap_armored_winter_coat.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/cap_armored_winter_coat.rsi
+  - type: Item
+    size: Normal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.5
+        Heat: 0.4
+        Caustic: 0.65
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodWinterCapFancy
+
+# Blueshield Armour Vest
+
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Goob port: Armor coverage/traumaDeductions fields removed (not supported by Vanila ArmorComponent)
+# Durathred web vest
+# Ported from Goob-station-Master: Prototypes\_Goobstation\Entities\Clothing\OuterClothing\armour.yml
+
+- type: entity
+  parent: [ClothingOuterPonchoClassic, BaseMajorContraband]
+  id: ClothingOuterPonchoClassicRobust
+  name: authentic cowboys poncho
+  description: A poncho made for real cowboy's.
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+  # Goob port: component ModifyDelayedKnockdown removed (system absent in Vanila)
+  - type: StaminaResistance
+    damageCoefficient: 0.7
+
+#  Shitchap

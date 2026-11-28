@@ -34,6 +34,7 @@
     layer: 1
   - type: Appearance
   - type: SubFloorHide
+    category: Wires # Wormix
     blockAmbience: false
     blockInteractions: false
   - type: Construction

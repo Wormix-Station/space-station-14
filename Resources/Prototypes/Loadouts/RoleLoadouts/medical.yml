@@ -20,6 +20,8 @@
   - WLCMOGlasses # WL-Changes: Glasses add
   # - ChiefMedicalOfficerJobTrinkets
   - GroupSpeciesBreathToolMedical
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobMedicalDoctor
@@ -42,6 +44,8 @@
   - MedicalDoctorNeck # WL-Changes
   # - MedicalDoctorJobTrinkets
   - GroupSpeciesBreathToolMedical
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobMedicalIntern
@@ -58,6 +62,8 @@
   - WLNeck # WL-Changes: Neck add
   # - MedicalInternJobTrinkets
   - GroupSpeciesBreathToolMedical
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobChemist
@@ -77,6 +83,8 @@
   - WLNeck # WL-Changes: Neck add
   # - ChemistJobTrinkets
   - GroupSpeciesBreathToolMedical
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation
 
 - type: roleLoadout
   id: JobParamedic
@@ -97,3 +105,5 @@
   - WLNeck # WL-Changes: Neck add
   # - ParamedicJobTrinkets
   - GroupSpeciesBreathToolMedical
+  - WormixSponsorGroup # Wormix: ported from Goobstation
+  - WormixAnimals # Wormix: ported from Goobstation

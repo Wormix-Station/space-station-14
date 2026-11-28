@@ -14,19 +14,26 @@ namespace Content.Client.Administration.UI
         {
             _window = new AdminAnnounceWindow();
             _window.OnClose += () => SendMessage(new CloseEuiMessage());
-            _window.AnnounceButton.OnPressed += AnnounceButtonOnOnPressed;
+            _window.AnnounceButton.OnPressed += OnAnnouncePressed;
         }
 
-        private void AnnounceButtonOnOnPressed(BaseButton.ButtonEventArgs obj)
+        // Wormix: send the extended announce data (target, color, sound, sender signature).
+        private void OnAnnouncePressed(BaseButton.ButtonEventArgs args)
         {
+            var destination = _window.Destination;
+
             SendMessage(new AdminAnnounceEuiMsg.DoAnnounce
             {
-                Announcement = Rope.Collapse(_window.Announcement.TextRope),
-                Announcer =  _window.Announcer.Text,
-                AnnounceType =  (AdminAnnounceType) (_window.AnnounceMethod.SelectedMetadata ?? AdminAnnounceType.Station),
-                CloseAfter = !_window.KeepWindowOpen.Pressed,
+                Announcement = _window.AnnouncementText,
+                Announcer = _window.AnnouncerText,
+                AnnounceType = destination.Type,
+                TargetGrid = destination.Grid,
+                ColorHex = _window.ColorHex,
+                SoundPath = _window.SoundPath,
+                SoundVolume = _window.Volume,
+                Sender = _window.SenderText,
+                CloseAfter = !_window.KeepOpen,
             });
-
         }
 
         public override void Opened()
@@ -37,6 +44,12 @@ namespace Content.Client.Administration.UI
         public override void Closed()
         {
             _window.Close();
+        }
+
+        public override void HandleState(EuiStateBase state)
+        {
+            if (state is AdminAnnounceEuiState announceState)
+                _window.SetTargets(announceState.Targets);
         }
     }
 }

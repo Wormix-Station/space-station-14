@@ -17,34 +17,26 @@ public sealed partial class JobRequirementLoadoutEffect : LoadoutEffect
     [DataField(required: true)]
     public JobRequirement Requirement = default!;
 
-    public override bool Validate(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutPrototype proto, ICommonSession? session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason)
+    public override bool Validate(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutPrototype proto, ICommonSession? session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason) // Corvax-Sponsors
     {
-        //WL-Changes-start
-        reason = null;
-        return true;
-        //var configurationManager = collection.Resolve<IConfigurationManager>();
-        //var timersDisabled = !configurationManager.GetCVar(CCVars.GameRoleLoadoutTimers);
+        // Wormix: restored playtime validation (was disabled by Wormix-Changes), aligned with Goobstation behavior
+        var configurationManager = collection.Resolve<IConfigurationManager>();
+        var timersDisabled = !configurationManager.GetCVar(CCVars.GameRoleLoadoutTimers);
 
-        //if (session == null || timersDisabled)
-        //{
-        //    reason = FormattedMessage.Empty;
-        //    return true;
-        //}
+        if (session == null || timersDisabled)
+        {
+            reason = FormattedMessage.Empty;
+            return true;
+        }
 
-        //if (session == null)
-        //{
-        //    reason = FormattedMessage.Empty;
-        //    return true;
-        //}
-
-        //var manager = collection.Resolve<ISharedPlaytimeManager>();
-        //var playtimes = manager.GetPlayTimes(session);
-        //return Requirement.Check(collection.Resolve<IEntityManager>(),
-        //    collection.Resolve<IPrototypeManager>(),
-        //    profile,
-        //    /*WL-Changes-start*/null,/*WL-Changes-end*/
-        //    playtimes,
-        //    out reason);
-        //WL-Changes-end
+        var manager = collection.Resolve<ISharedPlaytimeManager>();
+        var playtimes = manager.GetPlayTimes(session);
+        return Requirement.Check(collection.Resolve<IEntityManager>(),
+            collection.Resolve<IPrototypeManager>(),
+            configurationManager,
+            profile,
+            null,
+            playtimes,
+            out reason);
     }
 }

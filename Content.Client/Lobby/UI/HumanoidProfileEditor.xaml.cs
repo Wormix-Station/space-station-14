@@ -12,6 +12,7 @@ using Content.Client.Sprite;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared._WL.Skills; // WL-Skills
 using Content.Shared._WL.Records; // WL-Records
+using Content.Shared._WL.CharacterInformation; // Wormix-ERPStatus
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
@@ -358,6 +359,22 @@ namespace Content.Client.Lobby.UI
 
             #endregion SpawnPriority
 
+            #region ERPStatus // Wormix-ERPStatus
+
+            foreach (var value in Enum.GetValues<EnumERPStatus>())
+            {
+                ErpStatusButton.AddItem(Loc.GetString($"humanoid-erp-status-{value.ToString().ToLower()}"), (int) value);
+            }
+
+            ErpStatusButton.OnItemSelected += args =>
+            {
+                ErpStatusButton.SelectId(args.Id);
+                Profile = Profile?.WithERPStatus((EnumERPStatus) args.Id);
+                SetDirty();
+            };
+
+            #endregion ERPStatus
+
             #region Eyes
 
             EyeColorPicker.OnEyeColorPicked += newColor =>
@@ -537,6 +554,7 @@ namespace Content.Client.Lobby.UI
             if (Profile != null)
             {
                 PreferenceUnavailableButton.SelectId((int)Profile.PreferenceUnavailable);
+                ErpStatusButton.SelectId((int) Profile.ERPStatus); // Wormix-ERPStatus
             }
         }
 

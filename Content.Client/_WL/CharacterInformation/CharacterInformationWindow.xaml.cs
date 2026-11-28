@@ -41,6 +41,22 @@ public sealed partial class CharacterInformationWindow : FancyWindow
             ? state.OocText
             : Loc.GetString("character-information-ui-no-ooc-text"));
 
+        // Wormix-ERPStatus-Start
+        var erpLoc = state.ERPStatus switch
+        {
+            EnumERPStatus.FULL => "humanoid-erp-status-full",
+            EnumERPStatus.HALF => "humanoid-erp-status-half",
+            _ => "humanoid-erp-status-no",
+        };
+        ErpStatusLabel.Text = Loc.GetString(erpLoc).ToUpper();
+        ErpStatusLabel.FontColorOverride = state.ERPStatus switch
+        {
+            EnumERPStatus.FULL => Color.Green,
+            EnumERPStatus.HALF => Color.Yellow,
+            _ => Color.Red,
+        };
+        // Wormix-ERPStatus-End
+
         SetWidth = Size.X + 0.1f;
     }
 }

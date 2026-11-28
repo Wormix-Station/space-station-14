@@ -47,6 +47,7 @@
   id: ChiefMedicalOfficerJumpsuit
   name: loadout-group-chief-medical-officer-jumpsuit
   loadouts:
+  - CMOMJ
   - ChiefMedicalOfficerJumpsuit
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
@@ -65,6 +66,7 @@
   name: loadout-group-chief-medical-officer-neck
   minLimit: 0
   loadouts:
+  - ChiefMedicalOfficerEnsemble
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
 
@@ -113,6 +115,7 @@
   id: MedicalDoctorJumpsuit
   name: loadout-group-medical-doctor-jumpsuit
   loadouts:
+  - MedicMJ
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
   - SeniorPhysicianJumpsuit
@@ -149,6 +152,7 @@
   id: MedicalInternJumpsuit
   name: loadout-group-medical-intern-jumpsuit
   loadouts:
+  - MedicMJ
   - WhiteJumpsuit
   - WhiteJumpskirt
 
@@ -164,6 +168,7 @@
   id: ChemistJumpsuit
   name: loadout-group-chemist-jumpsuit
   loadouts:
+  - ChemistMJ
   - ChemistJumpsuit
   - ChemistJumpskirt
 
@@ -204,6 +209,7 @@
   id: ParamedicJumpsuit
   name: loadout-group-paramedic-jumpsuit
   loadouts:
+  - ParamedMJ
   - ParamedicJumpsuit
   - ParamedicJumpskirt
 
@@ -212,6 +218,7 @@
   name: loadout-group-paramedic-outerclothing
   minLimit: 0
   loadouts:
+  - ParamedicDavidsJacket
   - ParamedicWindbreaker
   - ParamedicWintercoat
 

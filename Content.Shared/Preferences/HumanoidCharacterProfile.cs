@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 using Content.Shared._WL.Skills; // WL-Skills
 using Content.Shared._WL.Languages; // WL-Languages
 using Content.Shared._WL.Records; // WL-Changes-Records
+using Content.Shared._WL.CharacterInformation; // Wormix-ERPStatus
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.TTS;
 using Content.Shared._WL.Barks; // WL-Changes
@@ -181,6 +182,7 @@ namespace Content.Shared.Preferences
             string name,
             string flavortext,
             string ooctext, // WL-OOCText
+            EnumERPStatus erpStatus, // Wormix-ERPStatus
             string species,
             string customSpeciesName, // Starlight
             string TTS_voice, // Corvax-TTS
@@ -221,6 +223,7 @@ namespace Content.Shared.Preferences
             Name = name;
             FlavorText = flavortext;
             OocText = ooctext; // WL-OOCText
+            ERPStatus = erpStatus; // Wormix-ERPStatus
             Species = species;
             TTSVoice = TTS_voice; // Corvax-TTS
             Age = age;
@@ -275,6 +278,7 @@ namespace Content.Shared.Preferences
             : this(other.Name,
                 other.FlavorText,
                 other.OocText, // WL-OOC
+                other.ERPStatus, // Wormix-ERPStatus
                 other.Species,
                 other.CustomSpeciesName, // Starlight
                 other.TTSVoice,
@@ -586,6 +590,8 @@ namespace Content.Shared.Preferences
         //WL-Changes-start
         [DataField] public string OocText { get; private set; } = ""; // WL-OOCText
 
+        [DataField] public EnumERPStatus ERPStatus { get; private set; } = EnumERPStatus.NO; // Wormix-ERPStatus
+
         [DataField]
         public string MedicalRecord { get; set; } = string.Empty;
 
@@ -628,6 +634,13 @@ namespace Content.Shared.Preferences
             return new(this) { OocText = oocText };
         }
         // WL-OOCText-End
+
+        // Wormix-ERPStatus-Start
+        public HumanoidCharacterProfile WithERPStatus(EnumERPStatus status)
+        {
+            return new(this) { ERPStatus = status };
+        }
+        // Wormix-ERPStatus-End
 
         // WL-Records-Start
         public HumanoidCharacterProfile WithMedicalRecord(string record)
@@ -992,6 +1005,7 @@ namespace Content.Shared.Preferences
             // WL-Changes-start
             if (Height != other.Height) return false;
             if (OocText != other.OocText) return false;
+            if (ERPStatus != other.ERPStatus) return false; // Wormix-ERPStatus
             if (FlavorText != other.FlavorText) return false;
             if (MedicalRecord != other.MedicalRecord) return false;
             if (SecurityRecord != other.SecurityRecord) return false;

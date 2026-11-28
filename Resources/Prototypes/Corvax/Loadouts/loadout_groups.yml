@@ -242,6 +242,8 @@
   name: loadout-group-pilot-head
   minLimit: 0
   loadouts:
+  - SecurityHelmetAlt
+  - SideCap
   - SecurityPilotBeret
   - TrooperHat
 
@@ -274,6 +276,8 @@
   id: PilotOuterClothing
   name: loadout-group-pilot-outerclothing
   loadouts:
+  - SecurityOfficerWintercoatGoob
+  - WinterCoatSeniorSecArmored
   - OuterWinterPilot
   - BomberPilot # WL-Changes: Pilot drip
 
@@ -297,6 +301,7 @@
   id: BrigmedicJumpsuit
   name: loadout-group-brigmedic-jumpsuit
   loadouts:
+  - BrigmedicMJ
   # WL-change-start: wardrobe refresh
   - ClassicBlackShirtBlackPants
   - ClassicBlackShirtDarkPants
@@ -338,6 +343,7 @@
   id: BrigmedicOuterClothing
   name: loadout-group-brigmedic-clothing
   loadouts:
+  - SecurityOfficerWintercoatGoob
   - BrigmedicCoatLab
   - BrigmedicVest
   - BrigmedicCoatAMG

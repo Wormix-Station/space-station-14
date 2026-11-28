@@ -62,6 +62,10 @@ namespace Content.Shared.Verbs
         public static readonly VerbCategory Rotate =
             new("verb-categories-rotate", "/Textures/Interface/VerbIcons/refresh.svg.192dpi.png", iconsOnly: true) { Columns = 5 };
 
+        // Shitmed - ItemSwitch: mode-switch verb category
+        public static readonly VerbCategory Switch =
+            new("verb-categories-switch", "/Textures/Interface/VerbIcons/group.svg.192dpi.png");
+
         public static readonly VerbCategory Smite =
             new("verb-categories-smite", "/Textures/Interface/VerbIcons/smite.svg.192dpi.png", iconsOnly: true) { Columns = 6 };
         public static readonly VerbCategory Tricks =

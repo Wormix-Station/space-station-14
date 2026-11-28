@@ -84,5 +84,10 @@ server-ban-string = {$admin} created a {$severity} severity server ban that expi
 server-ban-string-no-pii = {$admin} created a {$severity} severity server ban that expires {$expires} for {$name} with reason: {$reason}
 server-ban-string-never = never
 
+# Wormix: ban panel presets
+ban-panel-presets = Presets
+ban-presets-title = Ban presets
+ban-panel-submit-watchlist = Add to watchlist
+
 # Kick on ban
 ban-kick-reason = You have been banned

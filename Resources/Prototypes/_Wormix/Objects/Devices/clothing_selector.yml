@@ -1,0 +1,542 @@
+# Шарфы
+- type: entity
+  id: UndeterminedClothingScarf
+  name: scarf selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _ADT/Clothing/Neck/Scarfs/white.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingNeckScarfStripedRed
+    - ClothingSelectorClothingNeckScarfStripedGreen
+    - ClothingSelectorClothingNeckScarfStripedBlue
+    - ClothingSelectorClothingNeckScarfStripedBlack
+    - ClothingSelectorClothingNeckScarfStripedBrown
+    - ClothingSelectorClothingNeckScarfStripedLightBlue
+    - ClothingSelectorClothingNeckScarfStripedOrange
+    - ClothingSelectorClothingNeckScarfStripedPurple
+
+# Длинные шарфы
+- type: entity
+  id: UndeterminedClothingScarfLong
+  name: long scarf selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _ADT/Clothing/Neck/Scarfs/White_long_scarf.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorADTClothingNeckScarfLongRed
+    - ClothingSelectorADTClothingNeckScarfLongGreen
+    - ClothingSelectorADTClothingNeckScarfLongBlue
+    - ClothingSelectorADTClothingNeckScarfLongYellow
+    - ClothingSelectorADTClothingNeckScarfLongOrange
+    - ClothingSelectorADTClothingNeckScarfLongPink
+    - ClothingSelectorADTClothingNeckScarfLongPurple
+    - ClothingSelectorADTClothingNeckScarfLongBlack
+    - ClothingSelectorADTClothingNeckScarfLongWhite
+
+# Лицевые шарфы
+- type: entity
+  id: UndeterminedClothingFacescarf
+  name: facescarf selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_white.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorADTClothingNeckFacescarfRed
+    - ClothingSelectorADTClothingNeckFacescarfGreen
+    - ClothingSelectorADTClothingNeckFacescarfBlue
+    - ClothingSelectorADTClothingNeckFacescarfOrange
+    - ClothingSelectorADTClothingNeckFacescarfPurple
+    - ClothingSelectorADTClothingNeckFacescarfGrey
+    - ClothingSelectorADTClothingNeckFacescarfBlack
+    - ClothingSelectorADTClothingNeckFacescarfWhite
+
+# Куртки
+- type: entity
+  id: UndeterminedClothingWinterCoat
+  name: wintercoat selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+        state: coatybits-icon
+        color: "#EAE8E8"
+      - sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+        state: winterbits-icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingOuterWinterCoat
+    - ClothingSelectorClothingOuterWinterColorRed
+    - ClothingSelectorClothingOuterWinterColorOrange
+    - ClothingSelectorClothingOuterWinterColorYellow
+    - ClothingSelectorClothingOuterWinterColorGreen
+    - ClothingSelectorClothingOuterWinterColorBlue
+    - ClothingSelectorClothingOuterWinterColorPurple
+    - ClothingSelectorClothingOuterWinterColorLightBrown
+    - ClothingSelectorClothingOuterWinterColorBrown
+    - ClothingSelectorClothingOuterWinterColorBlack
+    - ClothingSelectorClothingOuterWinterColorWhite
+
+# Водолазки
+- type: entity
+  id: UndeterminedClothingTurtleneck
+  name: turtleneck selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_white.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckAquamarine
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckWhite
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckAzure
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckYellow
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckGreen
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckBrown
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckRed
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckOrange
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckPink
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckGrey
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckBlue
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckPurple
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckBlack
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckDarkBlue
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckWhiteSleeveless
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckWhiteBlackSleeveless
+    - ClothingSelectorADTClothingUniformJumpsuitTurtleneckBlackSleeveless
+    - ClothingSelectorClothingUniformJumpsuitTurtleneckSalat
+    - ClothingSelectorClothingUniformJumpsuitTurtleneckSalatblack
+
+# Водолазки с юбкой
+- type: entity
+  id: UndeterminedClothingTurtleneckSkirt
+  name: turtleneck with skirt selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_white_women.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckAquamarine
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckWhite
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckAzure
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckYellow
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckGreen
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckBrown
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckRed
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckOrange
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckPink
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckGrey
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckBlue
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckPurple
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckBlack
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckDarkBlue
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckWhiteSleeveless
+    - ClothingSelectorADTClothingUniformJumpskirtTurtleneckBlackSleeveless
+    - ClothingSelectorClothingUniformJumpskirtTurtleneckSalat
+
+# Плавки
+- type: entity
+  id: UndeterminedClothingSwimshorts
+  name: swim shorts selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Moffstation/Clothing/Uniforms/Swimsuit/shorts-generic.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingUniformShortsWhite
+    - ClothingSelectorClothingUniformShortsBlack
+    - ClothingSelectorClothingUniformShortsBlue
+    - ClothingSelectorClothingUniformShortsRed
+    - ClothingSelectorClothingUniformShortsGreen
+    - ClothingSelectorClothingUniformShortsYellow
+    - ClothingSelectorClothingUniformShortsPink
+    - ClothingSelectorClothingUniformSpeedo
+    - ClothingSelectorClothingUniformMedShorts
+
+# Купальники
+- type: entity
+  id: UndeterminedClothingSwimsuit
+  name: swimsuit selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Moffstation/Clothing/Uniforms/Swimsuit/bikini-generic.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingUniformBikiniWhite
+    - ClothingSelectorClothingUniformBikiniBlack
+    - ClothingSelectorClothingUniformBikiniBlue
+    - ClothingSelectorClothingUniformBikiniRed
+    - ClothingSelectorClothingUniformBikiniGreen
+    - ClothingSelectorClothingUniformBikiniYellow
+    - ClothingSelectorClothingUniformBikiniPink
+    - ClothingSelectorClothingUniformOnepieceWhite
+    - ClothingSelectorClothingUniformOnepieceBlack
+    - ClothingSelectorClothingUniformOnepieceBlue
+    - ClothingSelectorClothingUniformOnepieceRed
+    - ClothingSelectorClothingUniformOnepieceGreen
+    - ClothingSelectorClothingUniformOnepieceYellow
+    - ClothingSelectorClothingUniformOnepiecePink
+    - ClothingSelectorClothingUniformHonkini
+    - ClothingSelectorClothingUniformMedkini
+    - ClothingSelectorClothingUniformShirtkini
+    - ClothingSelectorClothingUniformNtBikini
+    - ClothingSelectorClothingUniformSyndikini
+    - ClothingSelectorClothingUniformHeartOnepiece
+    - ClothingSelectorClothingUniformOldtimeyOnepiece
+    - ClothingSelectorClothingUniformFishsuit
+    - ClothingSelectorClothingUniformNinjaSurfsuit
+    - ClothingSelectorClothingUniformWetsuitOrange
+    - ClothingSelectorClothingUniformMermaid
+    - ClothingSelectorClothingUniformCoconutSkirt
+    - ClothingSelectorClothingUniformGrassSkirt
+    - ClothingSelectorClothingUniformSundress
+
+# Полотенца
+- type: entity
+  id: UndeterminedClothingTowel
+  name: towel selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Multiple/towel.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorTP14TowelColorPurple
+    - ClothingSelectorTP14TowelColorRed
+    - ClothingSelectorTP14TowelColorBlue
+    - ClothingSelectorTP14TowelColorDarkBlue
+    - ClothingSelectorTP14TowelColorLightBlue
+    - ClothingSelectorTP14TowelColorTeal
+    - ClothingSelectorTP14TowelColorBrown
+    - ClothingSelectorTP14TowelColorLightBrown
+    - ClothingSelectorTP14TowelColorGray
+    - ClothingSelectorTP14TowelColorGreen
+    - ClothingSelectorTP14TowelColorDarkGreen
+    - ClothingSelectorTP14TowelColorGold
+    - ClothingSelectorTP14TowelColorOrange
+    - ClothingSelectorTP14TowelColorBlack
+    - ClothingSelectorTP14TowelColorPink
+    - ClothingSelectorTP14TowelColorYellow
+    - ClothingSelectorTP14TowelColorMaroon
+    - ClothingSelectorTP14TowelColorSilver
+    - ClothingSelectorTP14TowelColorMime
+
+# Комбинезоны
+- type: entity
+  id: UndeterminedClothingJumpsuit
+  name: jumpsuit selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Uniforms/Jumpsuits/Color/color.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingUniformJumpsuitColorGrey
+    - ClothingSelectorClothingUniformJumpskirtColorGrey
+    - ClothingSelectorClothingUniformJumpsuitColorWhite
+    - ClothingSelectorClothingUniformJumpskirtColorWhite
+    - ClothingSelectorClothingUniformJumpsuitColorBlack
+    - ClothingSelectorClothingUniformJumpskirtColorBlack
+    - ClothingSelectorClothingUniformJumpsuitColorBlue
+    - ClothingSelectorClothingUniformJumpskirtColorBlue
+    - ClothingSelectorClothingUniformJumpsuitColorYellow
+    - ClothingSelectorClothingUniformJumpskirtColorYellow
+    - ClothingSelectorClothingUniformJumpsuitColorGreen
+    - ClothingSelectorClothingUniformJumpskirtColorGreen
+    - ClothingSelectorClothingUniformJumpsuitColorOrange
+    - ClothingSelectorClothingUniformJumpskirtColorOrange
+    - ClothingSelectorClothingUniformJumpsuitColorRed
+    - ClothingSelectorClothingUniformJumpskirtColorRed
+    - ClothingSelectorClothingUniformJumpsuitColorPurple
+    - ClothingSelectorClothingUniformJumpskirtColorPurple
+    - ClothingSelectorClothingUniformJumpsuitColorPink
+    - ClothingSelectorClothingUniformJumpskirtColorPink
+    - ClothingSelectorClothingUniformJumpsuitColorDarkBlue
+    - ClothingSelectorClothingUniformJumpskirtColorDarkBlue
+    - ClothingSelectorClothingUniformJumpsuitColorDarkGreen
+    - ClothingSelectorClothingUniformJumpskirtColorDarkGreen
+    - ClothingSelectorClothingUniformJumpsuitColorTeal
+    - ClothingSelectorClothingUniformJumpskirtColorTeal
+
+# Туфли
+- type: entity
+  id: UndeterminedClothingShoes
+  name: shoes selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Shoes/color.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingShoesColorBlack
+    - ClothingSelectorClothingShoesColorBrown
+    - ClothingSelectorClothingShoesColorWhite
+    - ClothingSelectorClothingShoesColorBlue
+    - ClothingSelectorClothingShoesColorYellow
+    - ClothingSelectorClothingShoesColorGreen
+    - ClothingSelectorClothingShoesColorOrange
+    - ClothingSelectorClothingShoesColorRed
+    - ClothingSelectorClothingShoesColorPurple
+
+# Кепки
+- type: entity
+  id: UndeterminedClothingFlatcap
+  name: flatcap selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Head/Hats/greyflatcap.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingHeadHatGreyFlatcap
+    - ClothingSelectorClothingHeadHatBrownFlatcap
+
+# Перчатки
+- type: entity
+  id: UndeterminedClothingGloves
+  name: gloves selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Hands/Gloves/Color/black.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingHandsGlovesColorBlack
+    - ClothingSelectorClothingHandsGlovesColorGray
+    - ClothingSelectorClothingHandsGlovesColorBrown
+    - ClothingSelectorClothingHandsGlovesColorWhite
+    - ClothingSelectorClothingHandsGlovesColorRed
+    - ClothingSelectorClothingHandsGlovesColorBlue
+    - ClothingSelectorClothingHandsGlovesColorTeal
+    - ClothingSelectorClothingHandsGlovesColorGreen
+    - ClothingSelectorClothingHandsGlovesColorOrange
+    - ClothingSelectorClothingHandsGlovesColorPurple
+    - ClothingSelectorClothingHandsGlovesFingerless
+
+# Бейсболки
+- type: entity
+  id: UndeterminedClothingSoftcap
+  name: softcap selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Head/Soft/greysoft.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingHeadHatGreysoft
+    - ClothingSelectorClothingHeadHatMimesoft
+    - ClothingSelectorClothingHeadHatBluesoft
+    - ClothingSelectorClothingHeadHatYellowsoft
+    - ClothingSelectorClothingHeadHatGreensoft
+    - ClothingSelectorClothingHeadHatOrangesoft
+    - ClothingSelectorClothingHeadHatRedsoft
+    - ClothingSelectorClothingHeadHatBlacksoft
+    - ClothingSelectorClothingHeadHatPurplesoft
+    - ClothingSelectorClothingHeadHatCorpsoft
+
+# Повседневные комбинезоны
+- type: entity
+  id: UndeterminedClothingCasualJumpsuit
+  name: casual jumpsuit selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Uniforms/Jumpsuits/Civilian/casual.rsi
+        state: icon-jumpsuit
+      - sprite: Clothing/Uniforms/Jumpsuits/Civilian/casual.rsi
+        state: icon-shirt
+        color: "#134fc1"
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorClothingUniformJumpsuitCasualBlue
+    - ClothingSelectorClothingUniformJumpskirtCasualBlue
+    - ClothingSelectorClothingUniformJumpsuitCasualPurple
+    - ClothingSelectorClothingUniformJumpskirtCasualPurple
+    - ClothingSelectorClothingUniformJumpsuitCasualRed
+    - ClothingSelectorClothingUniformJumpskirtCasualRed
+    - ClothingSelectorClothingUniformJumpsuitCasualGreen
+    - ClothingSelectorClothingUniformJumpskirtCasualGreen
+
+# Шапки
+- type: entity
+  id: UndeterminedClothingBeanie
+  name: beanie selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: Clothing/Head/Hats/beanie.rsi
+        state: cuffcrown-icon
+      - sprite: Clothing/Head/Hats/beanie.rsi
+        state: body-icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorTP14ClothingHeadBeanie
+    - ClothingSelectorTP14ClothingHeadBlackBeanie
+    - ClothingSelectorTP14ClothingHeadBlueBeanie
+    - ClothingSelectorTP14ClothingHeadDarkBlueBeanie
+    - ClothingSelectorTP14ClothingHeadTealBeanie
+    - ClothingSelectorTP14ClothingHeadGreenBeanie
+    - ClothingSelectorTP14ClothingHeadDarkGreenBeanie
+    - ClothingSelectorTP14ClothingHeadOrangeBeanie
+    - ClothingSelectorTP14ClothingHeadPinkBeanie
+    - ClothingSelectorTP14ClothingHeadRedBeanie
+    - ClothingSelectorTP14ClothingHeadYellowBeanie
+    - ClothingSelectorTP14ClothingHeadPurpleBeanie
+    - ClothingSelectorTP14ClothingHeadLightBrownBeanie
+    - ClothingSelectorTP14ClothingHeadBrownBeanie
+    - ClothingSelectorTP14ClothingHeadMaroonBeanie
+
+# Панамы
+- type: entity
+  id: UndeterminedClothingBucket
+  name: bucket hat selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _TP/Clothing/Head/Hats/BucketHats/bucket_color.rsi
+        state: icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorTP14ClothingHeadBucket
+    - ClothingSelectorTP14ClothingHeadBucketBlack
+    - ClothingSelectorTP14ClothingHeadBucketBlue
+    - ClothingSelectorTP14ClothingHeadBucketDarkBlue
+    - ClothingSelectorTP14ClothingHeadBucketTeal
+    - ClothingSelectorTP14ClothingHeadBucketGreen
+    - ClothingSelectorTP14ClothingHeadBucketDarkGreen
+    - ClothingSelectorTP14ClothingHeadBucketOrange
+    - ClothingSelectorTP14ClothingHeadBucketPink
+    - ClothingSelectorTP14ClothingHeadBucketRed
+    - ClothingSelectorTP14ClothingHeadBucketYellow
+    - ClothingSelectorTP14ClothingHeadBucketPurple
+    - ClothingSelectorTP14ClothingHeadBucketLightBrown
+    - ClothingSelectorTP14ClothingHeadBucketBrown
+    - ClothingSelectorTP14ClothingHeadBucketMaroon
+    - ClothingSelectorTP14ClothingHeadBucketOlive
+    - ClothingSelectorTP14ClothingHeadBucketKhaki
+
+# Зимние сапоги
+- type: entity
+  id: UndeterminedClothingWinterBoots
+  name: winter boots selector
+  description: A small remote utilizing bluespace technology to drop in a hardsuit or modsuit of your choosing.
+  parent: [ BaseItem, BaseSetSelector ]
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _TP/Clothing/Shoes/Boots/colorable-winterboots.rsi
+        state: icon
+      - sprite: _TP/Clothing/Shoes/Boots/colorable-winterboots.rsi
+        state: soles-icon
+      - sprite: _ADT/Objects/Specific/clothing_voucher.rsi
+        state: icon
+  - type: SetSelector
+    possibleSets:
+    - ClothingSelectorTP14EntClothesBlackWinterBoots
+    - ClothingSelectorTP14EntClothesWhiteWinterBoots
+    - ClothingSelectorTP14EntClothesBlueWinterBoots
+    - ClothingSelectorTP14EntClothesDarkBlueWinterBoots
+    - ClothingSelectorTP14EntClothesBrownWinterBoots
+    - ClothingSelectorTP14EntClothesGreenWinterBoots
+    - ClothingSelectorTP14EntClothesOrangeWinterBoots
+    - ClothingSelectorTP14EntClothesRedWinterBoots
+    - ClothingSelectorTP14EntClothesYellowWinterBoots
+    - ClothingSelectorTP14EntClothesPurpleWinterBoots
+
+
+#====
+#  - type: Sprite
+#    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+#    layers:
+#    - state: coatybits-icon
+#
+#    - state: winterbits-icon

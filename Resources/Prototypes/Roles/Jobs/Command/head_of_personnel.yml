@@ -25,7 +25,7 @@
     - !type:OverallPlaytimeRequirement
       time: 50h #50 hrs # Corvax-RoleTime
     - !type:AgeRequirement
-      age: 8 # WL-Changes-AgeRequirement
+      age: 10 # Wormix-Changes-AgeRequirement
     - !type:TraitsRequirement #Corvax-TraitsRequirement
       inverted: true
       traits:

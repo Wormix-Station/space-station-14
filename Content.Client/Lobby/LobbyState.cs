@@ -14,7 +14,6 @@ using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Configuration;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
 namespace Content.Client.Lobby
@@ -30,7 +29,6 @@ namespace Content.Client.Lobby
         [Dependency] private IGameTiming _gameTiming = default!;
         [Dependency] private IVoteManager _voteManager = default!;
         [Dependency] private ClientsidePlaytimeTrackingManager _playtimeTracking = default!;
-        [Dependency] private IPrototypeManager _protoMan = default!;
 
         private ClientGameTicker _gameTicker = default!;
         private ContentAudioSystem _contentAudioSystem = default!;
@@ -203,7 +201,6 @@ namespace Content.Client.Lobby
 
         private void LobbyStatusUpdated()
         {
-            UpdateLobbyBackground();
             UpdateLobbyUi();
         }
 
@@ -285,26 +282,6 @@ namespace Content.Client.Lobby
                     ("songArtist", artist));
 
                 Lobby!.LobbySong.SetMarkup(markup);
-            }
-        }
-
-        private void UpdateLobbyBackground()
-        {
-            if (_protoMan.TryIndex(_gameTicker.LobbyBackground, out var proto))
-            {
-                Lobby!.Background.Texture = _resourceCache.GetResource<TextureResource>(proto.Background);
-
-                var markup = Loc.GetString("lobby-state-background-text",
-                    ("backgroundTitle", Loc.GetString(proto.Title)),
-                    ("backgroundArtist", Loc.GetString(proto.Artist)));
-
-                Lobby!.LobbyBackground.SetMarkup(markup);
-            }
-            else
-            {
-                Lobby!.Background.Texture = null;
-
-                Lobby!.LobbyBackground.SetMarkup(Loc.GetString("lobby-state-background-no-background-text"));
             }
         }
 

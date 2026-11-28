@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Ported from Goob-station-Master: Prototypes\Entities\Clothing\Shoes\specific.yml
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesWizard
+  name: wizard shoes
+  description: A pair of magic shoes.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Specific/wizard.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Specific/wizard.rsi

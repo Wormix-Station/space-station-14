@@ -1,45 +1,110 @@
 - type: vendingMachineInventory
+
   id: LawDrobeInventory
+
   startingInventory:
-    # WL-change-start: classic IAA suits and matching blazers
+
+    # Wormix-change-start: classic IAA suits and matching blazers
+
     ClothingUniformJumpsuitClassicWhiteShirtBlackPants: 1
+
     ClothingOuterBlazerClassicNoir: 1
+
     ClothingUniformJumpsuitClassicWhiteShirtBluePants: 1
+
     ClothingOuterBlazerClassicBlue: 1
+
     ClothingUniformJumpsuitClassicWhiteShirtRedPants: 1
+
     ClothingOuterBlazerClassicRed: 1
+
     ClothingUniformJumpsuitClassicLightblueShirtDarkwhitePants: 1
+
     ClothingOuterBlazerClassicDarkwhite: 1
-    # WL-change-end
-    ClothingNeckBtTieBlack: 2 # WL-Changes: Респрайт РНД и новые вещи
-    ClothingNeckBtTieLong: 2 # WL-Changes: Респрайт РНД и новые вещи
-    ClothingNeckBtTieRed: 2 # WL-Changes: Респрайт РНД и новые вещи
-    # WL-change-start: matching classic neckties
+
+    # Wormix-change-end
+
+    ClothingNeckBtTieBlack: 2 # Wormix-Changes: Респрайт РНД и новые вещи
+
+    ClothingNeckBtTieLong: 2 # Wormix-Changes: Респрайт РНД и новые вещи
+
+    ClothingNeckBtTieRed: 2 # Wormix-Changes: Респрайт РНД и новые вещи
+
+    # Wormix-change-start: matching classic neckties
+
     ClothingNeckTieDet: 2
+
     ClothingNeckTieBlue: 2
+
     ClothingNeckTieRed: 2
+
     ClothingNeckTieLightBlue: 2
-    # WL-change-end
+
+    # Wormix-change-end
+
     ClothingShoesBootsLaceup: 2
+
     ClothingHeadsetIAA: 2 # Corvax-IAA
+
     ClothingNeckLawyerbadge: 2
+
     BriefcaseBrown: 2
+
     BookSpaceLaw: 3
+
     # Corvax-LawyerDrip-Start
+
     ClothingHandsGlovesColorWhite: 1
+
     ClothingHandsGlovesColorGray: 1
+
     ClothingHandsGlovesColorBlack: 1
+
     ClothingHandsGlovesColorRed: 1
+
     ClothingHandsGlovesColorBlue: 1
+
     ClothingHeadHatBowlerHat: 1
+
     ClothingHeadHatOutlawHat: 1
+
     ClothingHeadHatTophat: 1
+
     # Corvax-LawyerDrip-End
+
     LuxuryPen: 2
+
     HandLabeler: 2
+
+    ClothingUniformJumpskirtLawyerBlack: 1
+
+    ClothingUniformJumpskirtLawyerBlue: 1
+
+    ClothingUniformJumpskirtLawyerGood: 1
+
+    ClothingUniformJumpskirtLawyerPurple: 1
+
+    ClothingUniformJumpskirtLawyerRed: 1
+
+    ClothingUniformJumpsuitLawyerBlack: 1
+
+    ClothingUniformJumpsuitLawyerBlue: 1
+
+    ClothingUniformJumpsuitLawyerGood: 1
+
+    ClothingUniformJumpsuitLawyerPurple: 1
+
+    ClothingUniformJumpsuitLawyerRed: 1
+
   contrabandInventory:
+
     ClothingOuterRobesJudge: 1
+
     ClothingHeadHatPwig: 1
+
     # "Legally" obtained currency
+
     SpaceCash100: 2
+
     ToyFigurineLawyer: 1
+

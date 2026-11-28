@@ -243,6 +243,7 @@ namespace Content.Server.Database
             profile.CharacterName = humanoid.Name;
             profile.FlavorText = humanoid.FlavorText;
             profile.OocText = humanoid.OocText; // WL-OOCText
+            profile.ERPStatus = (int) humanoid.ERPStatus; // Wormix-ERPStatus
             profile.MedicalRecord = humanoid.MedicalRecord; // WL-Records
             profile.SecurityRecord = humanoid.SecurityRecord; // WL-Records
             profile.EmploymentRecord = humanoid.EmploymentRecord; // WL-Records

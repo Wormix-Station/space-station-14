@@ -1,31 +1,148 @@
 - type: vendingMachineInventory
+
   id: CentDrobeInventory
+
   startingInventory:
+
     ClothingShoesBootsLaceup: 3
+
     ClothingShoesBootsJack: 3
-    ClothingShoesBootsJackToeless: 3 # WL-Changes
+
+    ClothingShoesBootsJackToeless: 3 # Wormix-Changes
+
     ClothingHandsGlovesCombat: 3
+
     ClothingEyesGlassesSunglasses: 3
+
     ClothingUniformJumpsuitCentcomOfficer: 3
+
     ClothingUniformJumpsuitCentcomOfficial: 3
+
     ClothingUniformJumpsuitCentcomAgent: 3
+
     ClothingUniformJumpsuitCentcomFormal: 3
+
     ClothingUniformJumpskirtCentcomFormalDress: 3
+
     ClothingHeadHatCentcom: 3
+
     # Trieste-start: from Trieste Port 14
+
     TP14ClothingHeadSolgovBucket: 2
+
     TP14PlushieLizardJobOverseer: 1
+
     TP14ClothingUniformJumpskirtOverseer: 2
+
     TP14ClothingUniformFormalJumpskirtOverseer: 2
+
     TP14ClothingUniformHighVisJumpskirtOverseer: 2
+
     # Trieste-end
+
     ClothingHeadHatCentcomcap: 3
+
     ClothingMaskGasCentcom: 3
+
     ClothingHeadsetCentCom: 3
+
     ClothingOuterWinterCentcom: 3
+
     ClothingOuterCoatExpensive: 1
+
     ClothingNeckScarfStripedCentcom: 3
+
     ClothingNeckCloakCentcom: 3
+
+    ClothingBackpackCaptain: 1
+
+    ClothingBackpackDuffelCaptain: 1
+
+    ClothingBackpackSatchelCaptain: 1
+
+    ClothingBeltSheriffSheath: 1
+
+    ClothingBeltWhiteSheath: 1
+
+    ClothingEyesGlassesCommand: 1
+
+    ClothingEyesGlassesGarGiga: 1
+
+    ClothingHandsGlovesCaptain: 1
+
+    ClothingHandsGlovesCaptainWhite: 1
+
+    ClothingHandsGlovesSheriff: 1
+
+    ClothingHeadHatBeretCaptainWhite: 1
+
+    ClothingHeadHatBeretSheriff: 1
+
+    ClothingHeadHatCapcap: 1
+
+    ClothingHeadHatCapcapSheriff: 1
+
+    ClothingHeadHatCapcapWhite: 1
+
+    ClothingHeadHatCaptain: 1
+
+    ClothingHeadHatGoldCentcom: 2
+
+    ClothingHeadsetAltCommand: 1
+
+    ClothingNeckCaptainWide: 1
+
+    ClothingNeckCloakCap: 1
+
+    ClothingNeckCloakCapFormal: 1
+
+    ClothingNeckCloakCentComPoncho: 3
+
+    ClothingNeckCloakGoldenCentComm: 2
+
+    ClothingNeckCloakHighCommand: 3
+
+    ClothingNeckCloakHighCommandCape: 2
+
+    ClothingNeckCloakRoyalCaptain: 1
+
+    ClothingNeckCloakSyndicateAdmiral: 1
+
+    ClothingNeckMantleCap: 1
+
+    ClothingNeckMantleEpaulettes: 1
+
+    ClothingNeckWhiteMantleCaptain: 1
+
+    ClothingOuterArmorCaptainCarapace: 1
+
+    ClothingOuterArmoredJacketCentralCommand: 2
+
+    ClothingOuterWinterCap: 1
+
+    ClothingUniformJumpskirtCapFormalDress: 1
+
+    ClothingUniformJumpskirtCaptain: 1
+
+    ClothingUniformJumpskirtCentcomPencilSkirt: 3
+
+    ClothingUniformJumpskirtWhiteCaptain: 1
+
+    ClothingUniformJumpsuitCapFormal: 1
+
+    ClothingUniformJumpsuitCaptain: 1
+
+    ClothingUniformJumpsuitCommandCaptain: 1
+
+    ClothingUniformJumpsuitGoldenLiaison: 2
+
+    ClothingUniformJumpsuitSheriff: 1
+
+    ClothingUniformJumpsuitWhiteCaptain: 1
+
   contrabandInventory:
+
     ToyFigurineCaptain: 1
+
     ToyFigurineHeadOfPersonnel: 1
+

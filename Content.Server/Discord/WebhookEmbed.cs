@@ -14,6 +14,11 @@ public struct WebhookEmbed
     [JsonPropertyName("color")]
     public int Color { get; set; } = 0;
 
+    // Wormix-Changes-start
+    [JsonPropertyName("timestamp")]
+    public DateTime? Timestamp { get; set; }
+    // Wormix-Changes-end
+
     [JsonPropertyName("footer")]
     public WebhookEmbedFooter? Footer { get; set; } = null;
 

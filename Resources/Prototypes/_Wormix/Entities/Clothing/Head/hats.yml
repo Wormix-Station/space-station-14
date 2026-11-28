@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Ported from Goob-station-Master: Prototypes\Entities\Clothing\Head\hats.yml
+
+- type: entity
+  parent: ClothingHeadBase # Goob edit
+  id: ClothingHeadHatWizard
+  name: wizard hat
+  description: A strange-looking blue hat that most certainly belongs to a powerful magic-user.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/wizardhat.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/wizardhat.rsi
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+    - WhitelistChameleon
+    - CorgiWearable

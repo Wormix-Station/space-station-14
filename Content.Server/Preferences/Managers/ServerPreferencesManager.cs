@@ -9,6 +9,7 @@ using Content.Server.Database;
 using Content.Shared.Body;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.CCVar;
+using Content.Shared._WL.CharacterInformation; // Wormix-ERPStatus
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -205,6 +206,7 @@ namespace Content.Server.Preferences.Managers
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.OocText, // WL-OOCText
+                (EnumERPStatus) profile.ERPStatus, // Wormix-ERPStatus
                 species,
                 customSpecie,
                 TTSVoice, // Corvax-TTS

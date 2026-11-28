@@ -15,7 +15,7 @@
       time: 10h
       inverted: true # stop playing intern if you're good at med!
     - !type:AgeRequirement # WL-Changes-AgeRequirement
-      age: 2 # WL-Changes-AgeRequirement
+      age: 0 # Wormix-Changes-AgeRequirement
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"
   supervisors: job-supervisors-medicine

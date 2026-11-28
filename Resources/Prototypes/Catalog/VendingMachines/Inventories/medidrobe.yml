@@ -1,50 +1,104 @@
 - type: vendingMachineInventory
+
   id: MediDrobeInventory
+
   startingInventory:
+
     # Essential Medical Clothing
+
     ClothingEyesHudMedical: 2
+
     ClothingEyesEyepatchHudMedical: 2
+
     # Optional Clothing
+
     ClothingHeadHatBeretMedic: 2
+
     ClothingHeadNurseHat: 2
+
     # Trieste-start: from Trieste Port 14
+
     TP14ClothingHeadMedicalBucket: 2
+
     TP14ClothingUniformJumpskirtMedicalNurseDress: 2
+
     # Trieste-end
+
     ClothingHeadHatParamedicsoft: 1
+
     ClothingHeadHatSurgcapGreen: 2
+
     ClothingHeadHatSurgcapBlue: 2
+
     ClothingHeadHatSurgcapPurple: 2
+
     ClothingMaskSterile: 2
+
     ClothingHeadsetMedical: 2
+
     ClothingBackpackMedical: 2
+
     ClothingBackpackDuffelMedical: 2
+
     ClothingBackpackSatchelMedical: 2
+
     ClothingUniformJumpsuitMedicalDoctor: 2
+
     ClothingUniformJumpskirtMedicalDoctor: 2
+
     UniformScrubsColorGreen: 2
+
     UniformScrubsColorBlue: 2
+
     UniformScrubsColorPurple: 2
+
     ClothingUniformJumpsuitParamedic: 1
+
     ClothingUniformJumpskirtParamedic: 1
+
     ClothingOuterCoatLab: 2
+
     ClothingOuterWinterMed: 2
+
     ClothingOuterCoatParamedicWB: 1
+
     ClothingOuterWinterPara: 1
+
     ClothingHandsGlovesLatex: 2
+
     ClothingHandsGlovesNitrile: 2
+
     ClothingShoesColorBlue: 2
+
     ClothingShoesColorWhite: 2
+
     ClothingShoesBootsWinterMed: 2
-    #WL-Changes: New clothing start
+
+    #Wormix-Changes: New clothing start
+
     ClothingNeckTieMed: 2
+
     ClothingUniformJumpsuitNurse: 3
+
     ClothingUniformJumpskirtNurse: 3
+
     ClothingUniformJumpsuitPathologist: 3
+
     ClothingHeadHatMedSoft: 3
-    #WL-Changes: New clothing end
+
+    #Wormix-Changes: New clothing end
+
+    ClothingBeltMedical: 4
+
+    ClothingOuterHospitalGown: 5
+
   contrabandInventory:
+
     ClothingUniformJumpskirtOfLife: 1
+
     ToyFigurineMedicalDoctor: 1
+
     ToyFigurineParamedic: 1
+
     ToyFigurineChiefMedicalOfficer: 1
+

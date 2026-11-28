@@ -10,7 +10,7 @@
     department: Security
     time: 20h
   - !type:AgeRequirement
-    age: 4 # WL-Changes-AgeRequirement
+    age: 3 # Wormix-Changes-AgeRequirement
   - !type:TraitsRequirement
     inverted: true
     traits:

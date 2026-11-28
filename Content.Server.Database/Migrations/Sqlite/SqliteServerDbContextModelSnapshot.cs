@@ -1157,6 +1157,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("employment_record");
 
+                    b.Property<int>("ERPStatus")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("erpstatus");
+
                     b.Property<string>("EyeColor")
                         .IsRequired()
                         .HasColumnType("TEXT")

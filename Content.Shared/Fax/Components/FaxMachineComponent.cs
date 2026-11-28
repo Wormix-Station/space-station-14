@@ -213,11 +213,16 @@ public sealed partial class FaxPrintout
     [DataField]
     public string? SenderFaxName { get; private set; } = default!;
 
+    // Wormix-Changes-start
+    [DataField]
+    public string? PhotoImageData { get; private set; }
+    // Wormix-Changes-end
+
     private FaxPrintout()
     {
     }
 
-    public FaxPrintout(string content, string name, string? label = null, string? prototypeId = null, string? stampState = null, List<StampDisplayInfo>? stampedBy = null, bool locked = false, string? senderFaxName = null)
+    public FaxPrintout(string content, string name, string? label = null, string? prototypeId = null, string? stampState = null, List<StampDisplayInfo>? stampedBy = null, bool locked = false, string? senderFaxName = null, /*Wormix-Changes*/string? photoImageData = null)
     {
         Content = content;
         Name = name;
@@ -227,5 +232,6 @@ public sealed partial class FaxPrintout
         StampedBy = stampedBy ?? new List<StampDisplayInfo>();
         Locked = locked;
         SenderFaxName = senderFaxName;
+        PhotoImageData = photoImageData; // Wormix-Changes
     }
 }

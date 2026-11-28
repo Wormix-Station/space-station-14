@@ -24,9 +24,12 @@ using Content.Shared.Paper;
 using Content.Shared.Power;
 using Content.Shared.Tools;
 using Content.Shared.UserInterface;
+using Content.Server.Discord; // Wormix-Changes
+using Content.Shared.CCVar; // Wormix-Changes
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Configuration; // Wormix-Changes
 using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -36,6 +39,7 @@ using Content.Shared.Materials;
 using Content.Shared.Examine;
 using Content.Shared.Whitelist;
 using Content.Shared._WL.Fax.Messages;
+using Content.Server._WL.Photo; // Wormix-Changes
 using Robust.Shared.Timing;
 
 namespace Content.Server.Fax;
@@ -63,6 +67,12 @@ public sealed partial class FaxSystem : EntitySystem
     // WL-Changes-start
     [Dependency] private MaterialStorageSystem _materialStorage = default!;
     // WL-Changes-end
+
+    // Wormix-Changes-start
+    [Dependency] private IConfigurationManager _cfg = default!;
+    [Dependency] private DiscordWebhook _discord = default!;
+    private WebhookData? _webhook;
+    // Wormix-Changes-end
 
     private static readonly ProtoId<ToolQualityPrototype> ScrewingQuality = "Screwing";
 
@@ -104,6 +114,14 @@ public sealed partial class FaxSystem : EntitySystem
         SubscribeLocalEvent<FaxMachineComponent, FaxSwitchNotifyMessage>(OnNotifyButtonPressed);
         SubscribeLocalEvent<FaxMachineComponent, FaxSwitchStorageMessage>(OnStorageButtonPressed);
         // WL-Changes-end
+
+        // Wormix-Changes-start
+        var value = _cfg.GetCVar(CCVars.DiscordFaxWebhook);
+        if (!string.IsNullOrEmpty(value))
+        {
+            _discord.TryGetWebhook(value, val => _webhook = val);
+        }
+        // Wormix-Changes-end
     }
 
     public override void Update(float frameTime)
@@ -580,6 +598,32 @@ public sealed partial class FaxSystem : EntitySystem
         if (sendEntity == null)
             return;
 
+        // Wormix-Changes-start
+        // Photos are copied as a printout with the base64 image, same as a sent photo
+        if (TryComp(sendEntity, out MetaDataComponent? photoMeta) &&
+            photoMeta.EntityPrototype != null &&
+            TryComp<PhotoCardComponent>(sendEntity, out var photoCard))
+        {
+            var photoCopy = new FaxPrintout(
+                "",
+                photoMeta.EntityName,
+                prototypeId: photoMeta.EntityPrototype.ID,
+                photoImageData: photoCard.ImageData is { } imageData ? Convert.ToBase64String(imageData) : null);
+
+            component.PrintingQueue.Enqueue(photoCopy);
+            component.SendTimeoutRemaining += component.SendTimeout;
+
+            UpdateUserInterface(uid, component);
+
+            _adminLogger.Add(LogType.Action,
+                LogImpact.Low,
+                $"{ToPrettyString(args.Actor):actor} " +
+                $"added copy job to \"{component.FaxName}\" {ToPrettyString(uid):tool} " +
+                $"of photo: {ToPrettyString(sendEntity):subject}");
+            return;
+        }
+        // Wormix-Changes-end
+
         if (!TryComp(sendEntity, out MetaDataComponent? metadata) ||
             !TryComp<PaperComponent>(sendEntity, out var paper))
             return;
@@ -633,8 +677,43 @@ public sealed partial class FaxSystem : EntitySystem
         if (!component.KnownFaxes.TryGetValue(component.DestinationFaxAddress.Value, out var faxName))
             return;
 
-        if (!TryComp(sendEntity, out MetaDataComponent? metadata) ||
-           !TryComp<PaperComponent>(sendEntity, out var paper))
+        // Wormix-Changes-start
+        if (!TryComp(sendEntity, out MetaDataComponent? metadata))
+            return;
+
+        // Photos are sent as a base64 image inside the printout, they are rebuilt on the receiving fax
+        if (TryComp<PhotoCardComponent>(sendEntity, out var photoCard))
+        {
+            if (metadata.EntityPrototype == null)
+                return;
+
+            var photoPrintout = new FaxPrintout(
+                "",
+                metadata.EntityName,
+                prototypeId: metadata.EntityPrototype.ID,
+                photoImageData: photoCard.ImageData is { } imageData ? Convert.ToBase64String(imageData) : null);
+
+            var photoPayload = new FaxPrintPayload { Data = photoPrintout };
+
+            _deviceNetworkSystem.SendPacket(uid, component.DestinationFaxAddress, ref photoPayload);
+
+            _adminLogger.Add(LogType.Action,
+                LogImpact.Low,
+                $"{ToPrettyString(args.Actor):actor} " +
+                $"sent fax from \"{component.FaxName}\" {ToPrettyString(uid):tool} " +
+                $"to \"{faxName}\" ({component.DestinationFaxAddress}) " +
+                $"of photo: {ToPrettyString(sendEntity):subject}");
+
+            component.SendTimeoutRemaining += component.SendTimeout;
+
+            _audioSystem.PlayPvs(component.SendSound, uid);
+
+            UpdateUserInterface(uid, component);
+            return;
+        }
+        // Wormix-Changes-end
+
+        if (!TryComp<PaperComponent>(sendEntity, out var paper))
             return;
 
         if (metadata.EntityPrototype == null)
@@ -713,6 +792,11 @@ public sealed partial class FaxSystem : EntitySystem
 
         component.PrintingQueue.Enqueue(printout);
 
+        // Wormix-Changes-start
+        if (component.NotifyAdmins)
+            NotifyDiscord(faxName, printout);
+        // Wormix-Changes-end
+
         //WL-Changes-start
         var ev = new FaxRecieveMessageEvent(printout, sender, (uid, component));
 
@@ -729,6 +813,23 @@ public sealed partial class FaxSystem : EntitySystem
         var printout = component.PrintingQueue.Dequeue();
 
         var entityToSpawn = ProtoMan.HasIndex(printout.PrototypeId) ? printout.PrototypeId : component.PrintPaperId;
+
+        // Wormix-Changes-start
+        // Photos are printed as photo cards with the base64 image restored
+        if (printout.PhotoImageData is { } photoData)
+        {
+            var photo = Spawn(entityToSpawn, Transform(uid).Coordinates);
+
+            if (TryComp<PhotoCardComponent>(photo, out var photoCard))
+                photoCard.ImageData = Convert.FromBase64String(photoData);
+
+            _metaData.SetEntityName(photo, printout.Name);
+
+            _adminLogger.Add(LogType.Action, LogImpact.Low, $"\"{component.FaxName}\" {ToPrettyString(uid):tool} printed photo {ToPrettyString(photo):subject}");
+            return;
+        }
+        // Wormix-Changes-end
+
         var printed = Spawn(entityToSpawn, Transform(uid).Coordinates);
 
         if (TryComp<PaperComponent>(printed, out var paper))
@@ -756,6 +857,75 @@ public sealed partial class FaxSystem : EntitySystem
 
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"\"{component.FaxName}\" {ToPrettyString(uid):tool} printed {ToPrettyString(printed):subject}: {printout.Content}");
     }
+
+    // Wormix-Changes-start
+    private async void NotifyDiscord(string faxName, FaxPrintout printout)
+    {
+        try
+        {
+            if (_webhook is null)
+                return;
+
+            var hook = _webhook.Value.ToIdentifier();
+
+            var footer = Loc.GetString("fax-notify-discord-footer", ("round", _gameTicker.RoundId));
+            var title = Loc.GetString("fax-notify-discord-head", ("sender", faxName));
+            var color = 0x17A03D; // green
+
+            var documentStamps = printout.StampedBy;
+            string stampsList = Loc.GetString("fax-stamps-discord-none");
+
+            if (documentStamps.Count > 0)
+            {
+                stampsList = "";
+
+                foreach (var stamp in documentStamps)
+                {
+                    if (stamp.StampedName.StartsWith("stamp-component-stamped-name"))
+                        stampsList += $"{Loc.GetString(stamp.StampedName)} ";
+                    else
+                        stampsList += $"{stamp.StampedName}(подпись) ";
+                }
+            }
+
+            var stampsEmbed = new WebhookEmbedField()
+            {
+                Name = Loc.GetString("fax-stamps-discord-head"),
+                Value = stampsList,
+            };
+
+            var nameEmbed = new WebhookEmbedField()
+            {
+                Name = Loc.GetString("fax-name-discord-head"),
+                Value = printout.Name,
+            };
+
+            var mainEmbed = new WebhookEmbed
+            {
+                Title = title,
+                Description = printout.Content,
+                Color = color,
+                Fields = new List<WebhookEmbedField>() { stampsEmbed, nameEmbed },
+                Footer = new WebhookEmbedFooter
+                {
+                    Text = footer,
+                },
+                Timestamp = DateTime.UtcNow,
+            };
+
+            var payload = new WebhookPayload
+            {
+                Embeds = new List<WebhookEmbed> { mainEmbed },
+            };
+
+            await _discord.CreateMessage(hook, payload);
+        }
+        catch (Exception e)
+        {
+            Log.Error($"Failed to send fax information to webhook!\n{e}");
+        }
+    }
+    // Wormix-Changes-end
 
     private void NotifyAdmins(string faxName)
     {

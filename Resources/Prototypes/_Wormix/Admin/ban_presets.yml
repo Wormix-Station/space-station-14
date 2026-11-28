@@ -1,0 +1,38 @@
+# Admin presets for the ban panel. Texts are filled in by the admin before submit:
+# bracketed parts are placeholders meant to be replaced.
+
+- type: banPreset
+  id: BanPresetPermanent
+  name: Постоянный бан
+  reason: "Постоянный бан. Пункт правил: [номер]. Суть нарушения: [краткое описание]. Обжалование — в Discord."
+
+- type: banPreset
+  id: BanPresetRoleBan
+  name: Бан должности
+  reason: "Бан должности. Пункт правил: [номер], рецидив: [да/нет]. Суть: [краткое описание]. Обжалование — в Discord."
+
+- type: banPreset
+  id: BanPresetRoleLeave
+  name: Бан должности (уход/АФК)
+  reason: "Бан должности за самовольный уход или АФК на ответственной позиции. Суть: [краткое описание]. Обжалование — в Discord."
+
+- type: banPreset
+  id: BanPresetTemporary
+  name: Временный бан
+  reason: "Временный бан на [срок]. Пункт правил: [номер]. Суть: [краткое описание]. Обжалование — в Discord."
+
+- type: banPreset
+  id: BanPresetRaid
+  name: Наблюдение (набег)
+  watchlist: true
+  reason: "Подозрение в организации набега. Суть: [краткое описание]."
+
+- type: banPreset
+  id: BanPresetNoAppeal
+  name: Бан без обжалования
+  reason: "Постоянный бан без права обжалования. Пункт правил: [номер]. Суть: [краткое описание]."
+
+- type: banPreset
+  id: BanPresetCommsRaid
+  name: Бан коммуникаций (набег)
+  reason: "Постоянный бан коммуникаций при подозрении на набег. Суть: [краткое описание]. Свяжитесь с администрацией в Discord."

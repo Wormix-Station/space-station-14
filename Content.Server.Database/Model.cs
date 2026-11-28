@@ -392,6 +392,7 @@ namespace Content.Server.Database
         [Column("char_name")] public string CharacterName { get; set; } = null!;
         public string FlavorText { get; set; } = null!;
         public string OocText { get; set; } = null!; // WL-OOCText
+        public int ERPStatus { get; set; } // Wormix-ERPStatus
         public string MedicalRecord { get; set; } = null!; // WL-Records
         public string SecurityRecord { get; set; } = null!; // WL-Records
         public string EmploymentRecord { get; set; } = null!; // WL-Records

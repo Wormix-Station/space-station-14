@@ -1,4 +1,6 @@
+using Content.Shared.Eye; // Wormix
 using Robust.Shared.GameStates;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.SubFloor
 {
@@ -50,5 +52,47 @@ namespace Content.Shared.SubFloor
         /// </summary>
         [DataField]
         public int? OriginalDrawDepth;
+
+        /// <summary>
+        /// Which mapper category this entity belongs to. While hidden, it is drawn on
+        /// that category's visibility layer instead of the generic subfloor one.
+        /// </summary>
+        // Wormix
+        [DataField]
+        public SubfloorCategory Category = SubfloorCategory.None;
     }
+
+    // Wormix-start
+    /// <summary>
+    /// Mapper-facing categories of things that live under the floor.
+    /// </summary>
+    [Serializable, NetSerializable]
+    public enum SubfloorCategory : byte
+    {
+        None,
+        Wires,
+        Pipes,
+        Disposals,
+    }
+
+    public static class SubfloorCategories
+    {
+        public const VisibilityFlags All =
+            VisibilityFlags.Subfloor
+            | VisibilityFlags.SubfloorWires
+            | VisibilityFlags.SubfloorPipes
+            | VisibilityFlags.SubfloorDisposals;
+
+        public static VisibilityFlags Mask(SubfloorCategory category)
+        {
+            return category switch
+            {
+                SubfloorCategory.Wires => VisibilityFlags.SubfloorWires,
+                SubfloorCategory.Pipes => VisibilityFlags.SubfloorPipes,
+                SubfloorCategory.Disposals => VisibilityFlags.SubfloorDisposals,
+                _ => VisibilityFlags.Subfloor,
+            };
+        }
+    }
+    // Wormix-end
 }

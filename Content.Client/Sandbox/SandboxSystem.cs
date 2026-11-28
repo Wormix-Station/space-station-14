@@ -1,5 +1,6 @@
 using Content.Client.Administration.Managers;
 using Content.Client.Movement.Systems;
+using Content.Client._Wormix.DeviceLinks; // Wormix
 using Content.Client.Sandbox.Components;
 using Content.Shared.Sandbox;
 using Robust.Client.Console;
@@ -18,6 +19,7 @@ namespace Content.Client.Sandbox
         [Dependency] private ContentEyeSystem _contentEye = default!;
         [Dependency] private SharedTransformSystem _transform = default!;
         [Dependency] private SharedMapSystem _mapSystem = default!;
+        [Dependency] private DeviceLinksClientSystem _deviceLinks = default!; // Wormix
 
         [Dependency] private EntityQuery<SandboxCopyableComponent> _sandboxCopyableQuery;
 
@@ -170,6 +172,19 @@ namespace Content.Client.Sandbox
         {
             _consoleHost.ExecuteCommand("showsubfloor");
         }
+
+        // Wormix-start
+        public void ToggleSubfloorCategory(string category)
+        {
+            _consoleHost.ExecuteCommand($"showsubfloor {category}");
+        }
+
+        public bool ToggleDeviceLinks()
+        {
+            _deviceLinks.Toggle();
+            return _deviceLinks.Enabled;
+        }
+        // Wormix-end
 
         public void ShowMarkers()
         {

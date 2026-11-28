@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _DV/Entities/Clothing/Neck/misc.yml
+
+- type: entity
+  parent: [ClothingNeckPonchoBlack, BaseSecurityContraband]
+  id: ClothingNeckCWPSec
+  name: senior officer's poncho
+  description: A cold weather poncho, advertised as a masterpiece of environmental protection. Results may vary. It has built-in camera.
+  components:
+  - type: Sprite
+    sprite: _DV/Clothing/Neck/cwpsec.rsi
+  - type: Clothing
+    sprite: _DV/Clothing/Neck/cwpsec.rsi
+  - type: DeviceNetwork
+    deviceNetId: Wired # :clueless:
+    receiveFrequencyId: SurveillanceCameraSecurity
+    transmitFrequencyId: SurveillanceCamera
+  - type: SurveillanceCamera
+    networkSet: true
+    nameSet: True
+    id: Bodycam
+  - type: Eye
+  - type: SurveillanceCameraMicrophone
+    blacklist:
+      components:
+        - SurveillanceCamera
+        - SurveillanceCameraMonitor
+        - RadioSpeaker
+  - type: ActiveListener
+    range: 10

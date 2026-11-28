@@ -1,0 +1,2235 @@
+# Шарфы
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedRed
+  name: полосатый красный шарф
+  description: Стильный полосатый красный шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/red.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedGreen
+  name: полосатый зелёный шарф
+  description: Стильный полосатый зелёный шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/green.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedBlue
+  name: полосатый синий шарф
+  description: Стильный полосатый синий шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/blue.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedBlack
+  name: полосатый чёрный шарф
+  description: Стильный полосатый чёрный шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/black.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedBrown
+  name: полосатый коричневый шарф
+  description: Стильный полосатый коричневый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/brown.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedBrown
+
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedLightBlue
+  name: полосатый светло-синий шарф
+  description: Стильный полосатый светло-синий шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/lightblue.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedLightBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedOrange
+  name: полосатый оранжевый шарф
+  description: Стильный полосатый оранжевый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/orange.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedOrange
+
+- type: selectableSet
+  id: ClothingSelectorClothingNeckScarfStripedPurple
+  name: полосатый пурпурный шарф
+  description: Стильный полосатый пурпурный шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды и тех, кто просто не выносит холодного ветра на своей шее.
+  sprite:
+    sprite: Clothing/Neck/Scarfs/purple.rsi
+    state: icon
+  content:
+  - ClothingNeckScarfStripedPurple
+
+
+
+# Длинные шарфы
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongRed
+  name: длинный красный шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Red_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongRed
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongGreen
+  name: длинный зелёный шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Green_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongGreen
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongBlue
+  name: длинный синий шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Blue_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongBlue
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongYellow
+  name: длинный жёлтый шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Yellow_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongYellow
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongOrange
+  name: длинный оранжевый шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Orange_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongOrange
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongPink
+  name: длинный розовый шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Pink_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongPink
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongPurple
+  name: длинный пурпурный шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Purple_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongPurple
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongBlack
+  name: длинный чёрный шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/Black_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongBlack
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckScarfLongWhite
+  name: длинный белый шарф
+  description: Длинный клетчатый шарф. Очень тёплый и приятный на ощупь.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Scarfs/White_long_scarf.rsi
+    state: icon
+  content:
+  - ADTClothingNeckScarfLongWhite
+
+
+
+# Лицевые шарфы
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfRed
+  name: красный лицевой шарф
+  description: Уютный красный лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_red.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfRed
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfGreen
+  name: зелёный лицевой шарф
+  description: Уютный зелёный лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_green.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfGreen
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfBlue
+  name: синий лицевой шарф
+  description: Уютный синий лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_blue.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfBlue
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfOrange
+  name: оранжевый лицевой шарф
+  description: Уютный оранжевый лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_orange.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfOrange
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfPurple
+  name: фиолетовый лицевой шарф
+  description: Уютный фиолетовый лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_purple.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfPurple
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfGrey
+  name: серый лицевой шарф
+  description: Уютный серый лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_grey.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfGrey
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfBlack
+  name: чёрный лицевой шарф
+  description: Уютный чёрный лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_black.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfBlack
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingNeckFacescarfWhite
+  name: белый лицевой шарф
+  description: Уютный белый лицевой шарф, который позволит держать ваше лицо в тепле. Можно носить как на лице, так и на шее.
+  sprite:
+    sprite: _ADT/Clothing/Neck/Facescarfs/facescarf_white.rsi
+    state: icon
+  content:
+  - ADTClothingNeckFacescarfWhite
+
+
+
+# Куртки
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterCoat
+  name: зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterCoat
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorRed
+  name: красная зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorOrange
+  name: оранжевая зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi 
+    state: icon
+  content:
+  - ClothingOuterWinterColorOrange
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorYellow
+  name: жёлтая зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorYellow
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorGreen
+  name: зелёная зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorBlue
+  name: синяя зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorPurple
+  name: фиолетовая зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorPurple
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorLightBrown
+  name: светло-коричневая зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorLightBrown
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorBrown
+  name: коричневая зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorBrown
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorBlack
+  name: чёрная зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingOuterWinterColorWhite
+  name: белая зимняя куртка
+  description: Тяжёлая куртка из «синтетического» меха животных.
+  sprite:
+    sprite: _CorvaxGoob/Clothing/OuterClothing/WinterCoats/coat.rsi
+    state: icon
+  content:
+  - ClothingOuterWinterColorWhite
+
+
+
+# Водолазки
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckAquamarine
+  name: аквамариновая водолазка
+  description: Слишком ярко!
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_aquamarine.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckAquamarine
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckWhite
+  name: белая водолазка
+  description: Тепло и уютно.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_white.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckWhite
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckAzure
+  name: голубая водолазка
+  description: Яркий оттенок синего.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_azure.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckAzure
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckYellow
+  name: жёлтая водолазка
+  description: Наполнена счастьем.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_yellow.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckYellow
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckGreen
+  name: зелёная водолазка
+  description: Дешёвый аналог водолазки Центрального Командования.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_green.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckGreen
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckBrown
+  name: коричневая водолазка
+  description: Знаешь ли ты, почему я ношу красное? Оно хорошо скрывает следы крови! И я вижу, что ты одета в коричневое...
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_brown.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckBrown
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckRed
+  name: красная водолазка
+  description: Хорошо маскирует следы крови.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_red.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckRed
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckOrange
+  name: оранжевая водолазка
+  description: Я не буду это комментировать.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_orange.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckOrange
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckPink
+  name: розовая водолазка
+  description: И кто это будет носить?
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_pink.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckPink
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckGrey
+  name: серая водолазка
+  description: Грей стиль?
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_grey.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckGrey 
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckBlue
+  name: синяя водолазка
+  description: Тёмный оттенок голубого.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_blue.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckBlue
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckPurple
+  name: фиолетовая водолазка
+  description: Почувствуй себя учёным РНД.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_purple.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckPurple
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckBlack
+  name: чёрная водолазка
+  description: Любимая одежда книжного червя.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_black.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckBlack
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckDarkBlue
+  name: тёмно-синяя водолазка
+  description: Для тех, кто любит косить под капитана.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_darkblue.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckDarkBlue
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckWhiteSleeveless
+  name: белая водолазка
+  description: Практичная и удобная водолазка белого цвета. На бирке можно заметить "Modeling Agency Dar-Vaxed".
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_whitesleeveless.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckWhiteSleeveless
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckWhiteBlackSleeveless
+  name: чёрно-белая водолазка
+  description: Практичная и удобная водолазка чёрно-белого цвета. На бирке можно заметить "Modeling Agency Dar-Vaxed".
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_whiteblacksleeveless.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckWhiteBlackSleeveless
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpsuitTurtleneckBlackSleeveless
+  name: чёрная водолазка
+  description: Практичная и удобная водолазка чёрного цвета. На бирке можно заметить "Modeling Agency Dar-Vaxed".
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_blacksleeveless.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpsuitTurtleneckBlackSleeveless
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitTurtleneckSalat
+  name: салатовая водолазка
+  description: Любимая одежда книжного червя.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_salat.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpsuitTurtleneckSalat
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitTurtleneckSalatblack
+  name: салатово-чёрная водолазка
+  description: Любимая одежда книжного червя.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpsuit/turtleneck_salatblack.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpsuitTurtleneckSalatblack
+
+
+
+# Водолазки с юбкой
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckAquamarine
+  name: аквамариновая водолазка с юбкой
+  description: Слишком ярко!
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_aquamarine_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckAquamarine
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckWhite
+  name: белая водолазка с юбкой
+  description: Тепло и уютно.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_white_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckWhite
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckAzure
+  name: голубая водолазка с юбкой
+  description: Яркий оттенок синего.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_azure_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckAzure
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckYellow
+  name: жёлтая водолазка с юбкой
+  description: Наполнена счастьем.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_yellow_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckYellow
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckGreen
+  name: зелёная водолазка с юбкой
+  description: Дешёвый аналог водолазки Центрального Командования.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_green_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckGreen
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckBrown
+  name: коричневая водолазка с юбкой
+  description: Знаешь ли ты, почему я ношу красное? Оно хорошо скрывает следы крови! И я вижу, что ты одета в коричневое...
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_brown_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckBrown
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckRed
+  name: красная водолазка с юбкой
+  description: Хорошо маскирует следы крови.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_red_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckRed
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckOrange
+  name: оранжевая водолазка с юбкой
+  description: Я не буду это комментировать.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_orange_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckOrange
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckPink
+  name: розовая водолазка с юбкой
+  description: И кто это будет носить?
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_pink_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckPink
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckGrey
+  name: серая водолазка с юбкой
+  description: Грей стиль?
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_grey_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckGrey 
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckBlue
+  name: синяя водолазка с юбкой
+  description: Тёмный оттенок голубого.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_blue_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckBlue
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckPurple
+  name: фиолетовая водолазка с юбкой
+  description: Почувствуй себя учёным РНД.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_purple_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckPurple
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckBlack
+  name: чёрная водолазка с юбкой
+  description: Любимая одежда книжного червя.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_black_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckBlack
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckDarkBlue
+  name: тёмно-синяя водолазка с юбкой
+  description: Для тех, кто любит косить под капитана.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_darkblue_women.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckDarkBlue
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckWhiteSleeveless
+  name: белая водолазка с юбкой
+  description: Практичная и удобная водолазка белого цвета. На бирке можно заметить "Modeling Agency Dar-Vaxed".
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_white_womensleeveless.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckWhiteSleeveless
+
+- type: selectableSet
+  id: ClothingSelectorADTClothingUniformJumpskirtTurtleneckBlackSleeveless
+  name: чёрная водолазка с юбкой
+  description: Практичная и удобная водолазка чёрного цвета. На бирке можно заметить "Modeling Agency Dar-Vaxed".
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_black_womensleeveless.rsi
+    state: icon
+  content:
+  - ADTClothingUniformJumpskirtTurtleneckBlackSleeveless
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtTurtleneckSalat
+  name: салатовая водолазка с юбкой
+  description: Любимая одежда книжного червя.
+  sprite:
+    sprite: _ADT/Clothing/Uniforms/Jumpskirt/turtleneck_salat_women.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpskirtTurtleneckSalat
+
+# Плавки (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShortsWhite
+  name: белые плавки
+  description: Standard swim shorts in white
+  sprite:
+    entity: ClothingUniformShortsWhite
+  content:
+  - ClothingUniformShortsWhite
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShortsBlack
+  name: чёрные плавки
+  description: Standard swim shorts in black
+  sprite:
+    entity: ClothingUniformShortsBlack
+  content:
+  - ClothingUniformShortsBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShortsBlue
+  name: синие плавки
+  description: Standard swim shorts in corporate blue
+  sprite:
+    entity: ClothingUniformShortsBlue
+  content:
+  - ClothingUniformShortsBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShortsRed
+  name: красные плавки
+  description: Standard swim shorts in alert red
+  sprite:
+    entity: ClothingUniformShortsRed
+  content:
+  - ClothingUniformShortsRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShortsGreen
+  name: зелёные плавки
+  description: Standard swim shorts in safety green
+  sprite:
+    entity: ClothingUniformShortsGreen
+  content:
+  - ClothingUniformShortsGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShortsYellow
+  name: жёлтые плавки
+  description: Standard swim shorts in hazard yellow
+  sprite:
+    entity: ClothingUniformShortsYellow
+  content:
+  - ClothingUniformShortsYellow
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShortsPink
+  name: розовые плавки
+  description: Standard swim shorts in cheerful pink
+  sprite:
+    entity: ClothingUniformShortsPink
+  content:
+  - ClothingUniformShortsPink
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformSpeedo
+  name: классические плавки
+  description: Classic tight swim briefs
+  sprite:
+    entity: ClothingUniformSpeedo
+  content:
+  - ClothingUniformSpeedo
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformMedShorts
+  name: медицинские плавки
+  description: Medical-themed swim shorts
+  sprite:
+    entity: ClothingUniformMedShorts
+  content:
+  - ClothingUniformMedShorts
+
+# Купальник (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformBikiniWhite
+  name: белое бикини
+  description: A standard bikini in white
+  sprite:
+    entity: ClothingUniformBikiniWhite
+  content:
+  - ClothingUniformBikiniWhite
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformBikiniBlack
+  name: чёрное бикини
+  description: A standard bikini in black
+  sprite:
+    entity: ClothingUniformBikiniBlack
+  content:
+  - ClothingUniformBikiniBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformBikiniBlue
+  name: синее бикини
+  description: A standard bikini in corporate blue
+  sprite:
+    entity: ClothingUniformBikiniBlue
+  content:
+  - ClothingUniformBikiniBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformBikiniRed
+  name: красное бикини
+  description: A standard bikini in alert red
+  sprite:
+    entity: ClothingUniformBikiniRed
+  content:
+  - ClothingUniformBikiniRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformBikiniGreen
+  name: зелёное бикини
+  description: A standard bikini in safety green
+  sprite:
+    entity: ClothingUniformBikiniGreen
+  content:
+  - ClothingUniformBikiniGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformBikiniYellow
+  name: жёлтое бикини
+  description: A standard bikini in hazard yellow
+  sprite:
+    entity: ClothingUniformBikiniYellow
+  content:
+  - ClothingUniformBikiniYellow
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformBikiniPink
+  name: розовое бикини
+  description: A standard bikini in cheerful pink
+  sprite:
+    entity: ClothingUniformBikiniPink
+  content:
+  - ClothingUniformBikiniPink
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOnepieceWhite
+  name: белый слитный купальник
+  description: A standard one-piece in white
+  sprite:
+    entity: ClothingUniformOnepieceWhite
+  content:
+  - ClothingUniformOnepieceWhite
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOnepieceBlack
+  name: чёрный слитный купальник
+  description: A standard one-piece in black
+  sprite:
+    entity: ClothingUniformOnepieceBlack
+  content:
+  - ClothingUniformOnepieceBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOnepieceBlue
+  name: синий слитный купальник
+  description: A standard one-piece in corporate blue
+  sprite:
+    entity: ClothingUniformOnepieceBlue
+  content:
+  - ClothingUniformOnepieceBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOnepieceRed
+  name: красный слитный купальник
+  description: A standard one-piece in alert red
+  sprite:
+    entity: ClothingUniformOnepieceRed
+  content:
+  - ClothingUniformOnepieceRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOnepieceGreen
+  name: зелёный слитный купальник
+  description: A standard one-piece in safety green
+  sprite:
+    entity: ClothingUniformOnepieceGreen
+  content:
+  - ClothingUniformOnepieceGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOnepieceYellow
+  name: жёлтый слитный купальник
+  description: A standard one-piece in hazard yellow
+  sprite:
+    entity: ClothingUniformOnepieceYellow
+  content:
+  - ClothingUniformOnepieceYellow
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOnepiecePink
+  name: розовый слитный купальник
+  description: A standard one-piece in cheerful pink
+  sprite:
+    entity: ClothingUniformOnepiecePink
+  content:
+  - ClothingUniformOnepiecePink
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformHonkini
+  name: хонкини
+  description: A clown-themed swimsuit that honks
+  sprite:
+    entity: ClothingUniformHonkini
+  content:
+  - ClothingUniformHonkini
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformMedkini
+  name: медицинское бикини
+  description: A medical-themed bikini
+  sprite:
+    entity: ClothingUniformMedkini
+  content:
+  - ClothingUniformMedkini
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformShirtkini
+  name: рубашка-бикини
+  description: A shirt with an attached swimsuit
+  sprite:
+    entity: ClothingUniformShirtkini
+  content:
+  - ClothingUniformShirtkini
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformNtBikini
+  name: бикини NanoTrasen
+  description: An official Nanotrasen-branded bikini
+  sprite:
+    entity: ClothingUniformNtBikini
+  content:
+  - ClothingUniformNtBikini
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformSyndikini
+  name: синдикат-бикини
+  description: A suspiciously red swimsuit
+  sprite:
+    entity: ClothingUniformSyndikini
+  content:
+  - ClothingUniformSyndikini
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformHeartOnepiece
+  name: слитный купальник с сердечками
+  description: A cute one-piece swimsuit with heart patterns
+  sprite:
+    entity: ClothingUniformHeartOnepiece
+  content:
+  - ClothingUniformHeartOnepiece
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformOldtimeyOnepiece
+  name: винтажный слитный купальник
+  description: An old-fashioned one-piece swimsuit
+  sprite:
+    entity: ClothingUniformOldtimeyOnepiece
+  content:
+  - ClothingUniformOldtimeyOnepiece
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformFishsuit
+  name: рыбный купальник
+  description: A swimsuit with fish-like features
+  sprite:
+    entity: ClothingUniformFishsuit
+  content:
+  - ClothingUniformFishsuit
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformNinjaSurfsuit
+  name: купальник ниндзя
+  description: A stealthy ninja-themed swimsuit
+  sprite:
+    entity: ClothingUniformNinjaSurfsuit
+  content:
+  - ClothingUniformNinjaSurfsuit
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformWetsuitOrange
+  name: оранжевый гидрокостюм
+  description: A bright orange wetsuit for visibility
+  sprite:
+    entity: ClothingUniformWetsuitOrange
+  content:
+  - ClothingUniformWetsuitOrange
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformMermaid
+  name: купальник русалки
+  description: A swimsuit resembling mermaid scales
+  sprite:
+    entity: ClothingUniformMermaid
+  content:
+  - ClothingUniformMermaid
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformCoconutSkirt
+  name: кокосовая юбка
+  description: A tropical coconut-themed swim skirt
+  sprite:
+    entity: ClothingUniformCoconutSkirt
+  content:
+  - ClothingUniformCoconutSkirt
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformGrassSkirt
+  name: травяная юбка
+  description: A traditional grass skirt swimwear
+  sprite:
+    entity: ClothingUniformGrassSkirt
+  content:
+  - ClothingUniformGrassSkirt
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformSundress
+  name: купальный сарафан
+  description: A light sundress suitable for swimming
+  sprite:
+    entity: ClothingUniformSundress
+  content:
+  - ClothingUniformSundress
+
+# Полотенце (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorPurple
+  name: фиолетовое полотенце
+  description: фиолетовое полотенце
+  sprite:
+    entity: TP14TowelColorPurple
+  content:
+  - TP14TowelColorPurple
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorRed
+  name: красное полотенце
+  description: красное полотенце
+  sprite:
+    entity: TP14TowelColorRed
+  content:
+  - TP14TowelColorRed
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorBlue
+  name: синее полотенце
+  description: синее полотенце
+  sprite:
+    entity: TP14TowelColorBlue
+  content:
+  - TP14TowelColorBlue
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorDarkBlue
+  name: тёмно-синее полотенце
+  description: тёмно-синее полотенце
+  sprite:
+    entity: TP14TowelColorDarkBlue
+  content:
+  - TP14TowelColorDarkBlue
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorLightBlue
+  name: голубое полотенце
+  description: голубое полотенце
+  sprite:
+    entity: TP14TowelColorLightBlue
+  content:
+  - TP14TowelColorLightBlue
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorTeal
+  name: бирюзовое полотенце
+  description: бирюзовое полотенце
+  sprite:
+    entity: TP14TowelColorTeal
+  content:
+  - TP14TowelColorTeal
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorBrown
+  name: коричневое полотенце
+  description: коричневое полотенце
+  sprite:
+    entity: TP14TowelColorBrown
+  content:
+  - TP14TowelColorBrown
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorLightBrown
+  name: светло-коричневое полотенце
+  description: светло-коричневое полотенце
+  sprite:
+    entity: TP14TowelColorLightBrown
+  content:
+  - TP14TowelColorLightBrown
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorGray
+  name: серое полотенце
+  description: серое полотенце
+  sprite:
+    entity: TP14TowelColorGray
+  content:
+  - TP14TowelColorGray
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorGreen
+  name: зелёное полотенце
+  description: зелёное полотенце
+  sprite:
+    entity: TP14TowelColorGreen
+  content:
+  - TP14TowelColorGreen
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorDarkGreen
+  name: тёмно-зелёное полотенце
+  description: тёмно-зелёное полотенце
+  sprite:
+    entity: TP14TowelColorDarkGreen
+  content:
+  - TP14TowelColorDarkGreen
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorGold
+  name: золотое полотенце
+  description: золотое полотенце
+  sprite:
+    entity: TP14TowelColorGold
+  content:
+  - TP14TowelColorGold
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorOrange
+  name: оранжевое полотенце
+  description: оранжевое полотенце
+  sprite:
+    entity: TP14TowelColorOrange
+  content:
+  - TP14TowelColorOrange
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorBlack
+  name: чёрное полотенце
+  description: чёрное полотенце
+  sprite:
+    entity: TP14TowelColorBlack
+  content:
+  - TP14TowelColorBlack
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorPink
+  name: розовое полотенце
+  description: розовое полотенце
+  sprite:
+    entity: TP14TowelColorPink
+  content:
+  - TP14TowelColorPink
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorYellow
+  name: жёлтое полотенце
+  description: жёлтое полотенце
+  sprite:
+    entity: TP14TowelColorYellow
+  content:
+  - TP14TowelColorYellow
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorMaroon
+  name: каштановое полотенце
+  description: каштановое полотенце
+  sprite:
+    entity: TP14TowelColorMaroon
+  content:
+  - TP14TowelColorMaroon
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorSilver
+  name: серебряное полотенце
+  description: серебряное полотенце
+  sprite:
+    entity: TP14TowelColorSilver
+  content:
+  - TP14TowelColorSilver
+
+- type: selectableSet
+  id: ClothingSelectorTP14TowelColorMime
+  name: беззвучное полотенце
+  description: беззвучное полотенце
+  sprite:
+    entity: TP14TowelColorMime
+  content:
+  - TP14TowelColorMime
+
+# Комбинезон (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorGrey
+  name: серый комбинезон
+  description: A tasteful grey jumpsuit that reminds you of the good old days.
+  sprite:
+    entity: ClothingUniformJumpsuitColorGrey
+  content:
+  - ClothingUniformJumpsuitColorGrey
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorGrey
+  name: серая юбка-комбинезон
+  description: A tasteful grey jumpskirt that reminds you of the good old days.
+  sprite:
+    entity: ClothingUniformJumpskirtColorGrey
+  content:
+  - ClothingUniformJumpskirtColorGrey
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorWhite
+  name: белый комбинезон
+  description: A generic white jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorWhite
+  content:
+  - ClothingUniformJumpsuitColorWhite
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorWhite
+  name: белая юбка-комбинезон
+  description: A generic white jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorWhite
+  content:
+  - ClothingUniformJumpskirtColorWhite
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorBlack
+  name: чёрный комбинезон
+  description: A generic black jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorBlack
+  content:
+  - ClothingUniformJumpsuitColorBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorBlack
+  name: чёрная юбка-комбинезон
+  description: A generic black jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorBlack
+  content:
+  - ClothingUniformJumpskirtColorBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorBlue
+  name: синий комбинезон
+  description: A generic blue jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorBlue
+  content:
+  - ClothingUniformJumpsuitColorBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorBlue
+  name: синяя юбка-комбинезон
+  description: A generic blue jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorBlue
+  content:
+  - ClothingUniformJumpskirtColorBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorYellow
+  name: жёлтый комбинезон
+  description: A generic yellow jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorYellow
+  content:
+  - ClothingUniformJumpsuitColorYellow
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorYellow
+  name: жёлтая юбка-комбинезон
+  description: A generic yellow jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorYellow
+  content:
+  - ClothingUniformJumpskirtColorYellow
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorGreen
+  name: зелёный комбинезон
+  description: A generic green jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorGreen
+  content:
+  - ClothingUniformJumpsuitColorGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorGreen
+  name: зелёная юбка-комбинезон
+  description: A generic green jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorGreen
+  content:
+  - ClothingUniformJumpskirtColorGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorOrange
+  name: оранжевый комбинезон
+  description: Don't wear this near paranoid security officers.
+  sprite:
+    entity: ClothingUniformJumpsuitColorOrange
+  content:
+  - ClothingUniformJumpsuitColorOrange
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorOrange
+  name: оранжевая юбка-комбинезон
+  description: Don't wear this near paranoid security officers.
+  sprite:
+    entity: ClothingUniformJumpskirtColorOrange
+  content:
+  - ClothingUniformJumpskirtColorOrange
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorRed
+  name: красный комбинезон
+  description: A generic red jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorRed
+  content:
+  - ClothingUniformJumpsuitColorRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorRed
+  name: красная юбка-комбинезон
+  description: A generic red jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorRed
+  content:
+  - ClothingUniformJumpskirtColorRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorPurple
+  name: фиолетовый комбинезон
+  description: A generic light purple jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorPurple
+  content:
+  - ClothingUniformJumpsuitColorPurple
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorPurple
+  name: фиолетовая юбка-комбинезон
+  description: A generic light purple jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorPurple
+  content:
+  - ClothingUniformJumpskirtColorPurple
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorPink
+  name: розовый комбинезон
+  description: Just looking at this makes you feel [italic]fabulous[/italic].
+  sprite:
+    entity: ClothingUniformJumpsuitColorPink
+  content:
+  - ClothingUniformJumpsuitColorPink
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorPink
+  name: розовая юбка-комбинезон
+  description: Just looking at this makes you feel [italic]fabulous[/italic].
+  sprite:
+    entity: ClothingUniformJumpskirtColorPink
+  content:
+  - ClothingUniformJumpskirtColorPink
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorDarkBlue
+  name: тёмно-синий комбинезон
+  description: A generic dark blue jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorDarkBlue
+  content:
+  - ClothingUniformJumpsuitColorDarkBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorDarkBlue
+  name: тёмно-синяя юбка-комбинезон
+  description: A generic dark blue jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorDarkBlue
+  content:
+  - ClothingUniformJumpskirtColorDarkBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorDarkGreen
+  name: тёмно-зелёный комбинезон
+  description: A generic dark green jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorDarkGreen
+  content:
+  - ClothingUniformJumpsuitColorDarkGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorDarkGreen
+  name: тёмно-зелёная юбка-комбинезон
+  description: A generic dark green jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorDarkGreen
+  content:
+  - ClothingUniformJumpskirtColorDarkGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitColorTeal
+  name: аквамариновый комбинезон
+  description: A generic teal jumpsuit with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpsuitColorTeal
+  content:
+  - ClothingUniformJumpsuitColorTeal
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtColorTeal
+  name: аквамариновая юбка-комбинезон
+  description: A generic teal jumpskirt with no rank markings.
+  sprite:
+    entity: ClothingUniformJumpskirtColorTeal
+  content:
+  - ClothingUniformJumpskirtColorTeal
+
+# Туфли (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorBlack
+  name: чёрные туфли
+  description: Stylish black shoes.
+  sprite:
+    entity: ClothingShoesColorBlack
+  content:
+  - ClothingShoesColorBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorBrown
+  name: коричневые туфли
+  description: A pair of brown shoes.
+  sprite:
+    entity: ClothingShoesColorBrown
+  content:
+  - ClothingShoesColorBrown
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorWhite
+  name: белые туфли
+  description: Don't take them off at your office Christmas party.
+  sprite:
+    entity: ClothingShoesColorWhite
+  content:
+  - ClothingShoesColorWhite
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorBlue
+  name: синие туфли
+  description: Stylish blue shoes.
+  sprite:
+    entity: ClothingShoesColorBlue
+  content:
+  - ClothingShoesColorBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorYellow
+  name: жёлтые туфли
+  description: Stylish yellow shoes.
+  sprite:
+    entity: ClothingShoesColorYellow
+  content:
+  - ClothingShoesColorYellow
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorGreen
+  name: зелёные туфли
+  description: Stylish green shoes.
+  sprite:
+    entity: ClothingShoesColorGreen
+  content:
+  - ClothingShoesColorGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorOrange
+  name: оранжевые туфли
+  description: Stylish orange shoes.
+  sprite:
+    entity: ClothingShoesColorOrange
+  content:
+  - ClothingShoesColorOrange
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorRed
+  name: красные туфли
+  description: Stylish red shoes.
+  sprite:
+    entity: ClothingShoesColorRed
+  content:
+  - ClothingShoesColorRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingShoesColorPurple
+  name: фиолетовые туфли
+  description: Stylish purple shoes.
+  sprite:
+    entity: ClothingShoesColorPurple
+  content:
+  - ClothingShoesColorPurple
+
+# Кепки (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatGreyFlatcap
+  name: серая плоская кепка
+  description: Fashionable for both the working class and old man Jenkins.
+  sprite:
+    entity: ClothingHeadHatGreyFlatcap
+  content:
+  - ClothingHeadHatGreyFlatcap
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatBrownFlatcap
+  name: коричневая плоская кепка
+  description: "\"Stupid clown! You made me look bad!\""
+  sprite:
+    entity: ClothingHeadHatBrownFlatcap
+  content:
+  - ClothingHeadHatBrownFlatcap
+
+# Перчатки (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorBlack
+  name: чёрные перчатки
+  description: Regular black gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorBlack
+  content:
+  - ClothingHandsGlovesColorBlack
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorGray
+  name: серые перчатки
+  description: Regular grey gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorGray
+  content:
+  - ClothingHandsGlovesColorGray
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorBrown
+  name: коричневые перчатки
+  description: Regular brown gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorBrown
+  content:
+  - ClothingHandsGlovesColorBrown
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorWhite
+  name: белые перчатки
+  description: Regular white gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorWhite
+  content:
+  - ClothingHandsGlovesColorWhite
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorRed
+  name: красные перчатки
+  description: Regular red gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorRed
+  content:
+  - ClothingHandsGlovesColorRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorBlue
+  name: синие перчатки
+  description: Regular blue gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorBlue
+  content:
+  - ClothingHandsGlovesColorBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorTeal
+  name: аквамариновые перчатки
+  description: Regular teal gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorTeal
+  content:
+  - ClothingHandsGlovesColorTeal
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorGreen
+  name: зелёные перчатки
+  description: Regular green gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorGreen
+  content:
+  - ClothingHandsGlovesColorGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorOrange
+  name: оранжевые перчатки
+  description: Regular orange gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorOrange
+  content:
+  - ClothingHandsGlovesColorOrange
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesColorPurple
+  name: фиолетовые перчатки
+  description: Regular purple gloves that do not keep you from frying.
+  sprite:
+    entity: ClothingHandsGlovesColorPurple
+  content:
+  - ClothingHandsGlovesColorPurple
+
+- type: selectableSet
+  id: ClothingSelectorClothingHandsGlovesFingerless
+  name: беспалые перчатки
+  description: Plain black gloves without fingertips for the hard working.
+  sprite:
+    entity: ClothingHandsGlovesFingerless
+  content:
+  - ClothingHandsGlovesFingerless
+
+# Бейсболки (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatGreysoft
+  name: серая кепка
+  description: A grey baseball cap.
+  sprite:
+    entity: ClothingHeadHatGreysoft
+  content:
+  - ClothingHeadHatGreysoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatMimesoft
+  name: белая кепка
+  description: A white baseball cap.
+  sprite:
+    entity: ClothingHeadHatMimesoft
+  content:
+  - ClothingHeadHatMimesoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatBluesoft
+  name: синяя кепка
+  description: A blue baseball cap.
+  sprite:
+    entity: ClothingHeadHatBluesoft
+  content:
+  - ClothingHeadHatBluesoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatYellowsoft
+  name: жёлтая кепка
+  description: A yellow baseball cap.
+  sprite:
+    entity: ClothingHeadHatYellowsoft
+  content:
+  - ClothingHeadHatYellowsoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatGreensoft
+  name: зелёная кепка
+  description: A green baseball cap.
+  sprite:
+    entity: ClothingHeadHatGreensoft
+  content:
+  - ClothingHeadHatGreensoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatOrangesoft
+  name: оранжевая кепка
+  description: An orange baseball cap.
+  sprite:
+    entity: ClothingHeadHatOrangesoft
+  content:
+  - ClothingHeadHatOrangesoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatRedsoft
+  name: красная кепка
+  description: A red baseball cap.
+  sprite:
+    entity: ClothingHeadHatRedsoft
+  content:
+  - ClothingHeadHatRedsoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatBlacksoft
+  name: чёрная кепка
+  description: A black baseball cap.
+  sprite:
+    entity: ClothingHeadHatBlacksoft
+  content:
+  - ClothingHeadHatBlacksoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatPurplesoft
+  name: фиолетовая кепка
+  description: A purple baseball cap.
+  sprite:
+    entity: ClothingHeadHatPurplesoft
+  content:
+  - ClothingHeadHatPurplesoft
+
+- type: selectableSet
+  id: ClothingSelectorClothingHeadHatCorpsoft
+  name: корпоративная кепка
+  description: A baseball cap in corporation colors.
+  sprite:
+    entity: ClothingHeadHatCorpsoft
+  content:
+  - ClothingHeadHatCorpsoft
+
+# Повседневные комбинезоны (ОдеждоМат)
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitCasualBlue
+  name: повседневный синий комбинезон
+  description: A loose worn blue shirt with a grey pants, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpsuitCasualBlue
+  content:
+  - ClothingUniformJumpsuitCasualBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtCasualBlue
+  name: повседневная синяя юбка-комбинезон
+  description: A loose worn blue shirt with a grey skirt, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpskirtCasualBlue
+  content:
+  - ClothingUniformJumpskirtCasualBlue
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitCasualPurple
+  name: повседневный фиолетовый комбинезон
+  description: A loose worn purple shirt with a grey pants, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpsuitCasualPurple
+  content:
+  - ClothingUniformJumpsuitCasualPurple
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtCasualPurple
+  name: повседневная фиолетовая юбка-комбинезон
+  description: A loose worn purple shirt with a grey skirt, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpskirtCasualPurple
+  content:
+  - ClothingUniformJumpskirtCasualPurple
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitCasualRed
+  name: повседневный красный комбинезон
+  description: A loose worn red shirt with a grey pants, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpsuitCasualRed
+  content:
+  - ClothingUniformJumpsuitCasualRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtCasualRed
+  name: повседневная красная юбка-комбинезон
+  description: A loose worn red shirt with a grey skirt, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpskirtCasualRed
+  content:
+  - ClothingUniformJumpskirtCasualRed
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpsuitCasualGreen
+  name: повседневный зелёный комбинезон
+  description: A loose worn green shirt with a grey pants, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpsuitCasualGreen
+  content:
+  - ClothingUniformJumpsuitCasualGreen
+
+- type: selectableSet
+  id: ClothingSelectorClothingUniformJumpskirtCasualGreen
+  name: повседневная зелёная юбка-комбинезон
+  description: A loose worn green shirt with a grey skirt, perfect for someone looking to relax.
+  sprite:
+    entity: ClothingUniformJumpskirtCasualGreen
+  content:
+  - ClothingUniformJumpskirtCasualGreen
+
+# Шапки (Зимнешкаф)
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBeanie
+  name: белая шапка
+  description: A generic white beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadBeanie
+  content:
+  - TP14ClothingHeadBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBlackBeanie
+  name: чёрная шапка
+  description: A generic black beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadBlackBeanie
+  content:
+  - TP14ClothingHeadBlackBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBlueBeanie
+  name: синяя шапка
+  description: A generic blue beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadBlueBeanie
+  content:
+  - TP14ClothingHeadBlueBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadDarkBlueBeanie
+  name: тёмно-синяя шапка
+  description: A generic dark blue beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadDarkBlueBeanie
+  content:
+  - TP14ClothingHeadDarkBlueBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadTealBeanie
+  name: бирюзовая шапка
+  description: A generic teal beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadTealBeanie
+  content:
+  - TP14ClothingHeadTealBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadGreenBeanie
+  name: зелёная шапка
+  description: A generic green beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadGreenBeanie
+  content:
+  - TP14ClothingHeadGreenBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadDarkGreenBeanie
+  name: тёмно-зелёная шапка
+  description: A generic dark green beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadDarkGreenBeanie
+  content:
+  - TP14ClothingHeadDarkGreenBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadOrangeBeanie
+  name: оранжевая шапка
+  description: A generic orange beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadOrangeBeanie
+  content:
+  - TP14ClothingHeadOrangeBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadPinkBeanie
+  name: розовая шапка
+  description: A generic pink beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadPinkBeanie
+  content:
+  - TP14ClothingHeadPinkBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadRedBeanie
+  name: красная шапка
+  description: A generic red beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadRedBeanie
+  content:
+  - TP14ClothingHeadRedBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadYellowBeanie
+  name: жёлтая шапка
+  description: A generic yellow beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadYellowBeanie
+  content:
+  - TP14ClothingHeadYellowBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadPurpleBeanie
+  name: фиолетовая шапка
+  description: A generic purple beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadPurpleBeanie
+  content:
+  - TP14ClothingHeadPurpleBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadLightBrownBeanie
+  name: светло-коричневая шапка
+  description: A generic light brown beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadLightBrownBeanie
+  content:
+  - TP14ClothingHeadLightBrownBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBrownBeanie
+  name: коричневая шапка
+  description: A generic brown beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadBrownBeanie
+  content:
+  - TP14ClothingHeadBrownBeanie
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadMaroonBeanie
+  name: каштановая шапка
+  description: A generic maroon beanie, keeps your head warm and cozy
+  sprite:
+    entity: TP14ClothingHeadMaroonBeanie
+  content:
+  - TP14ClothingHeadMaroonBeanie
+
+# Панамы (Зимнешкаф)
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucket
+  name: белая панама
+  description: A generic white bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucket
+  content:
+  - TP14ClothingHeadBucket
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketBlack
+  name: чёрная панама
+  description: A generic black bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketBlack
+  content:
+  - TP14ClothingHeadBucketBlack
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketBlue
+  name: синяя панама
+  description: A generic blue bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketBlue
+  content:
+  - TP14ClothingHeadBucketBlue
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketDarkBlue
+  name: тёмно-синяя панама
+  description: A generic dark blue bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketDarkBlue
+  content:
+  - TP14ClothingHeadBucketDarkBlue
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketTeal
+  name: бирюзовая панама
+  description: A generic teal bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketTeal
+  content:
+  - TP14ClothingHeadBucketTeal
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketGreen
+  name: зелёная панама
+  description: A generic green bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketGreen
+  content:
+  - TP14ClothingHeadBucketGreen
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketDarkGreen
+  name: тёмно-зелёная панама
+  description: A generic dark green bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketDarkGreen
+  content:
+  - TP14ClothingHeadBucketDarkGreen
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketOrange
+  name: оранжевая панама
+  description: A generic orange bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketOrange
+  content:
+  - TP14ClothingHeadBucketOrange
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketPink
+  name: розовая панама
+  description: A generic pink bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketPink
+  content:
+  - TP14ClothingHeadBucketPink
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketRed
+  name: красная панама
+  description: A generic red bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketRed
+  content:
+  - TP14ClothingHeadBucketRed
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketYellow
+  name: жёлтая панама
+  description: A generic yellow bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketYellow
+  content:
+  - TP14ClothingHeadBucketYellow
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketPurple
+  name: фиолетовая панама
+  description: A generic purple bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketPurple
+  content:
+  - TP14ClothingHeadBucketPurple
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketLightBrown
+  name: светло-коричневая панама
+  description: A generic light brown bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketLightBrown
+  content:
+  - TP14ClothingHeadBucketLightBrown
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketBrown
+  name: коричневая панама
+  description: A generic brown bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketBrown
+  content:
+  - TP14ClothingHeadBucketBrown
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketMaroon
+  name: каштановая панама
+  description: A generic maroon bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketMaroon
+  content:
+  - TP14ClothingHeadBucketMaroon
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketOlive
+  name: оливковая панама
+  description: A generic olive bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketOlive
+  content:
+  - TP14ClothingHeadBucketOlive
+
+- type: selectableSet
+  id: ClothingSelectorTP14ClothingHeadBucketKhaki
+  name: панама хаки
+  description: A generic khaki bucket hat, keeps the rain out of your eyes.
+  sprite:
+    entity: TP14ClothingHeadBucketKhaki
+  content:
+  - TP14ClothingHeadBucketKhaki
+
+# Зимние сапоги (Зимнешкаф)
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesBlackWinterBoots
+  name: чёрные зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesBlackWinterBoots
+  content:
+  - TP14EntClothesBlackWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesWhiteWinterBoots
+  name: белые зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesWhiteWinterBoots
+  content:
+  - TP14EntClothesWhiteWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesBlueWinterBoots
+  name: синие зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesBlueWinterBoots
+  content:
+  - TP14EntClothesBlueWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesDarkBlueWinterBoots
+  name: тёмно-синие зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesDarkBlueWinterBoots
+  content:
+  - TP14EntClothesDarkBlueWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesBrownWinterBoots
+  name: коричневые зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesBrownWinterBoots
+  content:
+  - TP14EntClothesBrownWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesGreenWinterBoots
+  name: зелёные зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesGreenWinterBoots
+  content:
+  - TP14EntClothesGreenWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesOrangeWinterBoots
+  name: оранжевые зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesOrangeWinterBoots
+  content:
+  - TP14EntClothesOrangeWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesRedWinterBoots
+  name: красные зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesRedWinterBoots
+  content:
+  - TP14EntClothesRedWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesYellowWinterBoots
+  name: жёлтые зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesYellowWinterBoots
+  content:
+  - TP14EntClothesYellowWinterBoots
+
+- type: selectableSet
+  id: ClothingSelectorTP14EntClothesPurpleWinterBoots
+  name: фиолетовые зимние сапоги
+  description: Fluffy boots to help survive even the coldest of winters.
+  sprite:
+    entity: TP14EntClothesPurpleWinterBoots
+  content:
+  - TP14EntClothesPurpleWinterBoots

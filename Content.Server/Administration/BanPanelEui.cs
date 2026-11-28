@@ -1,12 +1,14 @@
 using System.Net;
 using System.Net.Sockets;
 using Content.Server.Administration.Managers;
+using Content.Server.Administration.Notes;
 using Content.Server.Administration.Systems;
 using Content.Server.Chat.Managers;
 using Content.Server.EUI;
 using Content.Shared.Administration;
 using Content.Shared.Database;
 using Content.Shared.Eui;
+using Content.Shared._Wormix.Administration; // Wormix
 using Robust.Shared.Network;
 
 namespace Content.Server.Administration;
@@ -19,6 +21,7 @@ public sealed partial class BanPanelEui : BaseEui
     [Dependency] private IPlayerLocator _playerLocator = default!;
     [Dependency] private IChatManager _chat = default!;
     [Dependency] private IAdminManager _admins = default!;
+    [Dependency] private IAdminNotesManager _notes = default!; // Wormix
 
     private readonly ISawmill _sawmill;
 
@@ -51,11 +54,47 @@ public sealed partial class BanPanelEui : BaseEui
             case BanPanelEuiStateMsg.CreateBanRequest r:
                 BanPlayer(r.Ban);
                 break;
+            // Wormix-start
+            case CreateWatchlistBanRequest r:
+                CreateWatchlist(r);
+                break;
+            // Wormix-end
             case BanPanelEuiStateMsg.GetPlayerInfoRequest r:
                 ChangePlayer(r.PlayerUsername);
                 break;
         }
     }
+
+    // Wormix-start
+    private async void CreateWatchlist(CreateWatchlistBanRequest request)
+    {
+        if (!_notes.CanCreate(Player))
+        {
+            _sawmill.Warning($"{Player.Name} ({Player.UserId}) tried to create a watchlist entry with no notes flag");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(request.PlayerUsername) || string.IsNullOrWhiteSpace(request.Reason))
+            return;
+
+        var located = await _playerLocator.LookupIdByNameOrIdAsync(request.PlayerUsername);
+        if (located == null)
+        {
+            _chat.DispatchServerMessage(Player, Loc.GetString("cmd-ban-player"));
+            return;
+        }
+
+        await _notes.AddAdminRemark(
+            Player,
+            located.UserId,
+            NoteType.Watchlist,
+            request.Reason,
+            null,
+            true,
+            null);
+        Close();
+    }
+    // Wormix-end
 
     private async void BanPlayer(Ban ban)
     {

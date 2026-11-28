@@ -1,0 +1,115 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Clothing/Head/hats.yml
+
+- type: entity
+  parent: ClothingHeadHatBeretHoS
+  id: ClothingHeadHatBeretHeadOfSecurityAdvanced
+  name: head of security's parade beret
+  description: A particularly gilded beret, designed for the Head of Security.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/hos-expi.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/hos-expi.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSeniorBotanist
+  name: botanical beret
+  description: A green beret featuring a small blue flower given to experienced botanists.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/beret_botany.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/beret_botany.rsi
+
+- type: entity
+  parent: ClothingHeadHatCapcap
+  id: ClothingHeadHatCapcapSenior
+  name: cap cap senior
+  description: A grand, stylish cap worn by the Seniors Captains. Shows the station who's in charge.
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/cap_senior.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/cap_senior.rsi
+  - type: Item
+    sprite: _Goobstation/Clothing/Head/Hats/cap_senior.rsi
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseJanitorContraband ]
+  id: ClothingHeadHatJanitorCap
+  name: janitorial cap
+  description: An extravagant purple cap for only the BEST of janitorial workers.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/janitor_cap.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/janitor_cap.rsi
+  - type: Item
+    sprite: _Goobstation/Clothing/Head/Hats/janitor_cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+    - WhitelistChameleon
+    - HamsterWearable
+
+- type: entity # todo <mailfix>
+  parent: ClothingHeadBase
+  id: ClothingHeadMailCarrier
+  name: clothing-head-mail-carrier
+  description: clothing-head-mail-carrier-desc
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/mailman.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/mailman.rsi
+
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Ported from Goob-station-Master: Prototypes\_Goobstation\Entities\Clothing\Head\hats.yml
+# Goob port: Armor component removed from head-wear (Vanila ArmorComponent has no coverage field; full-body armor from a hat would be wrong)
+
+- type: entity
+  parent: ClothingHeadHeadHatBaseFlippable
+  id: ClothingHeadHatPropeller
+  name: propeller hat
+  description: Aw gee willickers!
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/propeller.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/propeller.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+
+
+- type: entity
+  parent: ClothingHeadHatCentcomcap
+  id: ClothingHeadHatGoldCentcom
+  name: golden Centcom cap
+  description: A gold-and-white gilded cap worn by the highest-ranking members of Central Command.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/golden_centcom.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/golden_centcom.rsi
+  - type: Item
+    sprite: _Goobstation/Clothing/Head/Hats/golden_centcom.rsi
+
+
+- type: entity
+  abstract: true
+  parent: [ClothingHeadBase]
+  id: ClothingHeadHatArmored
+  components:
+  - type: StaticPrice
+    price: -90 # Wormix

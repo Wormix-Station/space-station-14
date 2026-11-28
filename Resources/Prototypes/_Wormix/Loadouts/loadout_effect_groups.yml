@@ -1,0 +1,148 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork: loadout effect groups
+
+- type: loadoutEffectGroup
+  id: CyberParamedic
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobParamedic
+      time: 74772 #20.77 hours
+
+- type: loadoutEffectGroup
+  id: GrandMasterCE
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChiefEngineer
+      time: 360000 # 100 hrs
+
+# Jumpsuit
+
+- type: loadoutEffectGroup
+  id: GrandMasterCMO
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobChiefMedicalOfficer
+      time: 360000 # 100 hrs
+
+# Jumpsuit
+
+- type: loadoutEffectGroup
+  id: GrandMasterCap
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 360000 # 100 hrs
+
+# Jumpsuit
+
+- type: loadoutEffectGroup
+  id: GrandMasterHoP
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 360000 # 100 hrs
+
+# Professional HoP Time
+
+- type: loadoutEffectGroup
+  id: GrandMasterHoS
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 360000 # 100 hrs
+
+# Jumpsuit
+
+- type: loadoutEffectGroup
+  id: GrandMasterQM
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 360000 # 100 hrs
+
+# Jumpsuit
+
+- type: loadoutEffectGroup
+  id: GrandMasterRD
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobResearchDirector
+      time: 360000 # 100 hrs
+
+# Head
+
+- type: loadoutEffectGroup
+  id: MasterBotanist
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBotanist
+      time: 72000 #20 hours
+
+- type: loadoutEffectGroup
+  id: MasterMiner
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 72000 #20 hours
+
+- type: loadoutEffectGroup
+  id: Noob
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:OverallPlaytimeRequirement
+      time: 18000 #5 hours
+      inverted: true
+
+#NTR Fancy suit
+
+- type: loadoutEffectGroup
+  id: SeniorWarden #masterwarden doesn't exist, but it'd be 20 hours, not this slop
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 187200 #Same as BSO mantle mostly for shits and giggles. Warden is Harrowing.
+
+- type: loadoutEffectGroup
+  id: SophisticatedTider
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobPassenger
+      time: 288000 # 80 hrs
+
+# Quarterzip
+
+- type: loadoutEffectGroup # Goobstation?
+  id: VeteranOfficer
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement: !type:DepartmentTimeRequirement
+        department: Security
+        time: 100h
+
+# Head
+

@@ -3,9 +3,9 @@
 lobbyenabled = false
 # Dev map for faster loading & convenience
 map = "Dev"
-role_timers = false
+role_timers = true
 admin_job_tracking = true
-role_loadout_timers = false
+role_loadout_timers = true
 new_character_jobs = "Passenger, Captain"
 
 [events]

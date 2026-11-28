@@ -46,6 +46,8 @@
                 <BoxContainer Name="RolesContainer"  Orientation="Vertical" />
             </ScrollContainer>
         </TabContainer>
+        <!-- Wormix: presets for the reason field. -->
+        <Button Name="PresetsButton" Text="{Loc ban-panel-presets}" HorizontalExpand="True" />
         <Button Name="SubmitButton" Text="{Loc ban-panel-submit}" HorizontalExpand="True" />
     </BoxContainer>
 </DefaultWindow>

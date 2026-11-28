@@ -1,0 +1,79 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase, BaseMajorContraband]
+  id: ClothingShoesRealJordans
+  suffix: Magboots
+  name: air jordans
+  description: State-of-the-art, official, uncreased Jordans that protect you from slipping when turned on.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: StaticPrice
+    price: 750
+  - type: Damageable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Items/bow_pull.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ClothingShoesCreasedJordans:
+            min: 1
+            max: 1
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesCreasedJordans
+  name: creased air jordans
+  description: No wait... this can't be.... THEY'RE CREASED!
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
+    state: icon-creased
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: StaticPrice
+    price: 1
+
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Clothing/Shoes/boots.yml
+
+- type: entity
+  parent: [BaseCommandContraband, ClothingShoesBootsJack]
+  id: ClothingShoesBootsJackAdvanced
+  name: advanced jackboots
+  description: This pair of jackboots was designed for the Head of Security. No one knows why are they called advanced, but they are for sure advanced in drip.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Shoes/Boots/advanced_jackboots.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Shoes/Boots/advanced_jackboots.rsi
+
+- type: entity
+  parent: [ClothingShoesMilitaryBase, ClothingShoesBaseWinterBoots, BaseSecurityContraband]
+  id: ClothingShoesWinterCombatBoots
+  name: snowjacks boots
+  description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. Now in winter edition.
+  components:
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.6
+

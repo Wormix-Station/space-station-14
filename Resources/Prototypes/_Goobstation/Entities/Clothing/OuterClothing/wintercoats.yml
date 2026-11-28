@@ -1,0 +1,48 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Goobstation/Entities/Clothing/OuterClothing/wintercoats.yml
+
+- type: entity # upstreamrr todo <mailfix>
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterCoatMail
+  name: mail carrier's winter coat
+  description: It'll keep away the cold but not the dogs.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/mail_winter_coat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/mail_winter_coat.rsi
+
+- type: entity
+  parent: [ClothingOuterArmorBase, ClothingOuterWinterCoatToggleable, BaseSecurityContraband]
+  id: ClothingOuterWinterSecArmored
+  name: security armored winter coat
+  description: A sturdy, utilitarian winter coat designed to protect security members from any threats and hypothermic events.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/secvestcoat.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/secvestcoat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodWinterSec
+  - type: StaticPrice
+    price: 220
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+
+- type: entity
+  parent: ClothingOuterWinterSecArmored
+  id: ClothingOuterWinterSeniorSecArmored
+  name: senior security armored winter coat
+  description: A sturdy, utilitarian winter coat designed to protect senior security members from any threats and hypothermic events.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/seniorsecvestcoat.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/OuterClothing/Wintercoats/seniorsecvestcoat.rsi

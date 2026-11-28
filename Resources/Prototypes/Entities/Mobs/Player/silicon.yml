@@ -68,6 +68,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         toggleAction: ActionAGhostShowCommunications
   - type: CrewMonitoringConsole
+    doAlert: false
   - type: GeneralStationRecordConsole
   - type: DeviceNetwork
     deviceNetId: Wireless

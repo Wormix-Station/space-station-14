@@ -75,6 +75,7 @@
     - dumpentities
     - showwallmounts
     - showaccessreaders
+    - showdevicelinks # Wormix
     - quickinspect
 
 - Flags: MAPPING
@@ -87,6 +88,7 @@
     - toggledecals
     - showwallmounts
     - showaccessreaders
+    - showdevicelinks # Wormix
 
 - Flags: QUERY
   Commands:
@@ -101,3 +103,4 @@
 - Flags: ADMIN
   Commands:
     - admin_overlay
+    - showdevicelinks # Wormix

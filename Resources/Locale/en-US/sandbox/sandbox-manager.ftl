@@ -15,6 +15,11 @@ sandbox-window-toggle-lights-button = Toggle Lights
 sandbox-window-toggle-fov-button = Toggle FOV
 sandbox-window-toggle-shadows-button = Toggle Shadows
 sandbox-window-toggle-subfloor-button = Toggle Subfloor
+# Wormix: mapper layer toggles
+sandbox-window-show-wires-button = Show wiring
+sandbox-window-show-pipes-button = Show atmos network
+sandbox-window-show-disposals-button = Show disposal network
+sandbox-window-show-device-links-button = Show device links
 sandbox-window-toggle-suicide-button = Suicide
 sandbox-window-show-spawns-button = Show Spawns
 sandbox-window-show-bb-button = Show BB

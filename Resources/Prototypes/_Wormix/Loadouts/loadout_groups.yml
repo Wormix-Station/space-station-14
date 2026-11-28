@@ -1,0 +1,98 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork (Wormix): special & sponsor loadout groups
+
+- type: loadoutGroup
+  id: WormixSponsorGroup
+  name: loadout-group-wormix-special
+  minLimit: 0
+  maxLimit: 99
+  loadouts:
+  - ClothingNeckLegacyOfShipyardsLoadout
+
+- type: loadoutGroup
+  id: WormixAnimals
+  name: loadout-group-wormix-animals
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - BeePack
+
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork: loadout groups
+
+- type: loadoutGroup
+  id: CaptainGloves
+  name: loadout-group-captain-gloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - CaptainGloves
+
+- type: loadoutGroup
+  id: CaptainMask
+  name: loadout-group-captain-mask
+  minLimit: 0
+  loadouts:
+  - CaptainMask
+
+- type: loadoutGroup
+  id: CaptainShoes
+  name: loadout-group-captain-shoes
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - CaptainLeatherShoes
+  - CaptainHeels
+
+- type: loadoutGroup
+  id: DetectiveGloves
+  name: loadout-group-detective-gloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - DetectiveGloves
+
+- type: loadoutGroup
+  id: HeadofSecurityShoes
+  name: loadout-group-hos-shoes
+  loadouts:
+  - JackBootsGoob
+  - SecurityWinterBootsGoob
+  - AdvancedJackBoots
+
+- type: loadoutGroup
+  id: HoPGloves
+  name: loadout-group-hop-gloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - HoPGloves
+
+- type: loadoutGroup
+  id: SalvageSpecialistJumpsuit
+  name: loadout-group-salvage-specialist-jumpsuit
+  loadouts:
+  - SalvageSpecialistJumpsuit
+  - SalvageSpecialistJumpskirt
+  - SalvageSpecialistOveralls
+  - SalvageSpecialistMJ
+  - ShaftMinerJumpsuit # Wormix: no lavaland role here, available to salvage specialists
+  - ShaftMinerJumpskirt
+  - ShaftMinerOveralls
+  - ShaftMinerMJ
+  - LostFrontierProspectorSuit
+
+- type: loadoutGroup
+  id: SalvageSpecialistNeck
+  name: loadout-group-salvage-specialist-neck
+  minLimit: 0
+  loadouts:
+  - MinerCloak
+
+- type: loadoutGroup
+  id: SecurityNeck
+  name: loadout-group-security-neck
+  minLimit: 0
+  loadouts:
+  - ClothingNeckCWPSec
+  - ClothingNeckMantleVeteranSecurity

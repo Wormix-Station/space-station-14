@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Ported from Goobstation fork, source path: _Backmen/Entities/Clothing/Head/soft.yml
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatPilotkaSec
+  name: clothing-head-security-flight-cap
+  description: clothing-head-security-flight-cap-desc
+  suffix: Backmen
+  components:
+    - type: Sprite
+      sprite: _Backmen/Clothing/Head/Soft/secpilotka.rsi
+    - type: Clothing
+      sprite: _Backmen/Clothing/Head/Soft/secpilotka.rsi

@@ -1,24 +1,60 @@
 - type: vendingMachineInventory
+
   id: DetDrobeInventory
+
   startingInventory:
-    ClothingUniformJumpsuitClassicWhiteShirtBlackPants: 2 # WL-change: wardrobe refresh
-    ClothingUniformJumpsuitClassicWhiteShirtDarkPants: 2 # WL-change: wardrobe refresh
+
+    ClothingUniformJumpsuitClassicWhiteShirtBlackPants: 2 # Wormix-change: wardrobe refresh
+
+    ClothingUniformJumpsuitClassicWhiteShirtDarkPants: 2 # Wormix-change: wardrobe refresh
+
     ClothingShoesColorBrown: 2
-    ClothingOuterTrenchcoatArmoredDarkDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterTrenchcoatArmoredLightDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterTrenchcoatArmoredNoirDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterTrenchcoatArmoredTanDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterTrenchcoatArmoredBlueDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterTrenchcoatArmoredKhakiDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterBlazerArmoredDarkDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterBlazerArmoredLightDetective: 1 # WL-change: wardrobe refresh
-    ClothingOuterBlazerArmoredNoirDetective: 1 # WL-change: wardrobe refresh
+
+    ClothingOuterTrenchcoatArmoredDarkDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterTrenchcoatArmoredLightDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterTrenchcoatArmoredNoirDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterTrenchcoatArmoredTanDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterTrenchcoatArmoredBlueDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterTrenchcoatArmoredKhakiDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterBlazerArmoredDarkDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterBlazerArmoredLightDetective: 1 # Wormix-change: wardrobe refresh
+
+    ClothingOuterBlazerArmoredNoirDetective: 1 # Wormix-change: wardrobe refresh
+
     ClothingHeadHatFedoraBrown: 2
+
     ClothingOuterVestDetective: 2
+
     ClothingNeckTieDet: 2
+
     ClothingHeadHatFedoraGrey: 2
+
     ClothingHandsGlovesColorBlack: 2
+
     ClothingHandsGlovesLatex: 2
+
     ClothingHeadsetSecurity: 2
+
+    ClothingOuterCoatDetectiveLoadout: 1
+
+    ClothingOuterCoatDetectiveLoadoutGrey: 1
+
+    ClothingUniformJumpskirtDetective: 2
+
+    ClothingUniformJumpskirtDetectiveGrey: 2
+
+    ClothingUniformJumpsuitDetective: 2
+
+    ClothingUniformJumpsuitDetectiveGrey: 2
+
   contrabandInventory:
+
     ToyFigurineDetective: 1
+

@@ -1,64 +1,17 @@
 - type: vendingMachineInventory
   id: WinterDrobeInventory
   startingInventory:
-    # WL-Turtleneck-start
-    ClothingUniformJumpskirtTurtleneckAquamarine: 2
-    ClothingUniformJumpsuitTurtleneckAquamarine: 2
-    ClothingUniformJumpskirtTurtleneckWhite: 2
-    ClothingUniformJumpsuitTurtleneckWhite: 2
-    ClothingUniformJumpskirtTurtleneckAzure: 2
-    ClothingUniformJumpsuitTurtleneckAzure: 2
-    ClothingUniformJumpskirtTurtleneckYellow: 2 
-    ClothingUniformJumpsuitTurtleneckYellow: 2
-    # WL-change-start: wardrobe refresh
-    ClothingUniformJumpskirtTurtleneckLightgreen: 2
-    ClothingUniformJumpsuitTurtleneckLightgreen: 2
-    ClothingUniformJumpskirtTurtleneckDarkgreen: 2
-    ClothingUniformJumpsuitTurtleneckDarkgreen: 2
-    # WL-change-end
-    ClothingUniformJumpskirtTurtleneckBrown: 2
-    ClothingUniformJumpsuitTurtleneckBrown: 2
-    ClothingUniformJumpskirtTurtleneckRed: 2
-    ClothingUniformJumpsuitTurtleneckRed: 2
-    ClothingUniformJumpskirtTurtleneckOrange: 2
-    ClothingUniformJumpsuitTurtleneckOrange: 2
-    ClothingUniformJumpskirtTurtleneckPink: 2
-    ClothingUniformJumpsuitTurtleneckPink: 2
-    ClothingUniformJumpskirtTurtleneckGrey: 2
-    ClothingUniformJumpsuitTurtleneckGrey: 2 
-    ClothingUniformJumpskirtTurtleneckBlue: 2
-    ClothingUniformJumpsuitTurtleneckBlue: 2 
-    ClothingUniformJumpskirtTurtleneckPurple: 2
-    ClothingUniformJumpsuitTurtleneckPurple: 2 
-    ClothingUniformJumpskirtTurtleneckBlack: 2
-    ClothingUniformJumpsuitTurtleneckBlack: 2
-    ClothingUniformJumpskirtTurtleneckSalat: 2
-    ClothingUniformJumpsuitTurtleneckSalat: 2 
-    ClothingUniformJumpsuitTurtleneckSalatblack: 2 
-    ClothingUniformJumpskirtTurtleneckBlackSleeveless: 2
-    ClothingUniformJumpsuitTurtleneckBlackSleeveless: 2 
-    ClothingUniformJumpsuitTurtleneckWhiteBlackSleeveless: 2 
-    ClothingUniformJumpsuitTurtleneckWhiteSleeveless: 2 
-    ClothingUniformJumpskirtTurtleneckWhiteSleeveless: 2
-    # WL-Turtleneck-end
-    # WL-Facescarf-start
-    ADTClothingNeckFacescarfBlack: 3
-    ADTClothingNeckFacescarfBlue: 3
-    ADTClothingNeckFacescarfGreen: 3
-    ADTClothingNeckFacescarfGrey: 3
-    ADTClothingNeckFacescarfOrange: 3
-    ADTClothingNeckFacescarfPurple: 3
-    ADTClothingNeckFacescarfRed: 3
-    ADTClothingNeckFacescarfWhite: 3
-    # WL-Facescarf-end
-    ClothingNeckScarfStripedRed: 3
-    ClothingNeckScarfStripedGreen: 3
-    ClothingNeckScarfStripedBlue: 3
-    ClothingNeckScarfStripedBlack: 3
-    ClothingNeckScarfStripedBrown: 3
-    ClothingNeckScarfStripedLightBlue: 3
-    ClothingNeckScarfStripedOrange: 3
-    ClothingNeckScarfStripedPurple: 3
+    #Wormix-Start
+    UndeterminedClothingScarf: 8
+    UndeterminedClothingScarfLong: 8
+    UndeterminedClothingFacescarf: 8
+    UndeterminedClothingTurtleneck: 8
+    UndeterminedClothingTurtleneckSkirt: 8
+    UndeterminedClothingWinterCoat: 8
+    UndeterminedClothingBeanie: 8
+    UndeterminedClothingBucket: 8
+    UndeterminedClothingWinterBoots: 8
+    #Wormix-End
     # WL-change-start: wardrobe refresh
     ClothingOuterTrenchcoatTan: 6
     ClothingOuterTrenchcoatBlue: 6
@@ -75,57 +28,23 @@
     ClothingOuterBomberLeather: 3
     # WL-change-end
     ClothingHeadHatCanadaBeanie: 4
-    # Trieste-start: TP14 beanies from Trieste Port 14
-    TP14ClothingHeadBeanie: 4
-    TP14ClothingHeadBlackBeanie: 4
-    TP14ClothingHeadBlueBeanie: 4
-    TP14ClothingHeadDarkBlueBeanie: 4
-    TP14ClothingHeadTealBeanie: 4
-    TP14ClothingHeadGreenBeanie: 4
-    TP14ClothingHeadDarkGreenBeanie: 4
-    TP14ClothingHeadOrangeBeanie: 4
-    TP14ClothingHeadPinkBeanie: 4
-    TP14ClothingHeadRedBeanie: 4
-    TP14ClothingHeadYellowBeanie: 4
-    TP14ClothingHeadPurpleBeanie: 4
-    TP14ClothingHeadLightBrownBeanie: 4
-    TP14ClothingHeadBrownBeanie: 4
-    TP14ClothingHeadMaroonBeanie: 4
-    # Trieste-end
-    # Trieste-start: TP14 bucket hats from Trieste Port 14
-    TP14ClothingHeadBucket: 4
-    TP14ClothingHeadBucketBlack: 4
-    TP14ClothingHeadBucketBlue: 4
-    TP14ClothingHeadBucketDarkBlue: 4
-    TP14ClothingHeadBucketTeal: 4
-    TP14ClothingHeadBucketGreen: 4
-    TP14ClothingHeadBucketDarkGreen: 4
-    TP14ClothingHeadBucketOrange: 4
-    TP14ClothingHeadBucketPink: 4
-    TP14ClothingHeadBucketRed: 4
-    TP14ClothingHeadBucketYellow: 4
-    TP14ClothingHeadBucketPurple: 4
-    TP14ClothingHeadBucketLightBrown: 4
-    TP14ClothingHeadBucketBrown: 4
-    TP14ClothingHeadBucketMaroon: 4
-    TP14ClothingHeadBucketOlive: 4
-    TP14ClothingHeadBucketKhaki: 4
-    # Trieste-end
+    # Wormix-Edit-Start (Goobstation parity)
+    ClothingOuterCoatGentle: 3
+    ClothingOuterCoatJensen: 3
+    ClothingOuterCoatTrench: 4
+    ClothingHeadHatUshanka: 3
+    # Wormix-Edit-End
     # Trieste-start: from Trieste Port 14
     TP14ClothingUniformJumpsuitItsTime: 2
-    TP14EntClothesBlackWinterBoots: 2
-    TP14EntClothesWhiteWinterBoots: 2
-    TP14EntClothesBlueWinterBoots: 2
-    TP14EntClothesDarkBlueWinterBoots: 2
-    TP14EntClothesBrownWinterBoots: 2
-    TP14EntClothesGreenWinterBoots: 2
-    TP14EntClothesOrangeWinterBoots: 2
-    TP14EntClothesRedWinterBoots: 2
-    TP14EntClothesYellowWinterBoots: 2
-    TP14EntClothesPurpleWinterBoots: 2
     # Trieste-end
     ClothingHeadHatSantahat: 2
     ClothingHeadHatXmasCrown: 2
+  contrabandInventory: # Wormix-Edit (Goobstation parity)
+    ClothingNeckScarfStripedCentcom: 3
+    ClothingOuterCoatSpaceAsshole: 1
+    ClothingOuterDavidsJacket: 1
+    ClothingOuterDavidsJacketValid: 1
+    ClothingOuterWinterCosmic: 1
   emaggedInventory:
     ClothingNeckScarfStripedSyndieGreen: 3
     ClothingNeckScarfStripedSyndieRed: 3
